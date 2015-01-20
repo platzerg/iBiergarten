@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3567BF4D-A259-4725-B2BC-3A79DCC101E2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>iBiergarten</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>FBFF621884A0B299BF5ECAD991185FEB223E299F</key>
+		<string>https://github.com/platzerg/iBiergarten.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iBiergarten.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>FBFF621884A0B299BF5ECAD991185FEB223E299F</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/platzerg/iBiergarten.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>FBFF621884A0B299BF5ECAD991185FEB223E299F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FBFF621884A0B299BF5ECAD991185FEB223E299F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iBiergarten</string>
+		</dict>
+	</array>
+</dict>
+</plist>
