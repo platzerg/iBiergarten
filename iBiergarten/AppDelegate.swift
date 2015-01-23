@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 
     var window: UIWindow?
 
-    let googleMapsApiKey = "AIzaSyCPu8s9ccA5N9WdODaBHlFAMP929kPMYkI"
+    let googleMapsApiKey = "AIzaSyAtiJt_V9F5A5ShovmwjmKYZ84JZpjmTco"
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         GMSServices.provideAPIKey(googleMapsApiKey)

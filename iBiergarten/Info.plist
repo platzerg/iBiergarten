@@ -2,14 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>UILaunchImageFile</key>
-	<string>arrest.png</string>
-	<key>UILaunchImageFile~ipad</key>
-	<string>arrest.png</string>
-	<key>CFBundleDisplayName</key>
-	<string>${PRODUCT_NAME}</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Zugriff auf die Location erlaubt?</string>
+	<key>CFBundleDisplayName</key>
+	<string>${PRODUCT_NAME}</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -24,37 +22,6 @@
 	<string>1.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
-	<key>CFBundleVersion</key>
-	<string>1</string>
-	<key>LSRequiresIPhoneOS</key>
-	<true/>
-	<key>UIMainStoryboardFile</key>
-	<string>Main</string>
-	<key>UIRequiredDeviceCapabilities</key>
-	<array>
-		<string>armv7</string>
-	</array>
-	<key>UIStatusBarTintParameters</key>
-	<dict>
-		<key>UINavigationBar</key>
-		<dict>
-			<key>Style</key>
-			<string>UIBarStyleDefault</string>
-			<key>Translucent</key>
-			<false/>
-		</dict>
-	</dict>
-	<key>UISupportedInterfaceOrientations</key>
-	<array>
-		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
-	</array>
-	<key>UISupportedInterfaceOrientations~ipad</key>
-	<array>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
-	</array>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
@@ -87,9 +54,46 @@
 			</array>
 		</dict>
 	</array>
+	<key>CFBundleVersion</key>
+	<string>1</string>
 	<key>FacebookAppID</key>
 	<string>391994024204840</string>
 	<key>FacebookDisplayName</key>
 	<string>Biergarten</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>UILaunchImageFile</key>
+	<string>Muenchen_01.jpg</string>
+	<key>UILaunchImageFile~ipad</key>
+	<string>Muenchen_01.jpg</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UIStatusBarHidden~ipad</key>
+	<true/>
+	<key>UIStatusBarTintParameters</key>
+	<dict>
+		<key>UINavigationBar</key>
+		<dict>
+			<key>Style</key>
+			<string>UIBarStyleDefault</string>
+			<key>Translucent</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
 </dict>
 </plist>

@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B140D701A728A82003CF8E7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B140D6F1A728A82003CF8E7 /* Images.xcassets */; };
 		0B43745D1A6A65C600A6E4AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B43745C1A6A65C600A6E4AB /* AppDelegate.swift */; };
 		0B4374601A6A65C600A6E4AB /* iBiergarten.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0B43745E1A6A65C600A6E4AB /* iBiergarten.xcdatamodeld */; };
-		0B4374691A6A65C600A6E4AB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B4374681A6A65C600A6E4AB /* Images.xcassets */; };
 		0B4374781A6A65C600A6E4AB /* iBiergartenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4374771A6A65C600A6E4AB /* iBiergartenTests.swift */; };
 		0B4D31291A6BA59400AFC29D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0B4D312B1A6BA59400AFC29D /* Localizable.strings */; };
 		0B4D31481A6BAC1B00AFC29D /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0B4D31471A6BAC1B00AFC29D /* Settings.bundle */; };
@@ -57,11 +57,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B140D6F1A728A82003CF8E7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0B4374571A6A65C600A6E4AB /* iBiergarten.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBiergarten.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B43745B1A6A65C600A6E4AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B43745C1A6A65C600A6E4AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B43745F1A6A65C600A6E4AB /* iBiergarten.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iBiergarten.xcdatamodel; sourceTree = "<group>"; };
-		0B4374681A6A65C600A6E4AB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0B4374711A6A65C600A6E4AB /* iBiergartenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iBiergartenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B4374771A6A65C600A6E4AB /* iBiergartenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iBiergartenTests.swift; sourceTree = "<group>"; };
 		0B4374811A6A66C500A6E4AB /* Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Swift-Bridging-Header.h"; path = "../Swift-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -145,6 +145,7 @@
 		0B43744E1A6A65C600A6E4AB = {
 			isa = PBXGroup;
 			children = (
+				0B140D6F1A728A82003CF8E7 /* Images.xcassets */,
 				0B4374591A6A65C600A6E4AB /* iBiergarten */,
 				0B4374741A6A65C600A6E4AB /* iBiergartenTests */,
 				0B4374581A6A65C600A6E4AB /* Products */,
@@ -170,7 +171,6 @@
 				0B4D312D1A6BA60400AFC29D /* Images */,
 				0B4374811A6A66C500A6E4AB /* Swift-Bridging-Header.h */,
 				0B43745C1A6A65C600A6E4AB /* AppDelegate.swift */,
-				0B4374681A6A65C600A6E4AB /* Images.xcassets */,
 				0B43745E1A6A65C600A6E4AB /* iBiergarten.xcdatamodeld */,
 				167843D10A537B13DAC1CE95 /* Storyboard */,
 				1678435440DBF09E9157D772 /* Model */,
@@ -375,11 +375,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B4D31481A6BAC1B00AFC29D /* Settings.bundle in Resources */,
+				0B140D701A728A82003CF8E7 /* Images.xcassets in Resources */,
 				0B5714981A6A7B8800E44CB3 /* libPods.a in Resources */,
 				0B7A0A8A1A700C54001F39C5 /* MarkerInfoView.xib in Resources */,
 				0B7A0A901A7020C7001F39C5 /* Muenchen_01.jpg in Resources */,
 				0B4D31291A6BA59400AFC29D /* Localizable.strings in Resources */,
-				0B4374691A6A65C600A6E4AB /* Images.xcassets in Resources */,
 				16784583231F782E4C6FD0ED /* LaunchScreen.xib in Resources */,
 				0B7A0A7C1A7009DD001F39C5 /* icon_me@2x.png in Resources */,
 				0B4D314B1A6BADAB00AFC29D /* InfoPlist.strings in Resources */,
