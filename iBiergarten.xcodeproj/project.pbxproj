@@ -12,7 +12,6 @@
 		0B4374691A6A65C600A6E4AB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B4374681A6A65C600A6E4AB /* Images.xcassets */; };
 		0B4374781A6A65C600A6E4AB /* iBiergartenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4374771A6A65C600A6E4AB /* iBiergartenTests.swift */; };
 		0B4D31291A6BA59400AFC29D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0B4D312B1A6BA59400AFC29D /* Localizable.strings */; };
-		0B4D31301A6BA65600AFC29D /* arrest.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B4D31321A6BA65600AFC29D /* arrest.png */; };
 		0B4D31481A6BAC1B00AFC29D /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0B4D31471A6BAC1B00AFC29D /* Settings.bundle */; };
 		0B4D314B1A6BADAB00AFC29D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0B4D314D1A6BADAB00AFC29D /* InfoPlist.strings */; };
 		0B4D31511A6BADC900AFC29D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0B4D31531A6BADC900AFC29D /* InfoPlist.strings */; };
@@ -29,6 +28,15 @@
 		0B5714951A6A7B6000E44CB3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B5714941A6A7B6000E44CB3 /* CoreData.framework */; };
 		0B5714971A6A7B6800E44CB3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B5714961A6A7B6800E44CB3 /* AVFoundation.framework */; };
 		0B5714981A6A7B8800E44CB3 /* libPods.a in Resources */ = {isa = PBXBuildFile; fileRef = 912F91D6AC9AD2EF1D15D40E /* libPods.a */; };
+		0B7A0A7C1A7009DD001F39C5 /* icon_me@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B7A0A7B1A7009DD001F39C5 /* icon_me@2x.png */; };
+		0B7A0A7E1A700ACB001F39C5 /* TypesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7A0A7D1A700ACB001F39C5 /* TypesTableViewController.swift */; };
+		0B7A0A821A700B1A001F39C5 /* GoogleDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7A0A7F1A700B1A001F39C5 /* GoogleDataProvider.swift */; };
+		0B7A0A831A700B1A001F39C5 /* GooglePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7A0A801A700B1A001F39C5 /* GooglePlace.swift */; };
+		0B7A0A841A700B1A001F39C5 /* PlaceMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7A0A811A700B1A001F39C5 /* PlaceMarker.swift */; };
+		0B7A0A891A700C54001F39C5 /* MarkerInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7A0A861A700C54001F39C5 /* MarkerInfoView.swift */; };
+		0B7A0A8A1A700C54001F39C5 /* MarkerInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B7A0A871A700C54001F39C5 /* MarkerInfoView.xib */; };
+		0B7A0A8B1A700C54001F39C5 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7A0A881A700C54001F39C5 /* UIViewExtension.swift */; };
+		0B7A0A901A7020C7001F39C5 /* Muenchen_01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0B7A0A921A7020C7001F39C5 /* Muenchen_01.jpg */; };
 		1678426F67E71BAB076E1FEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1678401170F337BB58F70469 /* Main.storyboard */; };
 		16784583231F782E4C6FD0ED /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16784344909E4373CBDE9CE3 /* LaunchScreen.xib */; };
 		16784A8BA649F343843493C7 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16784767A7A346982D7CC02C /* MasterViewController.swift */; };
@@ -59,8 +67,6 @@
 		0B4374811A6A66C500A6E4AB /* Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Swift-Bridging-Header.h"; path = "../Swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		0B4D312A1A6BA59400AFC29D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0B4D312C1A6BA59800AFC29D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		0B4D31311A6BA65600AFC29D /* de */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = de; path = de.lproj/arrest.png; sourceTree = "<group>"; };
-		0B4D31331A6BA65800AFC29D /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = en.lproj/arrest.png; sourceTree = "<group>"; };
 		0B4D313A1A6BA94200AFC29D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
 		0B4D313B1A6BA94B00AFC29D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		0B4D313C1A6BA9B800AFC29D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = de; path = de.lproj/Info.plist; sourceTree = "<group>"; };
@@ -82,6 +88,16 @@
 		0B5714941A6A7B6000E44CB3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		0B5714961A6A7B6800E44CB3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		0B79B4DB1A6BCAEF006321C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		0B7A0A7B1A7009DD001F39C5 /* icon_me@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_me@2x.png"; sourceTree = "<group>"; };
+		0B7A0A7D1A700ACB001F39C5 /* TypesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypesTableViewController.swift; sourceTree = "<group>"; };
+		0B7A0A7F1A700B1A001F39C5 /* GoogleDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoogleDataProvider.swift; path = ../Controllers/GoogleDataProvider.swift; sourceTree = "<group>"; };
+		0B7A0A801A700B1A001F39C5 /* GooglePlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GooglePlace.swift; path = ../Controllers/GooglePlace.swift; sourceTree = "<group>"; };
+		0B7A0A811A700B1A001F39C5 /* PlaceMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlaceMarker.swift; path = ../Controllers/PlaceMarker.swift; sourceTree = "<group>"; };
+		0B7A0A861A700C54001F39C5 /* MarkerInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkerInfoView.swift; sourceTree = "<group>"; };
+		0B7A0A871A700C54001F39C5 /* MarkerInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MarkerInfoView.xib; sourceTree = "<group>"; };
+		0B7A0A881A700C54001F39C5 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		0B7A0A911A7020C7001F39C5 /* de */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = de; path = de.lproj/Muenchen_01.jpg; sourceTree = "<group>"; };
+		0B7A0A931A7020C8001F39C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = en; path = en.lproj/Muenchen_01.jpg; sourceTree = "<group>"; };
 		16784767A7A346982D7CC02C /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		16784B6DF2E12691BC24D8FD /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		16784F7F312FB9B548AE3AC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = iBiergarten/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
@@ -149,12 +165,13 @@
 		0B4374591A6A65C600A6E4AB /* iBiergarten */ = {
 			isa = PBXGroup;
 			children = (
+				0B43745A1A6A65C600A6E4AB /* Supporting Files */,
+				0B7A0A851A700C48001F39C5 /* View */,
 				0B4D312D1A6BA60400AFC29D /* Images */,
 				0B4374811A6A66C500A6E4AB /* Swift-Bridging-Header.h */,
 				0B43745C1A6A65C600A6E4AB /* AppDelegate.swift */,
 				0B4374681A6A65C600A6E4AB /* Images.xcassets */,
 				0B43745E1A6A65C600A6E4AB /* iBiergarten.xcdatamodeld */,
-				0B43745A1A6A65C600A6E4AB /* Supporting Files */,
 				167843D10A537B13DAC1CE95 /* Storyboard */,
 				1678435440DBF09E9157D772 /* Model */,
 				16784A783D2242A0C40F7A8A /* Controllers */,
@@ -194,14 +211,28 @@
 		0B4D312D1A6BA60400AFC29D /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				0B4D31321A6BA65600AFC29D /* arrest.png */,
+				0B7A0A921A7020C7001F39C5 /* Muenchen_01.jpg */,
+				0B7A0A7B1A7009DD001F39C5 /* icon_me@2x.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		0B7A0A851A700C48001F39C5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0B7A0A861A700C54001F39C5 /* MarkerInfoView.swift */,
+				0B7A0A871A700C54001F39C5 /* MarkerInfoView.xib */,
+				0B7A0A881A700C54001F39C5 /* UIViewExtension.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		1678435440DBF09E9157D772 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0B7A0A7F1A700B1A001F39C5 /* GoogleDataProvider.swift */,
+				0B7A0A801A700B1A001F39C5 /* GooglePlace.swift */,
+				0B7A0A811A700B1A001F39C5 /* PlaceMarker.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -218,6 +249,7 @@
 		16784A783D2242A0C40F7A8A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0B7A0A7D1A700ACB001F39C5 /* TypesTableViewController.swift */,
 				16784767A7A346982D7CC02C /* MasterViewController.swift */,
 				16784B6DF2E12691BC24D8FD /* DetailViewController.swift */,
 			);
@@ -309,6 +341,7 @@
 				TargetAttributes = {
 					0B4374561A6A65C600A6E4AB = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 3EUQZMQ92F;
 					};
 					0B4374701A6A65C600A6E4AB = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -343,10 +376,12 @@
 			files = (
 				0B4D31481A6BAC1B00AFC29D /* Settings.bundle in Resources */,
 				0B5714981A6A7B8800E44CB3 /* libPods.a in Resources */,
+				0B7A0A8A1A700C54001F39C5 /* MarkerInfoView.xib in Resources */,
+				0B7A0A901A7020C7001F39C5 /* Muenchen_01.jpg in Resources */,
 				0B4D31291A6BA59400AFC29D /* Localizable.strings in Resources */,
 				0B4374691A6A65C600A6E4AB /* Images.xcassets in Resources */,
-				0B4D31301A6BA65600AFC29D /* arrest.png in Resources */,
 				16784583231F782E4C6FD0ED /* LaunchScreen.xib in Resources */,
+				0B7A0A7C1A7009DD001F39C5 /* icon_me@2x.png in Resources */,
 				0B4D314B1A6BADAB00AFC29D /* InfoPlist.strings in Resources */,
 				1678426F67E71BAB076E1FEB /* Main.storyboard in Resources */,
 			);
@@ -430,10 +465,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B7A0A8B1A700C54001F39C5 /* UIViewExtension.swift in Sources */,
 				0B4374601A6A65C600A6E4AB /* iBiergarten.xcdatamodeld in Sources */,
+				0B7A0A821A700B1A001F39C5 /* GoogleDataProvider.swift in Sources */,
+				0B7A0A7E1A700ACB001F39C5 /* TypesTableViewController.swift in Sources */,
+				0B7A0A841A700B1A001F39C5 /* PlaceMarker.swift in Sources */,
 				0B43745D1A6A65C600A6E4AB /* AppDelegate.swift in Sources */,
 				16784A8BA649F343843493C7 /* MasterViewController.swift in Sources */,
 				16784E66DBBA0405F865CEDE /* DetailViewController.swift in Sources */,
+				0B7A0A891A700C54001F39C5 /* MarkerInfoView.swift in Sources */,
+				0B7A0A831A700B1A001F39C5 /* GooglePlace.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,15 +506,6 @@
 			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
-		0B4D31321A6BA65600AFC29D /* arrest.png */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0B4D31311A6BA65600AFC29D /* de */,
-				0B4D31331A6BA65800AFC29D /* en */,
-			);
-			name = arrest.png;
-			sourceTree = "<group>";
-		};
 		0B4D313D1A6BA9B800AFC29D /* Info.plist */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -498,6 +530,15 @@
 				0B4D31541A6BADCA00AFC29D /* de */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0B7A0A921A7020C7001F39C5 /* Muenchen_01.jpg */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B7A0A911A7020C7001F39C5 /* de */,
+				0B7A0A931A7020C8001F39C5 /* en */,
+			);
+			name = Muenchen_01.jpg;
 			sourceTree = "<group>";
 		};
 		1678401170F337BB58F70469 /* Main.storyboard */ = {
@@ -613,8 +654,7 @@
 			baseConfigurationReference = 4B56E6F1CA3FBCBCF5F5CA55 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: guenter platzer (T4PB5U8RFR)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: guenter platzer (T4PB5U8RFR)";
 				INFOPLIST_FILE = iBiergarten/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -629,8 +669,7 @@
 			baseConfigurationReference = DCFE5BDAE12D038C0E089F8A /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: guenter platzer (T4PB5U8RFR)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: guenter platzer (T4PB5U8RFR)";
 				INFOPLIST_FILE = iBiergarten/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
