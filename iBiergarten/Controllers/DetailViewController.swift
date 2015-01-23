@@ -65,6 +65,8 @@ class DetailViewController: UIViewController, TypesTableViewControllerDelegate, 
         fetchNearbyPlaces(mapView.camera.target)
     }
     
+    // kGMSTypeNormal, kGMSTypeSatellite, kGMSTypeHybrid,
+    // kGMSTypeTerrain, kGMSTypeNone
     @IBAction func mapTypeSegmentPressed(sender: AnyObject) {
         let segmentedControl = sender as UISegmentedControl
         switch segmentedControl.selectedSegmentIndex {
@@ -74,6 +76,10 @@ class DetailViewController: UIViewController, TypesTableViewControllerDelegate, 
             mapView.mapType = kGMSTypeSatellite
         case 2:
             mapView.mapType = kGMSTypeHybrid
+        case 3:
+            mapView.mapType = kGMSTypeTerrain
+        case 4:
+            mapView.mapType = kGMSTypeNone
         default:
             mapView.mapType = mapView.mapType
         }

@@ -32,10 +32,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OZP-CC-6gD" customClass="GMSMapView">
-                                <rect key="frame" x="16" y="64" width="568" height="478"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_me.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ueo-wq-VNf">
                                 <rect key="frame" x="285" y="273" width="30" height="55"/>
                             </imageView>
@@ -49,6 +45,10 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OZP-CC-6gD" customClass="GMSMapView">
+                                <rect key="frame" x="16" y="64" width="568" height="478"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -80,12 +80,14 @@
                             </connections>
                         </barButtonItem>
                         <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="fLx-u6-1Q5">
-                            <rect key="frame" x="180" y="7" width="240" height="30"/>
+                            <rect key="frame" x="140.5" y="6.5" width="319" height="31"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <segments>
                                 <segment title="Normal"/>
                                 <segment title="Satellite"/>
                                 <segment title="Hybrid"/>
+                                <segment title="Terrain"/>
+                                <segment title="None"/>
                             </segments>
                             <connections>
                                 <action selector="mapTypeSegmentPressed:" destination="JEX-9P-axG" eventType="valueChanged" id="DIV-mp-ajy"/>
@@ -105,7 +107,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="665" y="594"/>
+            <point key="canvasLocation" x="826.5" y="594"/>
         </scene>
         <!--Choose Types-->
         <scene sceneID="Rq3-J1-rM1">
