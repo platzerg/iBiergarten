@@ -14,7 +14,7 @@ class DetailViewController: UIViewController, TypesTableViewControllerDelegate, 
     @IBOutlet weak var mapView: GMSMapView!
     @IBOutlet weak var mapCenterPinImage: UIImageView!
     @IBOutlet weak var pinImageVerticalConstraint: NSLayoutConstraint!
-    var searchedTypes = ["bakery", "bar", "cafe", "grocery_or_supermarket", "restaurant", "beergarden", "biergrten"]
+    var searchedTypes = ["bakery", "bar", "cafe", "grocery_or_supermarket", "restaurant"]
     
     let locationManager = CLLocationManager()
     let dataProvider = GoogleDataProvider()
@@ -43,7 +43,9 @@ class DetailViewController: UIViewController, TypesTableViewControllerDelegate, 
             let region = mapView.projection.visibleRegion()
             let verticalDistance = GMSGeometryDistance(region.farLeft, region.nearLeft)
             let horizontalDistance = GMSGeometryDistance(region.farLeft, region.farRight)
-            return max(horizontalDistance, verticalDistance)*0.5
+          
+            //return max(horizontalDistance, verticalDistance)*5.5
+            return 50000;
         }
     }
     
