@@ -12,5 +12,5 @@
 
 #endif
 
-#import <AFNetworking/AFNetworking.h>
 #import <GoogleMaps.h>
+#import <PWReachability.h>

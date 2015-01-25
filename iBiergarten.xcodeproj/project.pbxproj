@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B0D1CB81A75248F008FD607 /* PWReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0D1CB71A75248F008FD607 /* PWReachability.swift */; };
 		0B140D701A728A82003CF8E7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B140D6F1A728A82003CF8E7 /* Images.xcassets */; };
 		0B43745D1A6A65C600A6E4AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B43745C1A6A65C600A6E4AB /* AppDelegate.swift */; };
 		0B4374601A6A65C600A6E4AB /* iBiergarten.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0B43745E1A6A65C600A6E4AB /* iBiergarten.xcdatamodeld */; };
@@ -57,6 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B0D1CB71A75248F008FD607 /* PWReachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PWReachability.swift; path = iBiergarten/PWReachability.swift; sourceTree = "<group>"; };
 		0B140D6F1A728A82003CF8E7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0B4374571A6A65C600A6E4AB /* iBiergarten.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBiergarten.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B43745B1A6A65C600A6E4AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -142,9 +144,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B0D1CB61A752465008FD607 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B0D1CB71A75248F008FD607 /* PWReachability.swift */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		0B43744E1A6A65C600A6E4AB = {
 			isa = PBXGroup;
 			children = (
+				0B0D1CB61A752465008FD607 /* Frameworks */,
 				0B140D6F1A728A82003CF8E7 /* Images.xcassets */,
 				0B4374591A6A65C600A6E4AB /* iBiergarten */,
 				0B4374741A6A65C600A6E4AB /* iBiergartenTests */,
@@ -475,6 +486,7 @@
 				16784E66DBBA0405F865CEDE /* DetailViewController.swift in Sources */,
 				0B7A0A891A700C54001F39C5 /* MarkerInfoView.swift in Sources */,
 				0B7A0A831A700B1A001F39C5 /* GooglePlace.swift in Sources */,
+				0B0D1CB81A75248F008FD607 /* PWReachability.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

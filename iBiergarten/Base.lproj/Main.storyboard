@@ -32,6 +32,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OZP-CC-6gD" customClass="GMSMapView">
+                                <rect key="frame" x="16" y="64" width="568" height="478"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_me.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ueo-wq-VNf">
                                 <rect key="frame" x="285" y="273" width="30" height="55"/>
                             </imageView>
@@ -45,31 +49,19 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OZP-CC-6gD" customClass="GMSMapView">
-                                <rect key="frame" x="16" y="64" width="568" height="478"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="fE2-r7-Lj1" firstAttribute="trailing" secondItem="OZP-CC-6gD" secondAttribute="trailing" id="2Cu-id-cna"/>
-                            <constraint firstAttribute="bottom" secondItem="OZP-CC-6gD" secondAttribute="bottom" constant="58" id="D2h-Ph-50A"/>
-                            <constraint firstItem="Ueo-wq-VNf" firstAttribute="centerY" secondItem="svH-Pt-448" secondAttribute="centerY" id="IHc-A0-DBA"/>
-                            <constraint firstItem="fE2-r7-Lj1" firstAttribute="bottom" secondItem="GAO-Cl-Wes" secondAttribute="top" id="Juw-MF-AZU"/>
-                            <constraint firstItem="fE2-r7-Lj1" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leadingMargin" constant="-8" id="QQN-Uw-XqV"/>
-                            <constraint firstItem="fE2-r7-Lj1" firstAttribute="top" secondItem="OZP-CC-6gD" secondAttribute="bottom" constant="17" id="fVX-Ga-Wr9"/>
-                            <constraint firstItem="OZP-CC-6gD" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leadingMargin" id="j3D-j6-PbY"/>
-                            <constraint firstItem="OZP-CC-6gD" firstAttribute="centerX" secondItem="Ueo-wq-VNf" secondAttribute="centerX" id="j8r-dg-4yf"/>
-                            <constraint firstItem="OZP-CC-6gD" firstAttribute="top" secondItem="SYR-Wa-9uf" secondAttribute="bottom" id="ls8-qN-kyC"/>
-                            <constraint firstItem="fE2-r7-Lj1" firstAttribute="trailing" secondItem="svH-Pt-448" secondAttribute="trailingMargin" id="tz4-dO-cto"/>
-                            <constraint firstItem="GAO-Cl-Wes" firstAttribute="top" secondItem="fE2-r7-Lj1" secondAttribute="bottom" constant="5" id="wXc-oO-Pww"/>
+                            <constraint firstItem="fE2-r7-Lj1" firstAttribute="trailing" secondItem="svH-Pt-448" secondAttribute="trailingMargin" id="0EL-4p-hrC"/>
+                            <constraint firstAttribute="bottom" secondItem="fE2-r7-Lj1" secondAttribute="bottom" constant="20" symbolic="YES" id="3kg-8y-azL"/>
+                            <constraint firstItem="OZP-CC-6gD" firstAttribute="centerX" secondItem="Ueo-wq-VNf" secondAttribute="centerX" id="9Oq-bO-H7L"/>
+                            <constraint firstItem="fE2-r7-Lj1" firstAttribute="top" secondItem="OZP-CC-6gD" secondAttribute="bottom" constant="17" id="FrH-fp-JWM"/>
+                            <constraint firstItem="fE2-r7-Lj1" firstAttribute="trailing" secondItem="OZP-CC-6gD" secondAttribute="trailing" id="g46-gD-hhA"/>
+                            <constraint firstItem="OZP-CC-6gD" firstAttribute="top" secondItem="SYR-Wa-9uf" secondAttribute="bottom" id="klg-oy-ATt"/>
+                            <constraint firstItem="OZP-CC-6gD" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leadingMargin" id="pby-ge-1qJ"/>
+                            <constraint firstItem="Ueo-wq-VNf" firstAttribute="centerY" secondItem="svH-Pt-448" secondAttribute="centerY" id="vhH-XL-hlu"/>
+                            <constraint firstItem="fE2-r7-Lj1" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leadingMargin" constant="-8" id="zH9-MW-VoX"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="Juw-MF-AZU"/>
-                                <exclude reference="wXc-oO-Pww"/>
-                            </mask>
-                        </variation>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="jms-gP-lmf">
