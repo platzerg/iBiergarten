@@ -7,9 +7,9 @@ inhibit_all_warnings!
 workspace 'iBiergarten.xcworkspace'
 
 platform :ios, '8.0'
-pod 'AFNetworking'
+#pod 'AFNetworking'
 pod 'Google-Maps-iOS-SDK'
-
+pod 'BiergartenFetcher', :path => '/Users/platzerworld/cocoapodsrepo/BiergartenFetcher/0.0.1'
 
 link_with 'iBiergarten', 'iBiergartenTests'
 
