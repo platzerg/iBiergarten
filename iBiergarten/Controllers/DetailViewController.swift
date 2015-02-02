@@ -132,7 +132,7 @@ class DetailViewController: UIViewController, TypesTableViewControllerDelegate, 
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
         if let location = locations.first as? CLLocation {
             // 6
-            mapView.camera = GMSCameraPosition(target: location.coordinate, zoom: 17, bearing: 0, viewingAngle: 0)
+            mapView.camera = GMSCameraPosition(target: location.coordinate, zoom: 15, bearing: 0, viewingAngle: 0)
             
             // 7
             locationManager.stopUpdatingLocation()

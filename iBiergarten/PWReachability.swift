@@ -15,6 +15,7 @@ class PWReachability{
     let nc = NSNotificationCenter.defaultCenter()
     let kAddHomeError: String = "kAddHomeError"
     
+    
     init() {
         self.internetReachable = Reachability.reachabilityForInternetConnection()
         internetReachable.startNotifier()
@@ -27,15 +28,53 @@ class PWReachability{
         
         var observer = notificationCenter.addObserverForName("gpl", object: nil, queue: mainQueue) { _ in
             print("gpl was here")
+            self.doOne()
         }
         
-        //notificationCenter.addObserver(<#observer: AnyObject#>, selector: <#Selector#>, name: <#String?#>, object: <#AnyObject?#>)
+        //notificationCenter.addObserver(self, selector: "doOne", name: "gpl", object: nil)
         
         fetchNearbyPlaces()
+        
     }
     
     func fetchNearbyPlaces() {
         nc.postNotificationName("gpl", object: nil)
     }
     
+    func doOne() {
+        NSNotificationCenter.defaultCenter().addObserver(self, selector:"drawAShape:", name: "actionOnePressed", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector:"showAMessage:", name: "actionTwoPressed", object: nil)
+        
+        var dateComp:NSDateComponents = NSDateComponents()
+        dateComp.year = 2015;
+        dateComp.month = 01;
+        dateComp.day = 25;
+        dateComp.hour = 17;
+        dateComp.minute = 05;
+        dateComp.timeZone = NSTimeZone.systemTimeZone()
+        
+        var calender:NSCalendar = NSCalendar(calendarIdentifier: NSGregorianCalendar)!
+        var date:NSDate = calender.dateFromComponents(dateComp)!
+        
+        
+        var notification:UILocalNotification = UILocalNotification()
+        notification.category = "FIRST_CATEGORY"
+        notification.alertBody = "Hi, I am a notification"
+        notification.fireDate = date
+        
+        UIApplication.sharedApplication().scheduleLocalNotification(notification)
+    }
+    
+    func drawAShape(notification:NSNotification){
+        var view:UIView = UIView(frame:CGRectMake(10, 10, 100, 100))
+        view.backgroundColor = UIColor.redColor()
+        
+    }
+    
+    func showAMessage(notification:NSNotification){
+        var message:UIAlertController = UIAlertController(title: "A Notification Message", message: "Hello there", preferredStyle: UIAlertControllerStyle.Alert)
+        message.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+        
+        
+    }
 }
