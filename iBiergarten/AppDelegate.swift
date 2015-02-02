@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         GMSServices.provideAPIKey(googleMapsApiKey)
         
-        //initNotification()
+        
         
         var j:PWReachability = PWReachability()
         j.fetchNearbyPlaces()
@@ -33,11 +33,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         let masterNavigationController = splitViewController.viewControllers[0] as UINavigationController
         let controller = masterNavigationController.topViewController as MasterViewController
         controller.managedObjectContext = self.managedObjectContext
+        
+        initNotification()
         return true
     }
     
-    func applicationgpl(application: UIApplication!, handleActionWithIdentifier identifier:String!,
-        forLocalNotification notification:UILocalNotification!, completionHandler: (() -> Void)!){
+    func application(application: UIApplication!, handleActionWithIdentifier identifier:String!, forLocalNotification notification:UILocalNotification!,
+        completionHandler: (() -> Void)!){
             
             if (identifier == "FIRST_ACTION"){
                 
@@ -193,6 +195,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         // NSSet of all our categories
         
         let categories:NSSet = NSSet(objects: firstCategory)
+        
+        
+        
         let types:UIUserNotificationType = UIUserNotificationType.Alert | UIUserNotificationType.Badge
         
         let mySettings:UIUserNotificationSettings = UIUserNotificationSettings(forTypes: types, categories: categories)

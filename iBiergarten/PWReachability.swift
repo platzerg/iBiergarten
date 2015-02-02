@@ -47,10 +47,10 @@ class PWReachability{
         
         var dateComp:NSDateComponents = NSDateComponents()
         dateComp.year = 2015;
-        dateComp.month = 01;
-        dateComp.day = 25;
-        dateComp.hour = 17;
-        dateComp.minute = 05;
+        dateComp.month = 02;
+        dateComp.day = 02;
+        dateComp.hour = 15;
+        dateComp.minute = 04;
         dateComp.timeZone = NSTimeZone.systemTimeZone()
         
         var calender:NSCalendar = NSCalendar(calendarIdentifier: NSGregorianCalendar)!
@@ -69,12 +69,14 @@ class PWReachability{
         var view:UIView = UIView(frame:CGRectMake(10, 10, 100, 100))
         view.backgroundColor = UIColor.redColor()
         
+        
     }
     
     func showAMessage(notification:NSNotification){
         var message:UIAlertController = UIAlertController(title: "A Notification Message", message: "Hello there", preferredStyle: UIAlertControllerStyle.Alert)
         message.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
         
+       
         
     }
 }
