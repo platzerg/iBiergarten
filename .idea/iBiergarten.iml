@@ -11,6 +11,9 @@
       <sourceFolder url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/lib/libz.dylib" isTestSource="false" />
     </content>
     <content url="file://$MODULE_DIR$" />
+    <content url="file://$USER_HOME$/cocoapodsrepo/BiergartenFetcher/0.0.1">
+      <sourceFolder url="file://$USER_HOME$/cocoapodsrepo/BiergartenFetcher/0.0.1" isTestSource="false" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

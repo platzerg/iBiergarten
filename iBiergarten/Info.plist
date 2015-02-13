@@ -4,8 +4,6 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Zugriff auf die Location erlaubt?</string>
 	<key>CFBundleDisplayName</key>
 	<string>${PRODUCT_NAME}</string>
 	<key>CFBundleExecutable</key>
@@ -62,6 +60,8 @@
 	<string>Biergarten</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Zugriff auf die Location erlaubt?</string>
 	<key>UILaunchImageFile</key>
 	<string>Muenchen_01.jpg</string>
 	<key>UILaunchImageFile~ipad</key>

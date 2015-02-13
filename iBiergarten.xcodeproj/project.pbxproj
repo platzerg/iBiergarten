@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		0B0D1CB81A75248F008FD607 /* PWReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0D1CB71A75248F008FD607 /* PWReachability.swift */; };
 		0B140D701A728A82003CF8E7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B140D6F1A728A82003CF8E7 /* Images.xcassets */; };
+		0B1FE3AE1A87C3E70084F0D9 /* NetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1FE3AD1A87C3E70084F0D9 /* NetworkViewController.swift */; };
+		0B207DAD1A877B0F00DC0A3F /* HRMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B207DAC1A877B0F00DC0A3F /* HRMViewController.m */; };
+		0B207DAF1A877B1F00DC0A3F /* TopApps.json in Resources */ = {isa = PBXBuildFile; fileRef = 0B207DAE1A877B1F00DC0A3F /* TopApps.json */; };
+		0B207DB71A877BF200DC0A3F /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B207DB61A877BF200DC0A3F /* CoreBluetooth.framework */; };
+		0B207DB91A877C0600DC0A3F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B207DB81A877C0600DC0A3F /* Foundation.framework */; };
+		0B207DBB1A877C1F00DC0A3F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B207DBA1A877C1F00DC0A3F /* CoreGraphics.framework */; };
+		0B207DBD1A877C2A00DC0A3F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B207DBC1A877C2A00DC0A3F /* UIKit.framework */; };
 		0B43745D1A6A65C600A6E4AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B43745C1A6A65C600A6E4AB /* AppDelegate.swift */; };
 		0B4374601A6A65C600A6E4AB /* iBiergarten.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0B43745E1A6A65C600A6E4AB /* iBiergarten.xcdatamodeld */; };
 		0B4374781A6A65C600A6E4AB /* iBiergartenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4374771A6A65C600A6E4AB /* iBiergartenTests.swift */; };
@@ -38,6 +45,7 @@
 		0B7A0A8A1A700C54001F39C5 /* MarkerInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B7A0A871A700C54001F39C5 /* MarkerInfoView.xib */; };
 		0B7A0A8B1A700C54001F39C5 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7A0A881A700C54001F39C5 /* UIViewExtension.swift */; };
 		0B7A0A901A7020C7001F39C5 /* Muenchen_01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0B7A0A921A7020C7001F39C5 /* Muenchen_01.jpg */; };
+		0B80D1321A8E762E00B51CFC /* Biergarten.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B80D1311A8E762E00B51CFC /* Biergarten.swift */; };
 		1678426F67E71BAB076E1FEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1678401170F337BB58F70469 /* Main.storyboard */; };
 		16784583231F782E4C6FD0ED /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16784344909E4373CBDE9CE3 /* LaunchScreen.xib */; };
 		16784A8BA649F343843493C7 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16784767A7A346982D7CC02C /* MasterViewController.swift */; };
@@ -60,6 +68,16 @@
 /* Begin PBXFileReference section */
 		0B0D1CB71A75248F008FD607 /* PWReachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PWReachability.swift; path = iBiergarten/PWReachability.swift; sourceTree = "<group>"; };
 		0B140D6F1A728A82003CF8E7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0B1FE3AD1A87C3E70084F0D9 /* NetworkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkViewController.swift; sourceTree = "<group>"; };
+		0B207DAB1A877B0F00DC0A3F /* HRMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRMViewController.h; sourceTree = "<group>"; };
+		0B207DAC1A877B0F00DC0A3F /* HRMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRMViewController.m; sourceTree = "<group>"; };
+		0B207DAE1A877B1F00DC0A3F /* TopApps.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TopApps.json; sourceTree = "<group>"; };
+		0B207DB21A877BBC00DC0A3F /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../Library/Developer/Xcode/DerivedData/iBiergarten-bsigpibmsvsrghayssycmerzhzzz/Build/Products/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
+		0B207DB41A877BC300DC0A3F /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../../Library/Developer/Xcode/DerivedData/iBiergarten-bsigpibmsvsrghayssycmerzhzzz/Build/Products/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		0B207DB61A877BF200DC0A3F /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		0B207DB81A877C0600DC0A3F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0B207DBA1A877C1F00DC0A3F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0B207DBC1A877C2A00DC0A3F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0B4374571A6A65C600A6E4AB /* iBiergarten.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBiergarten.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B43745B1A6A65C600A6E4AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B43745C1A6A65C600A6E4AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +118,8 @@
 		0B7A0A881A700C54001F39C5 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		0B7A0A911A7020C7001F39C5 /* de */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = de; path = de.lproj/Muenchen_01.jpg; sourceTree = "<group>"; };
 		0B7A0A931A7020C8001F39C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = en; path = en.lproj/Muenchen_01.jpg; sourceTree = "<group>"; };
+		0B80D1301A8E725400B51CFC /* Demo.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Demo.playground; sourceTree = "<group>"; };
+		0B80D1311A8E762E00B51CFC /* Biergarten.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Biergarten.swift; sourceTree = "<group>"; };
 		16784767A7A346982D7CC02C /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		16784B6DF2E12691BC24D8FD /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		16784F7F312FB9B548AE3AC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = iBiergarten/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
@@ -116,6 +136,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B207DBD1A877C2A00DC0A3F /* UIKit.framework in Frameworks */,
+				0B207DBB1A877C1F00DC0A3F /* CoreGraphics.framework in Frameworks */,
+				0B207DB91A877C0600DC0A3F /* Foundation.framework in Frameworks */,
+				0B207DB71A877BF200DC0A3F /* CoreBluetooth.framework in Frameworks */,
 				0B5714971A6A7B6800E44CB3 /* AVFoundation.framework in Frameworks */,
 				0B5714951A6A7B6000E44CB3 /* CoreData.framework in Frameworks */,
 				0B5714931A6A7B5900E44CB3 /* CoreLocation.framework in Frameworks */,
@@ -144,18 +168,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0B0D1CB61A752465008FD607 /* Frameworks */ = {
+		0B0D1CB61A752465008FD607 /* GPL */ = {
 			isa = PBXGroup;
 			children = (
+				0B80D1301A8E725400B51CFC /* Demo.playground */,
+				0B207DAE1A877B1F00DC0A3F /* TopApps.json */,
+				0B207DAB1A877B0F00DC0A3F /* HRMViewController.h */,
+				0B207DAC1A877B0F00DC0A3F /* HRMViewController.m */,
 				0B0D1CB71A75248F008FD607 /* PWReachability.swift */,
 			);
-			name = Frameworks;
+			name = GPL;
 			sourceTree = "<group>";
 		};
 		0B43744E1A6A65C600A6E4AB = {
 			isa = PBXGroup;
 			children = (
-				0B0D1CB61A752465008FD607 /* Frameworks */,
+				0B0D1CB61A752465008FD607 /* GPL */,
 				0B140D6F1A728A82003CF8E7 /* Images.xcassets */,
 				0B4374591A6A65C600A6E4AB /* iBiergarten */,
 				0B4374741A6A65C600A6E4AB /* iBiergartenTests */,
@@ -183,6 +211,7 @@
 				0B4374811A6A66C500A6E4AB /* Swift-Bridging-Header.h */,
 				0B43745C1A6A65C600A6E4AB /* AppDelegate.swift */,
 				0B43745E1A6A65C600A6E4AB /* iBiergarten.xcdatamodeld */,
+				0B80D1311A8E762E00B51CFC /* Biergarten.swift */,
 				167843D10A537B13DAC1CE95 /* Storyboard */,
 				1678435440DBF09E9157D772 /* Model */,
 				16784A783D2242A0C40F7A8A /* Controllers */,
@@ -263,6 +292,7 @@
 				0B7A0A7D1A700ACB001F39C5 /* TypesTableViewController.swift */,
 				16784767A7A346982D7CC02C /* MasterViewController.swift */,
 				16784B6DF2E12691BC24D8FD /* DetailViewController.swift */,
+				0B1FE3AD1A87C3E70084F0D9 /* NetworkViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -270,6 +300,12 @@
 		596C6487592CDFEAB89D23C7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0B207DBC1A877C2A00DC0A3F /* UIKit.framework */,
+				0B207DBA1A877C1F00DC0A3F /* CoreGraphics.framework */,
+				0B207DB81A877C0600DC0A3F /* Foundation.framework */,
+				0B207DB61A877BF200DC0A3F /* CoreBluetooth.framework */,
+				0B207DB41A877BC300DC0A3F /* SwiftyJSON.framework */,
+				0B207DB21A877BBC00DC0A3F /* Alamofire.framework */,
 				0B5714961A6A7B6800E44CB3 /* AVFoundation.framework */,
 				0B5714941A6A7B6000E44CB3 /* CoreData.framework */,
 				0B5714921A6A7B5900E44CB3 /* CoreLocation.framework */,
@@ -394,6 +430,7 @@
 				16784583231F782E4C6FD0ED /* LaunchScreen.xib in Resources */,
 				0B7A0A7C1A7009DD001F39C5 /* icon_me@2x.png in Resources */,
 				0B4D314B1A6BADAB00AFC29D /* InfoPlist.strings in Resources */,
+				0B207DAF1A877B1F00DC0A3F /* TopApps.json in Resources */,
 				1678426F67E71BAB076E1FEB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,6 +513,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B80D1321A8E762E00B51CFC /* Biergarten.swift in Sources */,
 				0B7A0A8B1A700C54001F39C5 /* UIViewExtension.swift in Sources */,
 				0B4374601A6A65C600A6E4AB /* iBiergarten.xcdatamodeld in Sources */,
 				0B7A0A821A700B1A001F39C5 /* GoogleDataProvider.swift in Sources */,
@@ -484,7 +522,9 @@
 				0B43745D1A6A65C600A6E4AB /* AppDelegate.swift in Sources */,
 				16784A8BA649F343843493C7 /* MasterViewController.swift in Sources */,
 				16784E66DBBA0405F865CEDE /* DetailViewController.swift in Sources */,
+				0B207DAD1A877B0F00DC0A3F /* HRMViewController.m in Sources */,
 				0B7A0A891A700C54001F39C5 /* MarkerInfoView.swift in Sources */,
+				0B1FE3AE1A87C3E70084F0D9 /* NetworkViewController.swift in Sources */,
 				0B7A0A831A700B1A001F39C5 /* GooglePlace.swift in Sources */,
 				0B0D1CB81A75248F008FD607 /* PWReachability.swift in Sources */,
 			);
@@ -665,9 +705,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4B56E6F1CA3FBCBCF5F5CA55 /* Pods.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: guenter platzer (T4PB5U8RFR)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iBiergarten",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/iBiergarten-bsigpibmsvsrghayssycmerzhzzz/Build/Products/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = iBiergarten/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -680,9 +724,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DCFE5BDAE12D038C0E089F8A /* Pods.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: guenter platzer (T4PB5U8RFR)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iBiergarten",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/iBiergarten-bsigpibmsvsrghayssycmerzhzzz/Build/Products/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = iBiergarten/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

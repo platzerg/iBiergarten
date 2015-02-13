@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CoreData
 
 
 class PWReachability{
@@ -14,7 +15,7 @@ class PWReachability{
     let internetReachable: Reachability
     let nc = NSNotificationCenter.defaultCenter()
     let kAddHomeError: String = "kAddHomeError"
-    
+    var allBiergarten = Array<Biergarten>()
     
     init() {
         self.internetReachable = Reachability.reachabilityForInternetConnection()
@@ -26,15 +27,62 @@ class PWReachability{
         let notificationCenter = NSNotificationCenter.defaultCenter()
         let mainQueue = NSOperationQueue.mainQueue()
         
-        var observer = notificationCenter.addObserverForName("gpl", object: nil, queue: mainQueue) { _ in
-            print("gpl was here")
-            self.doOne()
+        let url = NSURL(string: "http://biergartenservice.appspot.com/platzerworld/biergarten/holebiergarten")
+        let request = NSURLRequest(URL: url!)
+        
+        NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) {response,data,error in
+            if data != nil {
+                
+                let json : AnyObject! = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil)
+                
+                if let statusesArray = json as? NSDictionary{
+                    if let biergartenListe = statusesArray["biergartenListe"] as? NSArray{
+                        for bier in biergartenListe {
+                            
+                            if let biergarten = bier as? NSDictionary{
+                                
+                                var id: Int = bier["id"]! as Int
+                                var name: String = bier["name"]! as String
+                                var strasse: String = bier["strasse"]! as String
+                                var plz: String = bier["plz"]! as String
+                                var ort: String = bier["ort"]! as String
+                                var url: String = bier["url"]! as String
+                                var longitude: String = bier["longitude"]! as String
+                                var latitude: String = bier["latitude"]! as String
+                                var email: String = bier["email"]! as String
+                                var telefon: String = bier["telefon"]! as String
+                                var desc: String = bier["desc"]! as String
+                                var favorit: Bool = bier["favorit"]! as Bool
+                                
+                                var biergartenModel: Biergarten = Biergarten(id: id, name:name, strasse:strasse, plz:plz, ort:ort, url:url, longitude:longitude, latitude:latitude, email:email, telefon:telefon, desc:desc, favorit: favorit)
+                                
+                                self.allBiergarten.append(biergartenModel)                                   }
+                        }
+                    }
+                }
+            }
+            
+            if error != nil {
+                let alert = UIAlertView(title:"Oops!",message:error.localizedDescription, delegate:nil, cancelButtonTitle:"OK")
+                alert.show()
+            }
+            UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+            
+            self.nc.postNotificationName("BiergartenLoaded", object: nil)
         }
         
-        //notificationCenter.addObserver(self, selector: "doOne", name: "gpl", object: nil)
+        
+        var observer = notificationCenter.addObserverForName("gpl", object: nil, queue: mainQueue) { _ in
+            print("gpl was here")
+            
+        }
         
         fetchNearbyPlaces()
         
+    }
+    
+    func getAllBiergarten() -> Array<Biergarten> {
+        return self.allBiergarten
     }
     
     func fetchNearbyPlaces() {

@@ -9,8 +9,8 @@
 #ifndef iBiergarten_Swift_Bridging_Header_h
 #define iBiergarten_Swift_Bridging_Header_h
 
+#import <GoogleMaps.h>
+#import <PWReachability.h>
 
 #endif
 
-#import <GoogleMaps.h>
-#import <PWReachability.h>
