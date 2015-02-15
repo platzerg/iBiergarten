@@ -14,7 +14,7 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
     var detailViewController: DetailViewController? = nil
     var managedObjectContext: NSManagedObjectContext? = nil
 
-
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         self.clearsSelectionOnViewWillAppear = false

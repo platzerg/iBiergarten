@@ -1,0 +1,3004 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Biergarten</key>
+	<dict>
+		<key>biergartenListe</key>
+		<array>
+			<dict>
+				<key>desc</key>
+				<string>Am Nordrand des Englischen Gartens gelegen Am Nordrand des Englischen Gartens gelegen Am Nordrand des Englischen Gartens gelegen 000  Am Nordrand des Englischen Gartens gelegen</string>
+				<key>email</key>
+				<string>aumeister@aumeister.de</string>
+				<key>favorit</key>
+				<true/>
+				<key>id</key>
+				<real>1</real>
+				<key>latitude</key>
+				<string>48,185977</string>
+				<key>longitude</key>
+				<string>11,620038</string>
+				<key>name</key>
+				<string>Zum Aumeister</string>
+				<key>ort</key>
+				<string>MÃ¼nchen (Schwabing)</string>
+				<key>plz</key>
+				<string>80939</string>
+				<key>strasse</key>
+				<string>Sondermeierstrasse 1</string>
+				<key>telefon</key>
+				<string>089 / 18 93 142 0</string>
+				<key>url</key>
+				<string>www.aumeister.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>GrÃ¶Ãter Biergarten, ein echter Klassiker</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>2</real>
+				<key>latitude</key>
+				<string>48,149882</string>
+				<key>longitude</key>
+				<string>11,511167</string>
+				<key>name</key>
+				<string>Hirschgarten</string>
+				<key>ort</key>
+				<string>MÃ¼nchen (Neuhausen)</string>
+				<key>plz</key>
+				<string>80639</string>
+				<key>strasse</key>
+				<string>Hirschgarten 1</string>
+				<key>telefon</key>
+				<string>089/17 99 91 19</string>
+				<key>url</key>
+				<string>www.hirschgarten.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>In der NÃ¤he des Forstenrieder Parks, mit Spielplatz</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>3</real>
+				<key>latitude</key>
+				<string>48,086563</string>
+				<key>longitude</key>
+				<string>11,478682</string>
+				<key>name</key>
+				<string>Maxhof</string>
+				<key>ort</key>
+				<string>MÃ¼nchen (Maxhof)</string>
+				<key>plz</key>
+				<string>81475</string>
+				<key>strasse</key>
+				<string>MÃ¼hlthalerstr. 91</string>
+				<key>telefon</key>
+				<string>089-75698870</string>
+				<key>url</key>
+				<string>www.gasthaus-maxhof.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Schattige PlÃ¤tze unter MÃ¼nchens grÃ¶Ãter Markise</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>4</real>
+				<key>latitude</key>
+				<string>48,132973</string>
+				<key>longitude</key>
+				<string>11,588972</string>
+				<key>name</key>
+				<string>Muffatwerk</string>
+				<key>ort</key>
+				<string>MÃ¼nchen (Haidhausen)</string>
+				<key>plz</key>
+				<string>81667</string>
+				<key>strasse</key>
+				<string>ZellstraÃe 4</string>
+				<key>telefon</key>
+				<string>+49-(0)89-45875073</string>
+				<key>url</key>
+				<string>www.muffatwerk.de/de/pages/biergarten</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Mediterranes Flair mitten in MÃ¼nchen, keine Selbstbedienug</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>5</real>
+				<key>latitude</key>
+				<string>48,131672</string>
+				<key>longitude</key>
+				<string>11,529931</string>
+				<key>name</key>
+				<string>Villa Flora</string>
+				<key>ort</key>
+				<string>MÃ¼nchen</string>
+				<key>plz</key>
+				<string>80636</string>
+				<key>strasse</key>
+				<string>Hansastr. 44</string>
+				<key>telefon</key>
+				<string></string>
+				<key>url</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Der Biergarten Cirkuswiese befindet sich gleich neben der Theresienwiese und ist einer der am wenigsten besuchten BiergÃ¤rten MÃ¼nchens.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>6</real>
+				<key>latitude</key>
+				<string>48,136394</string>
+				<key>longitude</key>
+				<string>11,548508</string>
+				<key>name</key>
+				<string>Cirkuswiese</string>
+				<key>ort</key>
+				<string>MÃ¼nchen</string>
+				<key>plz</key>
+				<string>80339</string>
+				<key>strasse</key>
+				<string>TheresienhÃ¶he 7</string>
+				<key>telefon</key>
+				<string>089-500593800</string>
+				<key>url</key>
+				<string>www.hacker-pschorrbraeu.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Ein idyllischer Kasteniengarten am S-Bahn-Halt Grub.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>7</real>
+				<key>latitude</key>
+				<string>48,388791</string>
+				<key>longitude</key>
+				<string>11,94609</string>
+				<key>name</key>
+				<string>Schweiger's Landgasthof</string>
+				<key>ort</key>
+				<string>Wartenberg</string>
+				<key>plz</key>
+				<string>85456</string>
+				<key>strasse</key>
+				<string>Manhartsdorf 2-4</string>
+				<key>telefon</key>
+				<string></string>
+				<key>url</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>BehÃ¤biger Biergarten am Ammerseeufer mit Dampfersteg.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>8</real>
+				<key>latitude</key>
+				<string>48,052764</string>
+				<key>longitude</key>
+				<string>11,100346</string>
+				<key>name</key>
+				<string>Seepost</string>
+				<key>ort</key>
+				<string>Schondorf am Ammersee</string>
+				<key>plz</key>
+				<string>86938</string>
+				<key>strasse</key>
+				<string>BahnhofstraÃe 2</string>
+				<key>telefon</key>
+				<string>08192-933753</string>
+				<key>url</key>
+				<string> www.seepost-ammersee.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Der sehr kleine BrÃ¼ckerl Biergarten befindet sich am Langwieder Bach unweit vom Langwieder See</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>9</real>
+				<key>latitude</key>
+				<string>48,191536</string>
+				<key>longitude</key>
+				<string>11,421795</string>
+				<key>name</key>
+				<string>BrÃ¼ckerl</string>
+				<key>ort</key>
+				<string>MÃ¼nchen</string>
+				<key>plz</key>
+				<string>81249</string>
+				<key>strasse</key>
+				<string>Goteboldstr. 189</string>
+				<key>telefon</key>
+				<string>089-81896164</string>
+				<key>url</key>
+				<string>www.brueckerl-langwied.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Der Biergarten von Kloster Andechs befindet sich innerhalb der Klostermauern von Andechs.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<true/>
+				<key>id</key>
+				<real>10</real>
+				<key>latitude</key>
+				<string>47,973729</string>
+				<key>longitude</key>
+				<string>11,183481</string>
+				<key>name</key>
+				<string>Kloster Andechs Biergarten</string>
+				<key>ort</key>
+				<string>Erling-Andechs</string>
+				<key>plz</key>
+				<string>82346</string>
+				<key>strasse</key>
+				<string>BergstraÃe 2</string>
+				<key>telefon</key>
+				<string>08152-3760</string>
+				<key>url</key>
+				<string>www.andechs.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Der Biergarten Postgarten befindet sich in dem kleinen StÃ¤dtchen Herrsching, am Ostufer vom Ammersee gelegen.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>11</real>
+				<key>latitude</key>
+				<string>47,998044</string>
+				<key>longitude</key>
+				<string>11,177318</string>
+				<key>name</key>
+				<string>Postgarten</string>
+				<key>ort</key>
+				<string>Herrsching</string>
+				<key>plz</key>
+				<string>82211</string>
+				<key>strasse</key>
+				<string>Andechstrasse 1</string>
+				<key>telefon</key>
+				<string>08152 396 270</string>
+				<key>url</key>
+				<string> www.post-herrsching.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Der Biergarten SchieÃstÃ¤tte Allach liegt an der Fahrradroute Pasing - Dachau, immer der WÃ¼rm entlang. </string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<true/>
+				<key>id</key>
+				<real>12</real>
+				<key>latitude</key>
+				<string>48,195731</string>
+				<key>longitude</key>
+				<string>11,456144</string>
+				<key>name</key>
+				<string>SchieÃstÃ¤tte Allach</string>
+				<key>ort</key>
+				<string>MÃ¼nchen (Allach)</string>
+				<key>plz</key>
+				<string>80999 </string>
+				<key>strasse</key>
+				<string>ServetstraÃe 1</string>
+				<key>telefon</key>
+				<string>089-189229-13</string>
+				<key>url</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string></string>
+				<key>email</key>
+				<string>089-3116039</string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>13</real>
+				<key>latitude</key>
+				<string>48,196493</string>
+				<key>longitude</key>
+				<string>11,576453</string>
+				<key>name</key>
+				<string>Wirtshaus am Hart</string>
+				<key>ort</key>
+				<string>MÃ¼nchen (Am Hart)</string>
+				<key>plz</key>
+				<string>80937</string>
+				<key>strasse</key>
+				<string>Sudetendeutsche StraÃe 40</string>
+				<key>telefon</key>
+				<string></string>
+				<key>url</key>
+				<string>www.theater-platzl.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Ein echter Stadtgarten, verschiedene Saisonbiere</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>1003</real>
+				<key>latitude</key>
+				<string>48,126479</string>
+				<key>longitude</key>
+				<string>11,558783</string>
+				<key>name</key>
+				<string>Paulaner BrÃ¤uhaus</string>
+				<key>ort</key>
+				<string>MÃ¼nchen (Sendling)</string>
+				<key>plz</key>
+				<string>80337</string>
+				<key>strasse</key>
+				<string>Kapuziner Platz 5</string>
+				<key>telefon</key>
+				<string>089-5446110</string>
+				<key>url</key>
+				<string>www.paulaner-brauhaus.com/muenchen/facilities</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Mehr Flair geht nicht</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>1004</real>
+				<key>latitude</key>
+				<string>48,135238</string>
+				<key>longitude</key>
+				<string>11,57639</string>
+				<key>name</key>
+				<string>Viktualienmarkt</string>
+				<key>ort</key>
+				<string>MÃ¼nchen (Innenstadt)</string>
+				<key>plz</key>
+				<string>80331</string>
+				<key>strasse</key>
+				<string>Viktualienmarkt 6</string>
+				<key>telefon</key>
+				<string>089-297545</string>
+				<key>url</key>
+				<string> www.biergarten-viktualienmarkt.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Der Biergarten Maisinger Seehof befindet sich direkt am Maisinger See.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>1005</real>
+				<key>latitude</key>
+				<string>47,981658</string>
+				<key>longitude</key>
+				<string>11,282774</string>
+				<key>name</key>
+				<string>Maisinger Seehof</string>
+				<key>ort</key>
+				<string>Maising-PÃ¶cking</string>
+				<key>plz</key>
+				<string>82343</string>
+				<key>strasse</key>
+				<string>Seestr. 14</string>
+				<key>telefon</key>
+				<string>08151-744242</string>
+				<key>url</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Das Pe. Es. Kottmeier befindet sich in Planegg, sÃ¼dwestlich von MÃ¼nchen's Innenstadt.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>1006</real>
+				<key>latitude</key>
+				<string>48,10553</string>
+				<key>longitude</key>
+				<string>11,423055</string>
+				<key>name</key>
+				<string>Pe. Es. Kottmeier</string>
+				<key>ort</key>
+				<string>Planegg</string>
+				<key>plz</key>
+				<string>82152</string>
+				<key>strasse</key>
+				<string>BrÃ¤uhausstraÃe 18</string>
+				<key>telefon</key>
+				<string>089-89930030</string>
+				<key>url</key>
+				<string>www.pe-es.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Der 2010 erÃ¶ffnete Biergarten SchiaÃn befindet sich in der Stadt Erding.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<true/>
+				<key>id</key>
+				<real>1007</real>
+				<key>latitude</key>
+				<string>48,313891</string>
+				<key>longitude</key>
+				<string>11,910569</string>
+				<key>name</key>
+				<string>SchiaÃn</string>
+				<key>ort</key>
+				<string>Erding</string>
+				<key>plz</key>
+				<string>854345</string>
+				<key>strasse</key>
+				<string>Neues SchieÃfeld 2</string>
+				<key>telefon</key>
+				<string>08122-8809890</string>
+				<key>url</key>
+				<string>schiassn.com</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>GemÃ¼tlicher Biergarten mit einem groÃe Spielplatz</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>2003</real>
+				<key>latitude</key>
+				<string>48,125481</string>
+				<key>longitude</key>
+				<string>11,526718</string>
+				<key>name</key>
+				<string>Hopfengarten</string>
+				<key>ort</key>
+				<string>MÃ¼nchen (Westpark)</string>
+				<key>plz</key>
+				<string>81373</string>
+				<key>strasse</key>
+				<string>Siegenburger Str. 43</string>
+				<key>telefon</key>
+				<string>089-7608846</string>
+				<key>url</key>
+				<string>www.hopfen-garten.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>GemÃ¼tlicher Nachbarschafts-Biergarten</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>2004</real>
+				<key>latitude</key>
+				<string>48,123315</string>
+				<key>longitude</key>
+				<string>11,541197</string>
+				<key>name</key>
+				<string>Spektakel</string>
+				<key>ort</key>
+				<string>MÃ¼nchen (Sendling)</string>
+				<key>plz</key>
+				<string>81737</string>
+				<key>strasse</key>
+				<string>Pfeuferstr. 32</string>
+				<key>telefon</key>
+				<string>089-76758359</string>
+				<key>url</key>
+				<string>www.spektakel-muenchen.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Traditionsbiergarten, klassische Einkehr.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>2005</real>
+				<key>latitude</key>
+				<string>48,095846</string>
+				<key>longitude</key>
+				<string>11,727382</string>
+				<key>name</key>
+				<string>Gut Keferloh</string>
+				<key>ort</key>
+				<string>Grasbrunn</string>
+				<key>plz</key>
+				<string>85630</string>
+				<key>strasse</key>
+				<string>Keferloh 2</string>
+				<key>telefon</key>
+				<string>089-469248</string>
+				<key>url</key>
+				<string>www.gut-keferloh.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Wirtshaus am Bavariapark mit Augustiner Biergarten auf der TheresienhÃ¶he</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>2006</real>
+				<key>latitude</key>
+				<string>48,131635</string>
+				<key>longitude</key>
+				<string>11,544043</string>
+				<key>name</key>
+				<string>Bavariapark</string>
+				<key>ort</key>
+				<string>MÃ¼nchen</string>
+				<key>plz</key>
+				<string>80339</string>
+				<key>strasse</key>
+				<string>TheresienhÃ¶he 15</string>
+				<key>telefon</key>
+				<string></string>
+				<key>url</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Der Fischer Biergarten befindet sich direkt am nÃ¶rdlichsten Ufer vom Ammersee</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>2007</real>
+				<key>latitude</key>
+				<string>48,077281</string>
+				<key>longitude</key>
+				<string>11.131932</string>
+				<key>name</key>
+				<string>Fischer</string>
+				<key>ort</key>
+				<string>Stegen am Ammersee</string>
+				<key>plz</key>
+				<string>82266</string>
+				<key>strasse</key>
+				<string>Landsberger StraÃe 79</string>
+				<key>telefon</key>
+				<string>08143-447655</string>
+				<key>url</key>
+				<string>www.fischer-stegen.com</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Traumplatz an der WÃ¼rm, ideal fÃ¼r FamilienausflÃ¼ge</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>3003</real>
+				<key>latitude</key>
+				<string>48,070996</string>
+				<key>longitude</key>
+				<string>11,5149</string>
+				<key>name</key>
+				<string>Iberl</string>
+				<key>ort</key>
+				<string>MÃ¼nchen</string>
+				<key>plz</key>
+				<string>81479</string>
+				<key>strasse</key>
+				<string>Wilhelm-Leibl-Str. 22</string>
+				<key>telefon</key>
+				<string></string>
+				<key>url</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Idylische Lage direkt an der Amper.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>3004</real>
+				<key>latitude</key>
+				<string>48,123302</string>
+				<key>longitude</key>
+				<string>11,156391</string>
+				<key>name</key>
+				<string>Dampfschiff</string>
+				<key>ort</key>
+				<string>Grafrath</string>
+				<key>plz</key>
+				<string>82284</string>
+				<key>strasse</key>
+				<string>Graf-Rasso-StraÃe 40</string>
+				<key>telefon</key>
+				<string>+49-(0)8144-1314</string>
+				<key>url</key>
+				<string>www.dampfschiff.com</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Neu: Brezn-BackstÃ¼berl mit Blick in die Backstube.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>3005</real>
+				<key>latitude</key>
+				<string>48,104191</string>
+				<key>longitude</key>
+				<string>11,414583</string>
+				<key>name</key>
+				<string>Heide Volm</string>
+				<key>ort</key>
+				<string>Planegg</string>
+				<key>plz</key>
+				<string>82152</string>
+				<key>strasse</key>
+				<string>Bahnhofstr. 51</string>
+				<key>telefon</key>
+				<string>089-8572029</string>
+				<key>url</key>
+				<string>www.heidevolm.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Natur, Kirche, Brauerei, Ruhe - kurz: Traumgarten.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>3006</real>
+				<key>latitude</key>
+				<string>48,312658</string>
+				<key>longitude</key>
+				<string>11,478068</string>
+				<key>name</key>
+				<string>Schlosswirtschaft Mariabrunn</string>
+				<key>ort</key>
+				<string>RÃ¶hrmoos</string>
+				<key>plz</key>
+				<string>85244</string>
+				<key>strasse</key>
+				<string>Gut Mariabrunn 3</string>
+				<key>telefon</key>
+				<string>08139-8661</string>
+				<key>url</key>
+				<string>www.schlosswirtschaft-mariabrunn.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Seepromenade fÃ¼hrt mitten durch, Postkartenblick.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>3007</real>
+				<key>latitude</key>
+				<string>47,995226</string>
+				<key>longitude</key>
+				<string>11,169225</string>
+				<key>name</key>
+				<string>Seehof Herrsching</string>
+				<key>ort</key>
+				<string>Herrsching</string>
+				<key>plz</key>
+				<string>82211</string>
+				<key>strasse</key>
+				<string>Seestr. 58</string>
+				<key>telefon</key>
+				<string>+49-(0)8152-9350</string>
+				<key>url</key>
+				<string>www.seehof-ammersee.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Concordia Park ist ein nicht so bekannter Biergarten im MÃ¼nchner Stadtteil Neuhausen.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>3008</real>
+				<key>latitude</key>
+				<string>48,163593</string>
+				<key>longitude</key>
+				<string>11,535422</string>
+				<key>name</key>
+				<string>Concordia Park</string>
+				<key>ort</key>
+				<string>MÃ¼nchen (Neuhausen)</string>
+				<key>plz</key>
+				<string>80637</string>
+				<key>strasse</key>
+				<string>Landshuter Allee 165</string>
+				<key>telefon</key>
+				<string>089-155241</string>
+				<key>url</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Den Alter Wirt Ramersdorf im MÃ¼nchner Ortsteil Ramersdorf gibt es seit 1504</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>3009</real>
+				<key>latitude</key>
+				<string>48,11502</string>
+				<key>longitude</key>
+				<string>11,61527</string>
+				<key>name</key>
+				<string>Alter Wirt Ramersdorf</string>
+				<key>ort</key>
+				<string>MÃ¼nchen (Ramersdorf)</string>
+				<key>plz</key>
+				<string>81669</string>
+				<key>strasse</key>
+				<string>AribonenstraÃe 8</string>
+				<key>telefon</key>
+				<string>089-6891862</string>
+				<key>url</key>
+				<string>www.alterwirt-muenchen.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Der Biergarten befindet sich auf dem Anwesen einer ehemaligen Holz- und GetreidemÃ¼hle nÃ¤he Garching.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>3010</real>
+				<key>latitude</key>
+				<string>48,246272</string>
+				<key>longitude</key>
+				<string>11,661435</string>
+				<key>name</key>
+				<string>MÃ¼hlenpark</string>
+				<key>ort</key>
+				<string>Garching</string>
+				<key>plz</key>
+				<string>85748</string>
+				<key>strasse</key>
+				<string>MÃ¼hlgasse 48</string>
+				<key>telefon</key>
+				<string>089-3204975</string>
+				<key>url</key>
+				<string>www.biergarten-muehlenpark.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Der kleine Biergarten befindet sich am Renaissance SchloÃ in Dachau.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>3011</real>
+				<key>latitude</key>
+				<string>48,258399</string>
+				<key>longitude</key>
+				<string>11,433463</string>
+				<key>name</key>
+				<string>Schloss Dachau Biergarten</string>
+				<key>ort</key>
+				<string>Dachau</string>
+				<key>plz</key>
+				<string>85221</string>
+				<key>strasse</key>
+				<string>SchloÃstraÃe 2</string>
+				<key>telefon</key>
+				<string>08131-2799278</string>
+				<key>url</key>
+				<string>www.schloss-dachau.com</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Traditioneller Biergarten, an Feiertagen gibt es Live-Musik</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>4003</real>
+				<key>latitude</key>
+				<string>48,143608</string>
+				<key>longitude</key>
+				<string>11,416981</string>
+				<key>name</key>
+				<string>Zur Aubinger Einkehr</string>
+				<key>ort</key>
+				<string>MÃ¼nchen (Neuaubing)</string>
+				<key>plz</key>
+				<string>81249</string>
+				<key>strasse</key>
+				<string>GrÃ¶Ãweinsteinplatz 7</string>
+				<key>telefon</key>
+				<string>089-875581</string>
+				<key>url</key>
+				<string>www.zur-aubinger-einkehr.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Treff fÃ¼r Radler und Wanderer direkt an der Isar.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>4004</real>
+				<key>latitude</key>
+				<string>47,971996</string>
+				<key>longitude</key>
+				<string>11,476609</string>
+				<key>name</key>
+				<string>Zum Bruckenfischer</string>
+				<key>ort</key>
+				<string>Egling</string>
+				<key>plz</key>
+				<string>82544</string>
+				<key>strasse</key>
+				<string>DÃ¼rnstein 1</string>
+				<key>telefon</key>
+				<string>08178-3635</string>
+				<key>url</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>SchÃ¶ner Familenbiergarten, perfekt fÃ¼r Radl-Touren.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>4005</real>
+				<key>latitude</key>
+				<string>48,035897</string>
+				<key>longitude</key>
+				<string>11,575076</string>
+				<key>name</key>
+				<string>Kugler-Alm</string>
+				<key>ort</key>
+				<string>Deisenhofen</string>
+				<key>plz</key>
+				<string>82041</string>
+				<key>strasse</key>
+				<string>Linienstr. 93</string>
+				<key>telefon</key>
+				<string>089-61390120</string>
+				<key>url</key>
+				<string>www.kugleralm.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Der Tassilogarten ist ein sonniger Treffpunkt in Haidhausen fÃ¼r ein gemischtes Publikum.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>4006</real>
+				<key>latitude</key>
+				<string>48,123296</string>
+				<key>longitude</key>
+				<string>11,595444</string>
+				<key>name</key>
+				<string>Tassilogarten</string>
+				<key>ort</key>
+				<string>MÃ¼nchen</string>
+				<key>plz</key>
+				<string>81541</string>
+				<key>strasse</key>
+				<string>AuerfeldstraÃe 18</string>
+				<key>telefon</key>
+				<string></string>
+				<key>url</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Das Mangostin Garden kombiniert asiatische KÃ¼che mit bayerischer Tradition.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>4007</real>
+				<key>latitude</key>
+				<string>48,100173</string>
+				<key>longitude</key>
+				<string>11,546052</string>
+				<key>name</key>
+				<string>Mangostin Garden</string>
+				<key>ort</key>
+				<string>MÃ¼nchen</string>
+				<key>plz</key>
+				<string>81379</string>
+				<key>strasse</key>
+				<string>Maria-Einsiedel-StraÃe 2</string>
+				<key>telefon</key>
+				<string></string>
+				<key>url</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Der Bootshaus Biergarten befindet sich im MÃ¼nchner Stadtteil Thalkirchen, unweit vom Tierpark und nur einen kleinen FuÃmarsch von der Isar entfernt.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>4008</real>
+				<key>latitude</key>
+				<string>48,098905</string>
+				<key>longitude</key>
+				<string>11,547634</string>
+				<key>name</key>
+				<string>Bootshaus</string>
+				<key>ort</key>
+				<string>MÃ¼nchen (Thalkirchen)</string>
+				<key>plz</key>
+				<string>81379</string>
+				<key>strasse</key>
+				<string>ZentrallÃ¤ndstraÃe 16</string>
+				<key>telefon</key>
+				<string>089-78017761</string>
+				<key>url</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Der Biergarten Schlossallee Haag befindet sich nahe dem FluÃ Amper, nur einige Kilometer nÃ¶rdlich von Freising.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>4009</real>
+				<key>latitude</key>
+				<string>48,458249</string>
+				<key>longitude</key>
+				<string>11,832423</string>
+				<key>name</key>
+				<string>Schlossallee Haag</string>
+				<key>ort</key>
+				<string>Haag an der Amper</string>
+				<key>plz</key>
+				<string>85410</string>
+				<key>strasse</key>
+				<string>Freisinger StraÃe 1</string>
+				<key>telefon</key>
+				<string>08167-350</string>
+				<key>url</key>
+				<string>www.biergarten-haag.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Ideal, um vor der Hektik in der Innenstadt abzutauchen</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>5001</real>
+				<key>latitude</key>
+				<string>48,149925</string>
+				<key>longitude</key>
+				<string>11,511156</string>
+				<key>name</key>
+				<string>Augustinerkeller</string>
+				<key>ort</key>
+				<string>MÃ¼nchen</string>
+				<key>plz</key>
+				<string>80335</string>
+				<key>strasse</key>
+				<string>Arnulfstr. 52</string>
+				<key>telefon</key>
+				<string>089 594393</string>
+				<key>url</key>
+				<string>www.augustinerkeller.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Ideal fÃ¼r einen Ausflug mit dem Radl</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>5002</real>
+				<key>latitude</key>
+				<string>48,137055</string>
+				<key>longitude</key>
+				<string>11,402382</string>
+				<key>name</key>
+				<string>Freihamer Wirtshaus</string>
+				<key>ort</key>
+				<string>MÃ¼nchen (Freiham)</string>
+				<key>plz</key>
+				<string>81249</string>
+				<key>strasse</key>
+				<string>Freihamer Allee 21</string>
+				<key>telefon</key>
+				<string>089-89746991</string>
+				<key>url</key>
+				<string>www.freihamer-wirtshaus.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Reich von Ex-LÃ¶wenkÃ¶nig Wildmooser, urig und schÃ¶n</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>5003</real>
+				<key>latitude</key>
+				<string>48,086409</string>
+				<key>longitude</key>
+				<string>11,54069</string>
+				<key>name</key>
+				<string>HinterbrÃ¼hl</string>
+				<key>ort</key>
+				<string>MÃ¼nchen (Thalkirchen)</string>
+				<key>plz</key>
+				<string>81479</string>
+				<key>strasse</key>
+				<string>HinterbrÃ¼hl 2</string>
+				<key>telefon</key>
+				<string>089-794494</string>
+				<key>url</key>
+				<string>www.www.gasthof-hinterbrÃ¼hl.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Biergarten-Oase mit Sausalitos-Sommerbar</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>5004</real>
+				<key>latitude</key>
+				<string>48,134121</string>
+				<key>longitude</key>
+				<string>11,595277</string>
+				<key>name</key>
+				<string>HofbrÃ¤ukeller</string>
+				<key>ort</key>
+				<string>MÃ¼nchen (Haidhausen)</string>
+				<key>plz</key>
+				<string>81667</string>
+				<key>strasse</key>
+				<string>Innere Wiener Str. 19</string>
+				<key>telefon</key>
+				<string>089-4599250</string>
+				<key>url</key>
+				<string>www.hofbraeukeller.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Sehr sonnig</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>5005</real>
+				<key>latitude</key>
+				<string>48,148264</string>
+				<key>longitude</key>
+				<string>11,558626</string>
+				<key>name</key>
+				<string>LÃ¶wenbrÃ¤ukeller</string>
+				<key>ort</key>
+				<string>MÃ¼nchen (Neuhausen)</string>
+				<key>plz</key>
+				<string>80335</string>
+				<key>strasse</key>
+				<string>Nymphenburgestr. 2</string>
+				<key>telefon</key>
+				<string>089-54726690</string>
+				<key>url</key>
+				<string>www.loewenbraeukeller.com</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Urbild eines Ausflugsbiergartens hoch Ã¼ber der Isar</string>
+				<key>email</key>
+				<string>www.menterschwaige.de</string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>5006</real>
+				<key>latitude</key>
+				<string>48,081399</string>
+				<key>longitude</key>
+				<string>11,545245</string>
+				<key>name</key>
+				<string>Gutshof Menterschwaige</string>
+				<key>ort</key>
+				<string>MÃ¼nchen (Harlaching)</string>
+				<key>plz</key>
+				<string>81545</string>
+				<key>strasse</key>
+				<string>Menterschwaigstr. 4</string>
+				<key>telefon</key>
+				<string>089-640732</string>
+				<key>url</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Nobler Eingang, dahinter lockt GemÃ¼tlichkeit</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>5007</real>
+				<key>latitude</key>
+				<string>48,140645</string>
+				<key>longitude</key>
+				<string>11,468852</string>
+				<key>name</key>
+				<string>Prinzregent-Garten</string>
+				<key>ort</key>
+				<string>MÃ¼nchen (Pasing)</string>
+				<key>plz</key>
+				<string>81241</string>
+				<key>strasse</key>
+				<string>BenedikterstraÃe 35</string>
+				<key>telefon</key>
+				<string>089-8202760</string>
+				<key>url</key>
+				<string>www.prinzregentgarten.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Schmucker Biergarten mit guter S-Bahn-Anbindung</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>5008</real>
+				<key>latitude</key>
+				<string>47,92075</string>
+				<key>longitude</key>
+				<string>11,755291</string>
+				<key>name</key>
+				<string>Bartewirt</string>
+				<key>ort</key>
+				<string>83626 Valley/KreuzstraÃe</string>
+				<key>plz</key>
+				<string>83626</string>
+				<key>strasse</key>
+				<string>Grubstr. 1</string>
+				<key>telefon</key>
+				<string>08024-7718</string>
+				<key>url</key>
+				<string>www.bartewirt.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Staatliches denkmalgeschÃ¼tztes Wirtshaus.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>5009</real>
+				<key>latitude</key>
+				<string>48,277442</string>
+				<key>longitude</key>
+				<string>11,567654</string>
+				<key>name</key>
+				<string>Landgasthof Alter Wirt</string>
+				<key>ort</key>
+				<string>UnterschleiÃheim</string>
+				<key>plz</key>
+				<string>85716</string>
+				<key>strasse</key>
+				<string>Hauptstr. 36</string>
+				<key>telefon</key>
+				<string>089-3707340</string>
+				<key>url</key>
+				<string>www.alterwirt-ush.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Der Hohenlindener SauschÃ¼tt Biergarten befindet sich im Ã¶stlichen Teil vom Ebersberger Forst, cirka 35 Kilometer Ã¶stlich von MÃ¼nchen.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>5010</real>
+				<key>latitude</key>
+				<string>48,157115</string>
+				<key>longitude</key>
+				<string>11,996542</string>
+				<key>name</key>
+				<string>Waldwirtschaft Hohenlindener SauschÃ¼tt</string>
+				<key>ort</key>
+				<string>Hohenlinden</string>
+				<key>plz</key>
+				<string>85664</string>
+				<key>strasse</key>
+				<string>SauschÃ¼tt 1</string>
+				<key>telefon</key>
+				<string>08124-446478</string>
+				<key>url</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Der Landgasthof Langwied Hotel, Restaurant und Biergarten befindet sich im kleinen Dorf Langwied.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>5011</real>
+				<key>latitude</key>
+				<string>48,181381</string>
+				<key>longitude</key>
+				<string>11,423405</string>
+				<key>name</key>
+				<string>Landgasthof Langwied</string>
+				<key>ort</key>
+				<string>MÃ¼nchen</string>
+				<key>plz</key>
+				<string>81249</string>
+				<key>strasse</key>
+				<string>Waidachanger 9</string>
+				<key>telefon</key>
+				<string>089-89546184</string>
+				<key>url</key>
+				<string>www.landgasthof-langwied.com</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Bunter Biergarten im Herzen des Englischen Gartens</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>6001</real>
+				<key>latitude</key>
+				<string>48,152447</string>
+				<key>longitude</key>
+				<string>11,591912</string>
+				<key>name</key>
+				<string>Chinesischer Turm</string>
+				<key>ort</key>
+				<string>MÃ¼nchen</string>
+				<key>plz</key>
+				<string>80538</string>
+				<key>strasse</key>
+				<string>Englischer Garten 3</string>
+				<key>telefon</key>
+				<string>089-38387320</string>
+				<key>url</key>
+				<string>www.chinaturm.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>SchÃ¶nes Wirtshaus, schÃ¶ne Terrasse, LiegestÃ¼hle</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>6002</real>
+				<key>latitude</key>
+				<string>48,142478</string>
+				<key>longitude</key>
+				<string>11,564746</string>
+				<key>name</key>
+				<string>Park CafÃ¨</string>
+				<key>ort</key>
+				<string>MÃ¼nchen (Innenstadt)</string>
+				<key>plz</key>
+				<string>80333</string>
+				<key>strasse</key>
+				<string>Sophienstr. 7</string>
+				<key>telefon</key>
+				<string>089-51617980</string>
+				<key>url</key>
+				<string>www.parkcafe089.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>U-Bahn-Anschluss (Harthof), Dorfcharakter</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>6003</real>
+				<key>latitude</key>
+				<string>48,205563</string>
+				<key>longitude</key>
+				<string>11,572136</string>
+				<key>name</key>
+				<string>Weyprechthof</string>
+				<key>ort</key>
+				<string>MÃ¼nchen (Am Hart-Harthof)</string>
+				<key>plz</key>
+				<string>80937</string>
+				<key>strasse</key>
+				<string>Max-Liebermann-Str. 6</string>
+				<key>telefon</key>
+				<string>089-3111950</string>
+				<key>url</key>
+				<string>www.weyprechthof.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Brauerei-Biergarten, groÃer Spielplatz</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>6004</real>
+				<key>latitude</key>
+				<string>48,182759</string>
+				<key>longitude</key>
+				<string>11,252339</string>
+				<key>name</key>
+				<string>Brauhaus Bruck</string>
+				<key>ort</key>
+				<string>FÃ¼rstenfeldbruck</string>
+				<key>plz</key>
+				<string>82256</string>
+				<key>strasse</key>
+				<string>Augsburger Str. 41</string>
+				<key>telefon</key>
+				<string>+49-(0)8141-25490</string>
+				<key>url</key>
+				<string>www.brauhaus-bruck.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Blick aufs Kloster, Ã¼berweigend Bioprodukte.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>6005</real>
+				<key>latitude</key>
+				<string>48,172702</string>
+				<key>longitude</key>
+				<string>11,252245</string>
+				<key>name</key>
+				<string>FÃ¼rstenfelder</string>
+				<key>ort</key>
+				<string>FÃ¼rstenfeldbruck</string>
+				<key>plz</key>
+				<string>82256</string>
+				<key>strasse</key>
+				<string>FÃ¼rstenfeld 15</string>
+				<key>telefon</key>
+				<string>08141-88875-410</string>
+				<key>url</key>
+				<string>www.fuerstenfelder.com</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Im  Isartalgrund gelegen, sehr schÃ¶ner Ausblick.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>6006</real>
+				<key>latitude</key>
+				<string>47,978105</string>
+				<key>longitude</key>
+				<string>11,466288</string>
+				<key>name</key>
+				<string>KlosterbrÃ¤u SchÃ¤ftlarn</string>
+				<key>ort</key>
+				<string>Ebenhausen-SchÃ¤ftlarn</string>
+				<key>plz</key>
+				<string>82067</string>
+				<key>strasse</key>
+				<string>Kloster SchÃ¤ftlarn 16</string>
+				<key>telefon</key>
+				<string>08178-3694</string>
+				<key>url</key>
+				<string>www.klosterbraeustueberl-schaeftlarn.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Wunderbar schattig unter einem Dach aus Kastanien</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>7001</real>
+				<key>latitude</key>
+				<string>48,112957</string>
+				<key>longitude</key>
+				<string>11,478772</string>
+				<key>name</key>
+				<string>Erdinger WeiÃbiergarten</string>
+				<key>ort</key>
+				<string>MÃ¼nchen (GroÃhadern)</string>
+				<key>plz</key>
+				<string>81377</string>
+				<key>strasse</key>
+				<string>Heiglhofstr. 12</string>
+				<key>telefon</key>
+				<string>089-7194300</string>
+				<key>url</key>
+				<string>www.gasthaus-zum-erdinger-weissbraeu.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>BerÃ¼hmt, moderne Service-StraÃe, alte BÃ¤ume</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>7002</real>
+				<key>latitude</key>
+				<string>48,121668</string>
+				<key>longitude</key>
+				<string>11,582175</string>
+				<key>name</key>
+				<string>Paulaner am Nockerberg</string>
+				<key>ort</key>
+				<string>MÃ¼nchen (Giesing)</string>
+				<key>plz</key>
+				<string>81541</string>
+				<key>strasse</key>
+				<string>Hochstr. 77</string>
+				<key>telefon</key>
+				<string>089-4599130</string>
+				<key>url</key>
+				<string>www.nockherberg.com</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Super Radl-Treff, sehr schÃ¶ner Kinderspielplatz</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>7003</real>
+				<key>latitude</key>
+				<string>48,108487</string>
+				<key>longitude</key>
+				<string>11,557472</string>
+				<key>name</key>
+				<string>Zum Flaucher</string>
+				<key>ort</key>
+				<string>MÃ¼nchen (Thalkirchen)</string>
+				<key>plz</key>
+				<string>81379</string>
+				<key>strasse</key>
+				<string>Isarauenstr. 8</string>
+				<key>telefon</key>
+				<string>089-7232677</string>
+				<key>url</key>
+				<string>www.zum-flaucher.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Paradiesisch gelegen zwischen Wald und Isar.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>7004</real>
+				<key>latitude</key>
+				<string>47,997342</string>
+				<key>longitude</key>
+				<string>11,485463</string>
+				<key>name</key>
+				<string>Gasthaus zur MÃ¼hle</string>
+				<key>ort</key>
+				<string>StraÃlach</string>
+				<key>plz</key>
+				<string>82064</string>
+				<key>strasse</key>
+				<string>MÃ¼hltal 10</string>
+				<key>telefon</key>
+				<string>08178-3630</string>
+				<key>url</key>
+				<string>www.gasthausmuehle.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Bekann fÃ¼r KneiÃl Dunkel, wird hier frisch gebraut.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>7005</real>
+				<key>latitude</key>
+				<string>48,217029</string>
+				<key>longitude</key>
+				<string>11,263553</string>
+				<key>name</key>
+				<string>RÃ¤uber-KneiÃl-Garten</string>
+				<key>ort</key>
+				<string>Maisach</string>
+				<key>plz</key>
+				<string>82216</string>
+				<key>strasse</key>
+				<string>Hauptstr. 24</string>
+				<key>telefon</key>
+				<string></string>
+				<key>url</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Klassischer Biergarten direkt an der WÃ¼rm in Krailling</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>7006</real>
+				<key>latitude</key>
+				<string>48,096369</string>
+				<key>longitude</key>
+				<string>11,411099</string>
+				<key>name</key>
+				<string>Kraillinger Brauerei</string>
+				<key>ort</key>
+				<string>Krailling</string>
+				<key>plz</key>
+				<string>82152</string>
+				<key>strasse</key>
+				<string>MargaretenstraÃe 59</string>
+				<key>telefon</key>
+				<string>089-8571718</string>
+				<key>url</key>
+				<string>www.kraillinger-brauerei.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Klassiker unter den BiergÃ¤rten mit Hausmannskost</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>8001</real>
+				<key>latitude</key>
+				<string>48,109452</string>
+				<key>longitude</key>
+				<string>11,670973</string>
+				<key>name</key>
+				<string>Franziskanergarten</string>
+				<key>ort</key>
+				<string>MÃ¼nchen</string>
+				<key>plz</key>
+				<string>81827</string>
+				<key>strasse</key>
+				<string>Friedenspromenade 45</string>
+				<key>telefon</key>
+				<string>089-4300996</string>
+				<key>url</key>
+				<string>www.franziskanergarten.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Dorfbiergarten mit festen HolzbÃ¤nken, Spielplatz</string>
+				<key>email</key>
+				<string>alterwirt@t-online.de</string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>8002</real>
+				<key>latitude</key>
+				<string>48,086114</string>
+				<key>longitude</key>
+				<string>11,200545</string>
+				<key>name</key>
+				<string>Alter Wirt Etterschlag</string>
+				<key>ort</key>
+				<string>Etterschlag</string>
+				<key>plz</key>
+				<string>82237</string>
+				<key>strasse</key>
+				<string>Inninger Str. 6</string>
+				<key>telefon</key>
+				<string>08153-8282</string>
+				<key>url</key>
+				<string>www.alter-wirt-etterschlag.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Mexikaner mit bayerischem Biergarten.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>8003</real>
+				<key>latitude</key>
+				<string>48,107539</string>
+				<key>longitude</key>
+				<string>11,301885</string>
+				<key>name</key>
+				<string>Diablo</string>
+				<key>ort</key>
+				<string>Gilching</string>
+				<key>plz</key>
+				<string>82205</string>
+				<key>strasse</key>
+				<string>RÃ¶merstr. 11</string>
+				<key>telefon</key>
+				<string></string>
+				<key>url</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Direkt an einem kleinen Badesee.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>8004</real>
+				<key>latitude</key>
+				<string>48,158131</string>
+				<key>longitude</key>
+				<string>11,737542</string>
+				<key>name</key>
+				<string>Heimstettener See</string>
+				<key>ort</key>
+				<string>Aschheim</string>
+				<key>plz</key>
+				<string>85609</string>
+				<key>strasse</key>
+				<string>Am Heimstettener See</string>
+				<key>telefon</key>
+				<string>089-9031697</string>
+				<key>url</key>
+				<string>www.heimstettenersee.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Ideal fÃ¼r Wanderungen, griabig und schattig.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>8005</real>
+				<key>latitude</key>
+				<string>48,029872</string>
+				<key>longitude</key>
+				<string>11,368519</string>
+				<key>name</key>
+				<string>SchlossgaststÃ¤tte Leutstetten</string>
+				<key>ort</key>
+				<string>Starnberg (Leutstetten)</string>
+				<key>plz</key>
+				<string>82319</string>
+				<key>strasse</key>
+				<string>AltostraÃe 11</string>
+				<key>telefon</key>
+				<string>08151-8156</string>
+				<key>url</key>
+				<string>www.schlossgaststaette-leutstetten.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Viele Brotzeiten, alte BÃ¤ume und viel Platz fÃ¼r Kinder.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>8006</real>
+				<key>latitude</key>
+				<string>48,030548</string>
+				<key>longitude</key>
+				<string>11,498265</string>
+				<key>name</key>
+				<string>Waldgasthof Buchenhain</string>
+				<key>ort</key>
+				<string>Buchhain</string>
+				<key>plz</key>
+				<string>82065</string>
+				<key>strasse</key>
+				<string>Am Klettergarten 7</string>
+				<key>telefon</key>
+				<string>089-7930124</string>
+				<key>url</key>
+				<string>www.hotelbuchenhain.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Truderinger Traditionswirtshaus Lindengarten mit Biergarten.</string>
+				<key>email</key>
+				<string>info@lindengarten.eu</string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>8007</real>
+				<key>latitude</key>
+				<string>48,115028</string>
+				<key>longitude</key>
+				<string>11,678488</string>
+				<key>name</key>
+				<string>Lindengarten</string>
+				<key>ort</key>
+				<string>MÃ¼nchen</string>
+				<key>plz</key>
+				<string>81825</string>
+				<key>strasse</key>
+				<string>Solalindernstr. 50</string>
+				<key>telefon</key>
+				<string>+49-(0)89-430 9178</string>
+				<key>url</key>
+				<string>www.lindengarten.eu</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Der Seehaus Schreyegg Biergarten befindet sich in dem kleinen Dorf Stegen am nÃ¶rdlichsten Ende vom Ammersee.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>8008</real>
+				<key>latitude</key>
+				<string>48,076991</string>
+				<key>longitude</key>
+				<string>11,132922</string>
+				<key>name</key>
+				<string>Seehaus Schreyegg</string>
+				<key>ort</key>
+				<string>Stegen am Ammersee</string>
+				<key>plz</key>
+				<string>82266</string>
+				<key>strasse</key>
+				<string>Landsberger StraÃe 78</string>
+				<key>telefon</key>
+				<string>08143-992537</string>
+				<key>url</key>
+				<string> www.seehaus-schreyegg.com</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Zur Happy-Hour von 16 bis 18 Uhr und ab 22 Uhr Mass Bier 5 â¬</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>9001</real>
+				<key>latitude</key>
+				<string>48,095693</string>
+				<key>longitude</key>
+				<string>11,557966</string>
+				<key>name</key>
+				<string>Harlachinger Einkehr</string>
+				<key>ort</key>
+				<string>MÃ¼nchen (Harlaching)</string>
+				<key>plz</key>
+				<string>81545</string>
+				<key>strasse</key>
+				<string>Karolinger-Allee 34</string>
+				<key>telefon</key>
+				<string>089-64209093</string>
+				<key>url</key>
+				<string>www.harlachinger-einkehr.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Direkt am Seeufer gelegen, ideal nach einem Badetag</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>9002</real>
+				<key>latitude</key>
+				<string>48,197735</string>
+				<key>longitude</key>
+				<string>11,414366</string>
+				<key>name</key>
+				<string>Langwieder See</string>
+				<key>ort</key>
+				<string>MÃ¼nchen (Langwied)</string>
+				<key>plz</key>
+				<string>81249</string>
+				<key>strasse</key>
+				<string>Kreuzkapellenstr. 89</string>
+				<key>telefon</key>
+				<string>089-864860</string>
+				<key>url</key>
+				<string> www.langwiedersee.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Am Ufer des Ostpark-Sees, schÃ¶n zum Entspannen</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>9003</real>
+				<key>latitude</key>
+				<string>48,115355</string>
+				<key>longitude</key>
+				<string>11,638518</string>
+				<key>name</key>
+				<string>Michaeli-Garten</string>
+				<key>ort</key>
+				<string>MÃ¼nchen (Neuperlach)</string>
+				<key>plz</key>
+				<string>81735</string>
+				<key>strasse</key>
+				<string>Feichstr. 10</string>
+				<key>telefon</key>
+				<string>089-43552424</string>
+				<key>url</key>
+				<string>www.michaeligarten.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Schattig, groÃer Abenteuerspielplatz in der NÃ¤he</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>9004</real>
+				<key>latitude</key>
+				<string>48,123122</string>
+				<key>longitude</key>
+				<string>11,508018</string>
+				<key>name</key>
+				<string>Rosengarten</string>
+				<key>ort</key>
+				<string>MÃ¼nchen</string>
+				<key>plz</key>
+				<string>81377</string>
+				<key>strasse</key>
+				<string>Westendstr. 305</string>
+				<key>telefon</key>
+				<string></string>
+				<key>url</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Lauschiger Biergarten am Rand von Bogenhausen</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>9005</real>
+				<key>latitude</key>
+				<string>48,139913</string>
+				<key>longitude</key>
+				<string>11,628815</string>
+				<key>name</key>
+				<string>Wirtshaus Zamdorfer</string>
+				<key>ort</key>
+				<string>MÃ¼nchen (Bogenhausen)</string>
+				<key>plz</key>
+				<string>81677</string>
+				<key>strasse</key>
+				<string>Schwarzwaldstr. 2a</string>
+				<key>telefon</key>
+				<string>089-916921</string>
+				<key>url</key>
+				<string>www.zamdorfer.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Familienfreundlicher Garten mit S-Bahn-Anschluss</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>9006</real>
+				<key>latitude</key>
+				<string>48,08105</string>
+				<key>longitude</key>
+				<string>11,526835</string>
+				<key>name</key>
+				<string>Zum Hirschen</string>
+				<key>ort</key>
+				<string>MÃ¼nchen</string>
+				<key>plz</key>
+				<string>81479</string>
+				<key>strasse</key>
+				<string>Sollner Str. 43</string>
+				<key>telefon</key>
+				<string></string>
+				<key>url</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Traditioneller Biergarten neben dem Schloss.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>9007</real>
+				<key>latitude</key>
+				<string>48,095154</string>
+				<key>longitude</key>
+				<string>11,482942</string>
+				<key>name</key>
+				<string>Einkehr zur Schwaige</string>
+				<key>ort</key>
+				<string>MÃ¼nchen (FÃ¼rstenried)</string>
+				<key>plz</key>
+				<string>81475</string>
+				<key>strasse</key>
+				<string>Forst-Kasten-Allee 114</string>
+				<key>telefon</key>
+				<string>+49-(0)89-7591968</string>
+				<key>url</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Traumplatz an der WÃ¼rm, ideal fÃ¼r FamilienausflÃ¼ge.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>9008</real>
+				<key>latitude</key>
+				<string>48,176633</string>
+				<key>longitude</key>
+				<string>11,462053</string>
+				<key>name</key>
+				<string>Insel-MÃ¼hle</string>
+				<key>ort</key>
+				<string>MÃ¼nchen (Untermenzing)</string>
+				<key>plz</key>
+				<string>80999</string>
+				<key>strasse</key>
+				<string>Von-Kahr-Str. 87</string>
+				<key>telefon</key>
+				<string>089-81010</string>
+				<key>url</key>
+				<string>www.inselmuehle-muenchen.com</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Von Wasserrad angetriebener Hendlgrill.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>9009</real>
+				<key>latitude</key>
+				<string>48,125668</string>
+				<key>longitude</key>
+				<string>11,442231</string>
+				<key>name</key>
+				<string>Lochhamer's</string>
+				<key>ort</key>
+				<string>GrÃ¤felfing</string>
+				<key>plz</key>
+				<string>82166</string>
+				<key>strasse</key>
+				<string>Lochhamer Str. 4</string>
+				<key>telefon</key>
+				<string>089-85484651</string>
+				<key>url</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Das Restaurant Neue Fasanerie liegt idyllisch im Hartmannshofer Park.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>9010</real>
+				<key>latitude</key>
+				<string>48,173141</string>
+				<key>longitude</key>
+				<string>11,493296</string>
+				<key>name</key>
+				<string>Neue Fasanerie</string>
+				<key>ort</key>
+				<string>MÃ¼nchen (Moosach)</string>
+				<key>plz</key>
+				<string>80997</string>
+				<key>strasse</key>
+				<string>HartmannshofstraÃe 20</string>
+				<key>telefon</key>
+				<string>089-1495607</string>
+				<key>url</key>
+				<string>www.neue-fasanerie.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Der GrÃ¼nwalder Forstwirt befindet sich in idyllischer Lage auf einem 30.000mÂ² GrundstÃ¼ck in StraÃlach, 16 Kilometer vom MÃ¼nchner Stadtzentrum entfernt.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>9011</real>
+				<key>latitude</key>
+				<string>48,011819</string>
+				<key>longitude</key>
+				<string>11,522553</string>
+				<key>name</key>
+				<string>GrÃ¼nwalder Forstwirt</string>
+				<key>ort</key>
+				<string>StraÃlach</string>
+				<key>plz</key>
+				<string>82067</string>
+				<key>strasse</key>
+				<string>Riedweg 41</string>
+				<key>telefon</key>
+				<string>08170-213</string>
+				<key>url</key>
+				<string> www.gruenwalder-forstwirt.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Treffpunkt der MÃ¼ncher Familien mit Kindern</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>10001</real>
+				<key>latitude</key>
+				<string>48,162031</string>
+				<key>longitude</key>
+				<string>011,602587</string>
+				<key>name</key>
+				<string>Hirschau</string>
+				<key>ort</key>
+				<string>MÃ¼nchen (Schwabing)</string>
+				<key>plz</key>
+				<string>80805</string>
+				<key>strasse</key>
+				<string>GyÃlingerstr. 15</string>
+				<key>telefon</key>
+				<string>089-3221080</string>
+				<key>url</key>
+				<string>www.hirschau-muenchen.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Familienparadies, verschweigen, klassisch</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>10002</real>
+				<key>latitude</key>
+				<string>48,078467</string>
+				<key>longitude</key>
+				<string>11,671759</string>
+				<key>name</key>
+				<string>Leiberheim</string>
+				<key>ort</key>
+				<string>MÃ¼nchen (Waldperlach)</string>
+				<key>plz</key>
+				<string>81739</string>
+				<key>strasse</key>
+				<string>Nixenweg 9</string>
+				<key>telefon</key>
+				<string>089-4300000</string>
+				<key>url</key>
+				<string>www.leiberheim.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Klassischer Biergarten mit schÃ¶nen, alten GemÃ¤uers</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>10003</real>
+				<key>latitude</key>
+				<string>48,176019</string>
+				<key>longitude</key>
+				<string>11,627263</string>
+				<key>name</key>
+				<string>St. EmmeramsmÃ¼hle</string>
+				<key>ort</key>
+				<string>MÃ¼nchen</string>
+				<key>plz</key>
+				<string>81925</string>
+				<key>strasse</key>
+				<string>St. Emmeram 41</string>
+				<key>telefon</key>
+				<string>089 953971</string>
+				<key>url</key>
+				<string>www.emmeramsmuehle.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>TÃ¤glich wechselndes Tagsgericht, Bierpass</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>10004</real>
+				<key>latitude</key>
+				<string>48,102735</string>
+				<key>longitude</key>
+				<string>11,478862</string>
+				<key>name</key>
+				<string>Waldheim</string>
+				<key>ort</key>
+				<string>MÃ¼nchen</string>
+				<key>plz</key>
+				<string>81377</string>
+				<key>strasse</key>
+				<string>Waldheim 1</string>
+				<key>telefon</key>
+				<string></string>
+				<key>url</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Schmuckes Wirtshaus, preisgÃ¼nstiges Essen</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>10005</real>
+				<key>latitude</key>
+				<string>48,163986</string>
+				<key>longitude</key>
+				<string>11,475914</string>
+				<key>name</key>
+				<string>Zum GrÃ¼nen Baum</string>
+				<key>ort</key>
+				<string>MÃ¼nchen (Obermenzing)</string>
+				<key>plz</key>
+				<string>81247</string>
+				<key>strasse</key>
+				<string>Verdistr. 47</string>
+				<key>telefon</key>
+				<string>089-81089314</string>
+				<key>url</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Idyllischer Platz mitten im Wald, rustikales Flair</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>10006</real>
+				<key>latitude</key>
+				<string>48,260454</string>
+				<key>longitude</key>
+				<string>11,56782</string>
+				<key>name</key>
+				<string>Bergl</string>
+				<key>ort</key>
+				<string>OberschleiÃheim</string>
+				<key>plz</key>
+				<string>85764</string>
+				<key>strasse</key>
+				<string>Bergl 1</string>
+				<key>telefon</key>
+				<string>089-3150105</string>
+				<key>url</key>
+				<string>http://www.hacker-pschorr.de/freizeit/gastroguide/details.php?gastroID=542</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>BerÃ¼hmt fÃ¼r sein Bier, der Aufstieg lohnt sich.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>10007</real>
+				<key>latitude</key>
+				<string>47,973729</string>
+				<key>longitude</key>
+				<string>11,183481</string>
+				<key>name</key>
+				<string>Kloster Andechs BrÃ¤ustÃ¼berl</string>
+				<key>ort</key>
+				<string>Erling-Andechs</string>
+				<key>plz</key>
+				<string>82346</string>
+				<key>strasse</key>
+				<string>BergstraÃe 2</string>
+				<key>telefon</key>
+				<string>+49-(0)8152-3760</string>
+				<key>url</key>
+				<string>www.andechs.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Innen sehr nobel, Tische direkt am Seeufer.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>10008</real>
+				<key>latitude</key>
+				<string>48,077009</string>
+				<key>longitude</key>
+				<string>11,132905</string>
+				<key>name</key>
+				<string>Seehaus Schreyegg</string>
+				<key>ort</key>
+				<string>Inning am Ammersee</string>
+				<key>plz</key>
+				<string>82266</string>
+				<key>strasse</key>
+				<string>Landsbergerstr. 78</string>
+				<key>telefon</key>
+				<string></string>
+				<key>url</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Olympia-Alm im Olympia-Park</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>10009</real>
+				<key>latitude</key>
+				<string>48,171114</string>
+				<key>longitude</key>
+				<string>11,554349</string>
+				<key>name</key>
+				<string>Olympia-Alm</string>
+				<key>ort</key>
+				<string>MÃ¼nchen</string>
+				<key>plz</key>
+				<string>80809</string>
+				<key>strasse</key>
+				<string>Martin-Luther-King Weg 8</string>
+				<key>telefon</key>
+				<string>089-3009924</string>
+				<key>url</key>
+				<string>www.olympiaalm.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>GemÃ¼tlicher versteckter Biergarten mit angesagter Bar</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>11001</real>
+				<key>latitude</key>
+				<string>48,141234</string>
+				<key>longitude</key>
+				<string>11,492523</string>
+				<key>name</key>
+				<string>Laimer's</string>
+				<key>ort</key>
+				<string>MÃ¼nchen</string>
+				<key>plz</key>
+				<string>80687</string>
+				<key>strasse</key>
+				<string>Agricolastr. 16</string>
+				<key>telefon</key>
+				<string>089 5466401</string>
+				<key>url</key>
+				<string>www.laimers.com</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Traditioneller Biergarten mit groÃer Essensauswahl</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>11002</real>
+				<key>latitude</key>
+				<string>48,104576</string>
+				<key>longitude</key>
+				<string>11,535119</string>
+				<key>name</key>
+				<string>MÃ¼nchner Haupt</string>
+				<key>ort</key>
+				<string>MÃ¼nchen (Sendling)</string>
+				<key>plz</key>
+				<string>81379</string>
+				<key>strasse</key>
+				<string>Zielstattstr. 6</string>
+				<key>telefon</key>
+				<string>089-786940</string>
+				<key>url</key>
+				<string>www.muenchnerhaupt.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>SchÃ¶ner Traditionsbierbarten direkt an der WÃ¼rm</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>11003</real>
+				<key>latitude</key>
+				<string>48,098601</string>
+				<key>longitude</key>
+				<string>11,417625</string>
+				<key>name</key>
+				<string>Alter Wirt</string>
+				<key>ort</key>
+				<string>Krailling</string>
+				<key>plz</key>
+				<string>82152</string>
+				<key>strasse</key>
+				<string>Margaretenstr. 31</string>
+				<key>telefon</key>
+				<string>089-89198444</string>
+				<key>url</key>
+				<string>www.alterwirtkrailling.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Ruhiger Ausflugsbiergarten auf schÃ¶ner Lichtung.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>11004</real>
+				<key>latitude</key>
+				<string>48,075432</string>
+				<key>longitude</key>
+				<string>11,416919</string>
+				<key>name</key>
+				<string>Forsthaus Kasten</string>
+				<key>ort</key>
+				<string>Gauting Forst Kasten</string>
+				<key>plz</key>
+				<string>82131</string>
+				<key>strasse</key>
+				<string>Im Forstenrieder Park</string>
+				<key>telefon</key>
+				<string>089-8500360</string>
+				<key>url</key>
+				<string> www.forst-kasten.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Der Osterwaldgarten lockt ein buntes Publikum an â und biete gute SaisonkÃ¼che. </string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>11005</real>
+				<key>latitude</key>
+				<string>48,161828</string>
+				<key>longitude</key>
+				<string>11,594308</string>
+				<key>name</key>
+				<string>Osterwaldgarten</string>
+				<key>ort</key>
+				<string>MÃ¼nchen</string>
+				<key>plz</key>
+				<string>80802</string>
+				<key>strasse</key>
+				<string>KeferstraÃe 12</string>
+				<key>telefon</key>
+				<string></string>
+				<key>url</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Das Forsthaus St. Hubertus befindet sich inmitten des Ebersberger Forst's, cirka 35 Kilometer Ã¶stlich von MÃ¼nchen.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>11006</real>
+				<key>latitude</key>
+				<string>48,107992</string>
+				<key>longitude</key>
+				<string>11,932561</string>
+				<key>name</key>
+				<string>Forsthaus St. Hubertus</string>
+				<key>ort</key>
+				<string>Ebersberg</string>
+				<key>plz</key>
+				<string>85560</string>
+				<key>strasse</key>
+				<string>St. Hubertus 1</string>
+				<key>telefon</key>
+				<string>08092-8579996</string>
+				<key>url</key>
+				<string>www.forsthaus-hubertus.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Der Hofbrauhaus-Keller befindet sich in einer ruhigen Wohngegend am Lankesberg in Freising</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>11007</real>
+				<key>latitude</key>
+				<string>48,406286</string>
+				<key>longitude</key>
+				<string>11,748317</string>
+				<key>name</key>
+				<string>Hofbrauhaus-Keller Freising</string>
+				<key>ort</key>
+				<string>Freising</string>
+				<key>plz</key>
+				<string>85356</string>
+				<key>strasse</key>
+				<string>LankesbergstraÃe 5</string>
+				<key>telefon</key>
+				<string>08161-938800</string>
+				<key>url</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>An der Uni, kein typischer Biergarten</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>12001</real>
+				<key>latitude</key>
+				<string>48,152572</string>
+				<key>longitude</key>
+				<string>11,575953</string>
+				<key>name</key>
+				<string>Max-Emanuel-Brauerei</string>
+				<key>ort</key>
+				<string>MÃ¼nchen (Schwabing)</string>
+				<key>plz</key>
+				<string>80779</string>
+				<key>strasse</key>
+				<string>Adalbertstr. 33</string>
+				<key>telefon</key>
+				<string>089-2715158</string>
+				<key>url</key>
+				<string>www.max-emanuel-brauerei.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Traumhaft, um einen Abend zu genieÃen, sehr beliebt</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>12002</real>
+				<key>latitude</key>
+				<string>48,162679</string>
+				<key>longitude</key>
+				<string>11,532211</string>
+				<key>name</key>
+				<string>Taxisgarten</string>
+				<key>ort</key>
+				<string>MÃ¼nchen (Neuhausen)</string>
+				<key>plz</key>
+				<string>80637</string>
+				<key>strasse</key>
+				<string>Taxisstr. 12</string>
+				<key>telefon</key>
+				<string>089-156827</string>
+				<key>url</key>
+				<string>www.taxisgarten.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Grandioser Blick auf Klostergarten und Gebirge.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>12003</real>
+				<key>latitude</key>
+				<string>48,097058</string>
+				<key>longitude</key>
+				<string>11,043558</string>
+				<key>name</key>
+				<string>Emminger Hof</string>
+				<key>ort</key>
+				<string>St. Ottilien</string>
+				<key>plz</key>
+				<string>86941</string>
+				<key>strasse</key>
+				<string>Emminger Hof 1</string>
+				<key>telefon</key>
+				<string>08193-5238</string>
+				<key>url</key>
+				<string>www.emminger-hof.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string> Inmitten des grÃ¼nen Landschaftsschutzgebietes Isarauen â direkt neben dem Tierpark Hellabrunn. Die lÃ¤ngste Abendsonne genieÃen</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>12004</real>
+				<key>latitude</key>
+				<string>48,099844</string>
+				<key>longitude</key>
+				<string>11,560594</string>
+				<key>name</key>
+				<string>Gasthaus Siebenbrunn</string>
+				<key>ort</key>
+				<string>MÃ¼nchen (Thalkirchen)</string>
+				<key>plz</key>
+				<string>81543</string>
+				<key>strasse</key>
+				<string>Siebenbrunner StraÃe 5</string>
+				<key>telefon</key>
+				<string>089-80033777</string>
+				<key>url</key>
+				<string>www.biergarten-siebenbrunn.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>âs Truderinger Wirtshaus steht fÃ¼r groÃe Portionen, nette Leute und vernÃ¼nftige Preise.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>12005</real>
+				<key>latitude</key>
+				<string>48,1259</string>
+				<key>longitude</key>
+				<string>11,674258</string>
+				<key>name</key>
+				<string>âs Truderinger Wirtshaus</string>
+				<key>ort</key>
+				<string>MÃ¼nchen</string>
+				<key>plz</key>
+				<string>81829</string>
+				<key>strasse</key>
+				<string>Kirchtruderinger StraÃe 17</string>
+				<key>telefon</key>
+				<string></string>
+				<key>url</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Liebhard's BrÃ¤ustÃ¼berl Restaurant und Biergarten befindet sich in Aying.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>12006</real>
+				<key>latitude</key>
+				<string>47,97101</string>
+				<key>longitude</key>
+				<string>11,77983</string>
+				<key>name</key>
+				<string>Liebhard's BrÃ¤ustÃ¼berl zu Aying</string>
+				<key>ort</key>
+				<string>Aying</string>
+				<key>plz</key>
+				<string>85653</string>
+				<key>strasse</key>
+				<string>MÃ¼nchener StraÃe 2</string>
+				<key>telefon</key>
+				<string>08095-1345</string>
+				<key>url</key>
+				<string>www.liebhards-aying.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Nicht nur fÃ¼r Promis, Traumlage am See</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>13001</real>
+				<key>latitude</key>
+				<string>48,160504</string>
+				<key>longitude</key>
+				<string>11,598365</string>
+				<key>name</key>
+				<string>Seehaus</string>
+				<key>ort</key>
+				<string>MÃ¼nchen (Schwabing)</string>
+				<key>plz</key>
+				<string>80802</string>
+				<key>strasse</key>
+				<string>Kleinhesselohe 2</string>
+				<key>telefon</key>
+				<string>089-3816130</string>
+				<key>url</key>
+				<string>www.kuffler-gastronomie.de/de/muenchen/seehaus/index.php</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Typischer Wirtsgarten mitten im Ort</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>13002</real>
+				<key>latitude</key>
+				<string>48,226636</string>
+				<key>longitude</key>
+				<string>11,674572</string>
+				<key>name</key>
+				<string>Zur MÃ¼hle</string>
+				<key>ort</key>
+				<string>MÃ¼nchen</string>
+				<key>plz</key>
+				<string>85737</string>
+				<key>strasse</key>
+				<string>Kirchplatz 5</string>
+				<key>telefon</key>
+				<string>089-960930</string>
+				<key>url</key>
+				<string>www.hotel-muehle.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Angeblich Ã¤lteste Brauerei der Welt, seit 1040 in Betrieb.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>13003</real>
+				<key>latitude</key>
+				<string>48,395787</string>
+				<key>longitude</key>
+				<string>11,728761</string>
+				<key>name</key>
+				<string>BrÃ¤ustÃ¼berl Weihenstephan</string>
+				<key>ort</key>
+				<string>Freising (Weihenstephan)</string>
+				<key>plz</key>
+				<string>85354</string>
+				<key>strasse</key>
+				<string>Weihenstephaner Berg 10</string>
+				<key>telefon</key>
+				<string>08161-13004</string>
+				<key>url</key>
+				<string>www.braeustueberl-weihenstephan.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Direkt am Ufer der WÃ¼rm, groÃe Essensauswahl.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>13004</real>
+				<key>latitude</key>
+				<string>48,105576</string>
+				<key>longitude</key>
+				<string>11,422949</string>
+				<key>name</key>
+				<string>Kottmeier</string>
+				<key>ort</key>
+				<string>Planegg</string>
+				<key>plz</key>
+				<string>82152</string>
+				<key>strasse</key>
+				<string>BrÃ¤uhausstr. 18</string>
+				<key>telefon</key>
+				<string></string>
+				<key>url</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Alte Kastanien, sehr schattig, Blick aufs Schloss.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>13005</real>
+				<key>latitude</key>
+				<string>48,248117</string>
+				<key>longitude</key>
+				<string>11,558886</string>
+				<key>name</key>
+				<string>SchloÃwirtschaft OberschleiÃheim</string>
+				<key>ort</key>
+				<string>OberschleiÃheim</string>
+				<key>plz</key>
+				<string>85764</string>
+				<key>strasse</key>
+				<string>Maximilianshof 2</string>
+				<key>telefon</key>
+				<string>089-3151555</string>
+				<key>url</key>
+				<string>www.schlosswirtschaft-oberschleissheim.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>SÃ¼dlich von MÃ¼nchen.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>13006</real>
+				<key>latitude</key>
+				<string>48,067046</string>
+				<key>longitude</key>
+				<string>11,5394</string>
+				<key>name</key>
+				<string>Waldwirtschaft GroÃhesselohe</string>
+				<key>ort</key>
+				<string>GroÃhesselohe</string>
+				<key>plz</key>
+				<string>82049</string>
+				<key>strasse</key>
+				<string>Georg-Kalb-Str. 3</string>
+				<key>telefon</key>
+				<string></string>
+				<key>url</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Der Biergarten Alte Villa befindet sich neben einer alten bayrischen Villa am Ammersee, sÃ¼dwestlich von MÃ¼nchen.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>13007</real>
+				<key>latitude</key>
+				<string>48,026292</string>
+				<key>longitude</key>
+				<string>11,098021</string>
+				<key>name</key>
+				<string>Alte Villa</string>
+				<key>ort</key>
+				<string>Utting am Ammersee</string>
+				<key>plz</key>
+				<string>86919</string>
+				<key>strasse</key>
+				<string>SeestraÃe 32</string>
+				<key>telefon</key>
+				<string>08806-534456</string>
+				<key>url</key>
+				<string>www.alte-villa-biergarten.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Der Seegarten liegt direkt am Karlsfelder See und bietet eine gute MÃ¶glichkeit, in schÃ¶ner Umgebung zu speisen und/oder die Seele baumeln zu lassen.</string>
+				<key>email</key>
+				<string>info@paulaner-seegarten.de</string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>13008</real>
+				<key>latitude</key>
+				<string>48,236872</string>
+				<key>longitude</key>
+				<string>11,472543</string>
+				<key>name</key>
+				<string>Paulaner Seegarten</string>
+				<key>ort</key>
+				<string>Karlsfeld</string>
+				<key>plz</key>
+				<string>85757</string>
+				<key>strasse</key>
+				<string>HochstraÃe 71</string>
+				<key>telefon</key>
+				<string>08131 3909420</string>
+				<key>url</key>
+				<string>www.paulaner-seegarten.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Freundlich Raststation bei Wanderung oder Radtour</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>14001</real>
+				<key>latitude</key>
+				<string>47,919466</string>
+				<key>longitude</key>
+				<string>11,449878</string>
+				<key>name</key>
+				<string>AujÃ¤ger</string>
+				<key>ort</key>
+				<string>Puppling</string>
+				<key>plz</key>
+				<string>82544</string>
+				<key>strasse</key>
+				<string>AustraÃe 4</string>
+				<key>telefon</key>
+				<string>08171-78556</string>
+				<key>url</key>
+				<string>www.aujaeger-puppling.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Ãber 100 Jahre altes Wirtshaus mit viel Flair.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>14002</real>
+				<key>latitude</key>
+				<string>48,165051</string>
+				<key>longitude</key>
+				<string>11,782354</string>
+				<key>name</key>
+				<string>Gasthof Grub</string>
+				<key>ort</key>
+				<string>Poing-Grub</string>
+				<key>plz</key>
+				<string>85586</string>
+				<key>strasse</key>
+				<string>Parsdorfer Str. 5</string>
+				<key>telefon</key>
+				<string>089-9032336</string>
+				<key>url</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Kleinod im Wald, an Sonn- und Feiertagen Live-Musik.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>14003</real>
+				<key>latitude</key>
+				<string>48,416436</string>
+				<key>longitude</key>
+				<string>11,727771</string>
+				<key>name</key>
+				<string>Plantage!</string>
+				<key>ort</key>
+				<string>Freising</string>
+				<key>plz</key>
+				<string>85354</string>
+				<key>strasse</key>
+				<string>Plantage 2</string>
+				<key>telefon</key>
+				<string>08161-63155</string>
+				<key>url</key>
+				<string>www.plantage-freising.de</string>
+			</dict>
+			<dict>
+				<key>desc</key>
+				<string>Nur durch den Uferweg vom See getrennt.</string>
+				<key>email</key>
+				<string></string>
+				<key>favorit</key>
+				<false/>
+				<key>id</key>
+				<real>14004</real>
+				<key>latitude</key>
+				<string>47,913829</string>
+				<key>longitude</key>
+				<string>11,288334</string>
+				<key>name</key>
+				<string>Tutzinger Biergarten</string>
+				<key>ort</key>
+				<string>Tutzing</string>
+				<key>plz</key>
+				<string>82327</string>
+				<key>strasse</key>
+				<string>Midgardstr. 3-5</string>
+				<key>telefon</key>
+				<string>+49-(0)8158-1216</string>
+				<key>url</key>
+				<string>www.haering-wirtschaft.de</string>
+			</dict>
+		</array>
+		<key>biergartenid</key>
+		<string>GPL</string>
+	</dict>
+</dict>
+</plist>

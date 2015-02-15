@@ -15,6 +15,11 @@
 		0B207DB91A877C0600DC0A3F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B207DB81A877C0600DC0A3F /* Foundation.framework */; };
 		0B207DBB1A877C1F00DC0A3F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B207DBA1A877C1F00DC0A3F /* CoreGraphics.framework */; };
 		0B207DBD1A877C2A00DC0A3F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B207DBC1A877C2A00DC0A3F /* UIKit.framework */; };
+		0B38FBA51A90EB2500ACDA93 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B38FBA41A90EB2500ACDA93 /* CoreDataHelper.swift */; };
+		0B38FBAC1A90FC1F00ACDA93 /* Biergarten.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B38FBAA1A90FC1F00ACDA93 /* Biergarten.plist */; };
+		0B38FBAD1A90FC1F00ACDA93 /* Biergarten.json in Resources */ = {isa = PBXBuildFile; fileRef = 0B38FBAB1A90FC1F00ACDA93 /* Biergarten.json */; };
+		0B38FBAF1A91018500ACDA93 /* JsonDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B38FBAE1A91018500ACDA93 /* JsonDataHelper.swift */; };
+		0B38FBB21A910B6200ACDA93 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B38FBB11A910B6200ACDA93 /* Constants.swift */; };
 		0B43745D1A6A65C600A6E4AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B43745C1A6A65C600A6E4AB /* AppDelegate.swift */; };
 		0B4374601A6A65C600A6E4AB /* iBiergarten.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0B43745E1A6A65C600A6E4AB /* iBiergarten.xcdatamodeld */; };
 		0B4374781A6A65C600A6E4AB /* iBiergartenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4374771A6A65C600A6E4AB /* iBiergartenTests.swift */; };
@@ -78,9 +83,14 @@
 		0B207DB81A877C0600DC0A3F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0B207DBA1A877C1F00DC0A3F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		0B207DBC1A877C2A00DC0A3F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0B38FBA41A90EB2500ACDA93 /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		0B38FBAA1A90FC1F00ACDA93 /* Biergarten.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Biergarten.plist; sourceTree = "<group>"; };
+		0B38FBAB1A90FC1F00ACDA93 /* Biergarten.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Biergarten.json; sourceTree = "<group>"; };
+		0B38FBAE1A91018500ACDA93 /* JsonDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonDataHelper.swift; sourceTree = "<group>"; };
+		0B38FBB11A910B6200ACDA93 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0B4374571A6A65C600A6E4AB /* iBiergarten.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBiergarten.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B43745B1A6A65C600A6E4AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0B43745C1A6A65C600A6E4AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0B43745C1A6A65C600A6E4AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		0B43745F1A6A65C600A6E4AB /* iBiergarten.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iBiergarten.xcdatamodel; sourceTree = "<group>"; };
 		0B4374711A6A65C600A6E4AB /* iBiergartenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iBiergartenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B4374771A6A65C600A6E4AB /* iBiergartenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iBiergartenTests.swift; sourceTree = "<group>"; };
@@ -182,6 +192,25 @@
 			name = GPL;
 			sourceTree = "<group>";
 		};
+		0B38FBA31A90EB1A00ACDA93 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				0B38FBAA1A90FC1F00ACDA93 /* Biergarten.plist */,
+				0B38FBAB1A90FC1F00ACDA93 /* Biergarten.json */,
+				0B38FBA41A90EB2500ACDA93 /* CoreDataHelper.swift */,
+				0B38FBAE1A91018500ACDA93 /* JsonDataHelper.swift */,
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
+		0B38FBB01A910B4A00ACDA93 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				0B38FBB11A910B6200ACDA93 /* Constants.swift */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
 		0B43744E1A6A65C600A6E4AB = {
 			isa = PBXGroup;
 			children = (
@@ -207,15 +236,15 @@
 		0B4374591A6A65C600A6E4AB /* iBiergarten */ = {
 			isa = PBXGroup;
 			children = (
+				0B38FBB01A910B4A00ACDA93 /* Helper */,
+				0B38FBA31A90EB1A00ACDA93 /* Database */,
 				0B43745E1A6A65C600A6E4AB /* iBiergarten.xcdatamodeld */,
 				0B67EE8A1A9082200086723A /* Biergarten.swift */,
 				0B43745A1A6A65C600A6E4AB /* Supporting Files */,
 				0B7A0A851A700C48001F39C5 /* View */,
 				0B4D312D1A6BA60400AFC29D /* Images */,
-				0B4374811A6A66C500A6E4AB /* Swift-Bridging-Header.h */,
-				0B43745C1A6A65C600A6E4AB /* AppDelegate.swift */,
 				167843D10A537B13DAC1CE95 /* Storyboard */,
-				1678435440DBF09E9157D772 /* Model */,
+				1678435440DBF09E9157D772 /* ModelVO */,
 				16784A783D2242A0C40F7A8A /* Controllers */,
 			);
 			path = iBiergarten;
@@ -224,6 +253,7 @@
 		0B43745A1A6A65C600A6E4AB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0B4374811A6A66C500A6E4AB /* Swift-Bridging-Header.h */,
 				0B4D31471A6BAC1B00AFC29D /* Settings.bundle */,
 				0B4D312B1A6BA59400AFC29D /* Localizable.strings */,
 				0B43745B1A6A65C600A6E4AB /* Info.plist */,
@@ -269,11 +299,12 @@
 			name = View;
 			sourceTree = "<group>";
 		};
-		1678435440DBF09E9157D772 /* Model */ = {
+		1678435440DBF09E9157D772 /* ModelVO */ = {
 			isa = PBXGroup;
 			children = (
 				0BAA0B7F1A8F4B2100834417 /* BiergartenVO.swift */,
 			);
+			name = ModelVO;
 			path = Model;
 			sourceTree = "<group>";
 		};
@@ -289,6 +320,7 @@
 		16784A783D2242A0C40F7A8A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0B43745C1A6A65C600A6E4AB /* AppDelegate.swift */,
 				0BAA0B711A8F4B0000834417 /* DetailViewController.swift */,
 				0BAA0B721A8F4B0000834417 /* GoogleDataProvider.swift */,
 				0BAA0B731A8F4B0000834417 /* GooglePlace.swift */,
@@ -429,11 +461,13 @@
 				0B5714981A6A7B8800E44CB3 /* libPods.a in Resources */,
 				0B7A0A8A1A700C54001F39C5 /* MarkerInfoView.xib in Resources */,
 				0B7A0A901A7020C7001F39C5 /* Muenchen_01.jpg in Resources */,
+				0B38FBAC1A90FC1F00ACDA93 /* Biergarten.plist in Resources */,
 				0B4D31291A6BA59400AFC29D /* Localizable.strings in Resources */,
 				16784583231F782E4C6FD0ED /* LaunchScreen.xib in Resources */,
 				0B7A0A7C1A7009DD001F39C5 /* icon_me@2x.png in Resources */,
 				0B4D314B1A6BADAB00AFC29D /* InfoPlist.strings in Resources */,
 				0B207DAF1A877B1F00DC0A3F /* TopApps.json in Resources */,
+				0B38FBAD1A90FC1F00ACDA93 /* Biergarten.json in Resources */,
 				1678426F67E71BAB076E1FEB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -523,7 +557,9 @@
 				0BAA0B7E1A8F4B0000834417 /* TypesTableViewController.swift in Sources */,
 				0BAA0B791A8F4B0000834417 /* GoogleDataProvider.swift in Sources */,
 				0B43745D1A6A65C600A6E4AB /* AppDelegate.swift in Sources */,
+				0B38FBA51A90EB2500ACDA93 /* CoreDataHelper.swift in Sources */,
 				0B207DAD1A877B0F00DC0A3F /* HRMViewController.m in Sources */,
+				0B38FBAF1A91018500ACDA93 /* JsonDataHelper.swift in Sources */,
 				0B7A0A891A700C54001F39C5 /* MarkerInfoView.swift in Sources */,
 				0BAA0B801A8F4B2100834417 /* BiergartenVO.swift in Sources */,
 				0BAA0B7B1A8F4B0000834417 /* MasterViewController.swift in Sources */,
@@ -531,6 +567,7 @@
 				0BAA0B781A8F4B0000834417 /* DetailViewController.swift in Sources */,
 				0B0D1CB81A75248F008FD607 /* PWReachability.swift in Sources */,
 				0BAA0B7C1A8F4B0000834417 /* NetworkViewController.swift in Sources */,
+				0B38FBB21A910B6200ACDA93 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
