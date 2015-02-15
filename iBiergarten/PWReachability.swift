@@ -15,7 +15,7 @@ class PWReachability{
     let internetReachable: Reachability
     let nc = NSNotificationCenter.defaultCenter()
     let kAddHomeError: String = "kAddHomeError"
-    var allBiergarten = Array<Biergarten>()
+    var allBiergarten = Array<BiergartenVO>()
     
     init() {
         self.internetReachable = Reachability.reachabilityForInternetConnection()
@@ -41,7 +41,7 @@ class PWReachability{
                             
                             if let biergarten = bier as? NSDictionary{
                                 
-                                var id: Int = bier["id"]! as Int
+                                var id: Int16 = Int16(bier["id"]! as Int)
                                 var name: String = bier["name"]! as String
                                 var strasse: String = bier["strasse"]! as String
                                 var plz: String = bier["plz"]! as String
@@ -54,7 +54,7 @@ class PWReachability{
                                 var desc: String = bier["desc"]! as String
                                 var favorit: Bool = bier["favorit"]! as Bool
                                 
-                                var biergartenModel: Biergarten = Biergarten(id: id, name:name, strasse:strasse, plz:plz, ort:ort, url:url, longitude:longitude, latitude:latitude, email:email, telefon:telefon, desc:desc, favorit: favorit)
+                                var biergartenModel: BiergartenVO = BiergartenVO(id: id, name:name, strasse:strasse, plz:plz, ort:ort, url:url, longitude:longitude, latitude:latitude, email:email, telefon:telefon, desc:desc, favorit: favorit)
                                 
                                 self.allBiergarten.append(biergartenModel)                                   }
                         }
@@ -81,7 +81,7 @@ class PWReachability{
         
     }
     
-    func getAllBiergarten() -> Array<Biergarten> {
+    func getAllBiergarten() -> Array<BiergartenVO> {
         return self.allBiergarten
     }
     

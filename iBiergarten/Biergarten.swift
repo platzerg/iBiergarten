@@ -2,40 +2,26 @@
 //  Biergarten.swift
 //  iBiergarten
 //
-//  Created by platzerworld on 13.02.15.
+//  Created by platzerworld on 15.02.15.
 //  Copyright (c) 2015 platzerworld. All rights reserved.
 //
 
 import Foundation
+import CoreData
 
-class Biergarten {
-    var id: Int
-    var name: String
-    var strasse: String
-    var plz: String
-    var ort: String
-    var url: String
-    var longitude: String
-    var latitude: String
-    var email: String
-    var telefon: String
-    var desc: String
-    var favorit: Bool
+class Biergarten: NSManagedObject {
 
-    
-    init(id:Int, name:String, strasse:String, plz:String, ort:String, url:String, longitude:String, latitude:String, email:String, telefon:String, desc:String, favorit:Bool ){
-        self.id = id
-        self.name = name
-        self.strasse = strasse
-        self.plz = plz
-        self.ort = ort
-        self.url = url
-        self.longitude = longitude
-        self.latitude = latitude
-        self.email = email
-        self.telefon = telefon
-        self.desc = desc
-        self.favorit = favorit
-    }
-    
+    @NSManaged var desc: String
+    @NSManaged var email: String
+    @NSManaged var favorit: Bool
+    @NSManaged var id: Int16
+    @NSManaged var latitude: String
+    @NSManaged var longitude: String
+    @NSManaged var name: String
+    @NSManaged var ort: String
+    @NSManaged var plz: String
+    @NSManaged var strasse: String
+    @NSManaged var telefon: String
+    @NSManaged var url: String
+
 }

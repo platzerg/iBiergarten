@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0B0D1CB81A75248F008FD607 /* PWReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0D1CB71A75248F008FD607 /* PWReachability.swift */; };
 		0B140D701A728A82003CF8E7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B140D6F1A728A82003CF8E7 /* Images.xcassets */; };
-		0B1FE3AE1A87C3E70084F0D9 /* NetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1FE3AD1A87C3E70084F0D9 /* NetworkViewController.swift */; };
 		0B207DAD1A877B0F00DC0A3F /* HRMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B207DAC1A877B0F00DC0A3F /* HRMViewController.m */; };
 		0B207DAF1A877B1F00DC0A3F /* TopApps.json in Resources */ = {isa = PBXBuildFile; fileRef = 0B207DAE1A877B1F00DC0A3F /* TopApps.json */; };
 		0B207DB71A877BF200DC0A3F /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B207DB61A877BF200DC0A3F /* CoreBluetooth.framework */; };
@@ -36,20 +35,22 @@
 		0B5714951A6A7B6000E44CB3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B5714941A6A7B6000E44CB3 /* CoreData.framework */; };
 		0B5714971A6A7B6800E44CB3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B5714961A6A7B6800E44CB3 /* AVFoundation.framework */; };
 		0B5714981A6A7B8800E44CB3 /* libPods.a in Resources */ = {isa = PBXBuildFile; fileRef = 912F91D6AC9AD2EF1D15D40E /* libPods.a */; };
+		0B67EE8B1A9082200086723A /* Biergarten.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B67EE8A1A9082200086723A /* Biergarten.swift */; };
 		0B7A0A7C1A7009DD001F39C5 /* icon_me@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B7A0A7B1A7009DD001F39C5 /* icon_me@2x.png */; };
-		0B7A0A7E1A700ACB001F39C5 /* TypesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7A0A7D1A700ACB001F39C5 /* TypesTableViewController.swift */; };
-		0B7A0A821A700B1A001F39C5 /* GoogleDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7A0A7F1A700B1A001F39C5 /* GoogleDataProvider.swift */; };
-		0B7A0A831A700B1A001F39C5 /* GooglePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7A0A801A700B1A001F39C5 /* GooglePlace.swift */; };
-		0B7A0A841A700B1A001F39C5 /* PlaceMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7A0A811A700B1A001F39C5 /* PlaceMarker.swift */; };
 		0B7A0A891A700C54001F39C5 /* MarkerInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7A0A861A700C54001F39C5 /* MarkerInfoView.swift */; };
 		0B7A0A8A1A700C54001F39C5 /* MarkerInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B7A0A871A700C54001F39C5 /* MarkerInfoView.xib */; };
 		0B7A0A8B1A700C54001F39C5 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7A0A881A700C54001F39C5 /* UIViewExtension.swift */; };
 		0B7A0A901A7020C7001F39C5 /* Muenchen_01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0B7A0A921A7020C7001F39C5 /* Muenchen_01.jpg */; };
-		0B80D1321A8E762E00B51CFC /* Biergarten.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B80D1311A8E762E00B51CFC /* Biergarten.swift */; };
+		0BAA0B781A8F4B0000834417 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAA0B711A8F4B0000834417 /* DetailViewController.swift */; };
+		0BAA0B791A8F4B0000834417 /* GoogleDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAA0B721A8F4B0000834417 /* GoogleDataProvider.swift */; };
+		0BAA0B7A1A8F4B0000834417 /* GooglePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAA0B731A8F4B0000834417 /* GooglePlace.swift */; };
+		0BAA0B7B1A8F4B0000834417 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAA0B741A8F4B0000834417 /* MasterViewController.swift */; };
+		0BAA0B7C1A8F4B0000834417 /* NetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAA0B751A8F4B0000834417 /* NetworkViewController.swift */; };
+		0BAA0B7D1A8F4B0000834417 /* PlaceMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAA0B761A8F4B0000834417 /* PlaceMarker.swift */; };
+		0BAA0B7E1A8F4B0000834417 /* TypesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAA0B771A8F4B0000834417 /* TypesTableViewController.swift */; };
+		0BAA0B801A8F4B2100834417 /* BiergartenVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAA0B7F1A8F4B2100834417 /* BiergartenVO.swift */; };
 		1678426F67E71BAB076E1FEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1678401170F337BB58F70469 /* Main.storyboard */; };
 		16784583231F782E4C6FD0ED /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16784344909E4373CBDE9CE3 /* LaunchScreen.xib */; };
-		16784A8BA649F343843493C7 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16784767A7A346982D7CC02C /* MasterViewController.swift */; };
-		16784E66DBBA0405F865CEDE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16784B6DF2E12691BC24D8FD /* DetailViewController.swift */; };
 		4CDB1D02A02371FD4C9EE6C9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 912F91D6AC9AD2EF1D15D40E /* libPods.a */; };
 		9D051E1305D01CABB8D0DBD9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 912F91D6AC9AD2EF1D15D40E /* libPods.a */; };
 		D001E06B817D5688D72ED096 /* libPods-iBiergartenTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA7595461FA6BF9959CC861E /* libPods-iBiergartenTests.a */; };
@@ -68,7 +69,6 @@
 /* Begin PBXFileReference section */
 		0B0D1CB71A75248F008FD607 /* PWReachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PWReachability.swift; path = iBiergarten/PWReachability.swift; sourceTree = "<group>"; };
 		0B140D6F1A728A82003CF8E7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		0B1FE3AD1A87C3E70084F0D9 /* NetworkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkViewController.swift; sourceTree = "<group>"; };
 		0B207DAB1A877B0F00DC0A3F /* HRMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRMViewController.h; sourceTree = "<group>"; };
 		0B207DAC1A877B0F00DC0A3F /* HRMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRMViewController.m; sourceTree = "<group>"; };
 		0B207DAE1A877B1F00DC0A3F /* TopApps.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TopApps.json; sourceTree = "<group>"; };
@@ -107,21 +107,23 @@
 		0B5714921A6A7B5900E44CB3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		0B5714941A6A7B6000E44CB3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		0B5714961A6A7B6800E44CB3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		0B67EE8A1A9082200086723A /* Biergarten.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Biergarten.swift; sourceTree = "<group>"; };
 		0B79B4DB1A6BCAEF006321C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		0B7A0A7B1A7009DD001F39C5 /* icon_me@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_me@2x.png"; sourceTree = "<group>"; };
-		0B7A0A7D1A700ACB001F39C5 /* TypesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypesTableViewController.swift; sourceTree = "<group>"; };
-		0B7A0A7F1A700B1A001F39C5 /* GoogleDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoogleDataProvider.swift; path = ../Controllers/GoogleDataProvider.swift; sourceTree = "<group>"; };
-		0B7A0A801A700B1A001F39C5 /* GooglePlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GooglePlace.swift; path = ../Controllers/GooglePlace.swift; sourceTree = "<group>"; };
-		0B7A0A811A700B1A001F39C5 /* PlaceMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlaceMarker.swift; path = ../Controllers/PlaceMarker.swift; sourceTree = "<group>"; };
 		0B7A0A861A700C54001F39C5 /* MarkerInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkerInfoView.swift; sourceTree = "<group>"; };
 		0B7A0A871A700C54001F39C5 /* MarkerInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MarkerInfoView.xib; sourceTree = "<group>"; };
 		0B7A0A881A700C54001F39C5 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		0B7A0A911A7020C7001F39C5 /* de */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = de; path = de.lproj/Muenchen_01.jpg; sourceTree = "<group>"; };
 		0B7A0A931A7020C8001F39C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = en; path = en.lproj/Muenchen_01.jpg; sourceTree = "<group>"; };
 		0B80D1301A8E725400B51CFC /* Demo.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Demo.playground; sourceTree = "<group>"; };
-		0B80D1311A8E762E00B51CFC /* Biergarten.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Biergarten.swift; sourceTree = "<group>"; };
-		16784767A7A346982D7CC02C /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		16784B6DF2E12691BC24D8FD /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		0BAA0B711A8F4B0000834417 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		0BAA0B721A8F4B0000834417 /* GoogleDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleDataProvider.swift; sourceTree = "<group>"; };
+		0BAA0B731A8F4B0000834417 /* GooglePlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePlace.swift; sourceTree = "<group>"; };
+		0BAA0B741A8F4B0000834417 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		0BAA0B751A8F4B0000834417 /* NetworkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkViewController.swift; sourceTree = "<group>"; };
+		0BAA0B761A8F4B0000834417 /* PlaceMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceMarker.swift; sourceTree = "<group>"; };
+		0BAA0B771A8F4B0000834417 /* TypesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypesTableViewController.swift; sourceTree = "<group>"; };
+		0BAA0B7F1A8F4B2100834417 /* BiergartenVO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BiergartenVO.swift; path = iBiergarten/BiergartenVO.swift; sourceTree = SOURCE_ROOT; };
 		16784F7F312FB9B548AE3AC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = iBiergarten/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		4B56E6F1CA3FBCBCF5F5CA55 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		63CE92448F7E8DA6C476B74C /* Pods-iBiergartenTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iBiergartenTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iBiergartenTests/Pods-iBiergartenTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -205,13 +207,13 @@
 		0B4374591A6A65C600A6E4AB /* iBiergarten */ = {
 			isa = PBXGroup;
 			children = (
+				0B43745E1A6A65C600A6E4AB /* iBiergarten.xcdatamodeld */,
+				0B67EE8A1A9082200086723A /* Biergarten.swift */,
 				0B43745A1A6A65C600A6E4AB /* Supporting Files */,
 				0B7A0A851A700C48001F39C5 /* View */,
 				0B4D312D1A6BA60400AFC29D /* Images */,
 				0B4374811A6A66C500A6E4AB /* Swift-Bridging-Header.h */,
 				0B43745C1A6A65C600A6E4AB /* AppDelegate.swift */,
-				0B43745E1A6A65C600A6E4AB /* iBiergarten.xcdatamodeld */,
-				0B80D1311A8E762E00B51CFC /* Biergarten.swift */,
 				167843D10A537B13DAC1CE95 /* Storyboard */,
 				1678435440DBF09E9157D772 /* Model */,
 				16784A783D2242A0C40F7A8A /* Controllers */,
@@ -270,9 +272,7 @@
 		1678435440DBF09E9157D772 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0B7A0A7F1A700B1A001F39C5 /* GoogleDataProvider.swift */,
-				0B7A0A801A700B1A001F39C5 /* GooglePlace.swift */,
-				0B7A0A811A700B1A001F39C5 /* PlaceMarker.swift */,
+				0BAA0B7F1A8F4B2100834417 /* BiergartenVO.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -289,10 +289,13 @@
 		16784A783D2242A0C40F7A8A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				0B7A0A7D1A700ACB001F39C5 /* TypesTableViewController.swift */,
-				16784767A7A346982D7CC02C /* MasterViewController.swift */,
-				16784B6DF2E12691BC24D8FD /* DetailViewController.swift */,
-				0B1FE3AD1A87C3E70084F0D9 /* NetworkViewController.swift */,
+				0BAA0B711A8F4B0000834417 /* DetailViewController.swift */,
+				0BAA0B721A8F4B0000834417 /* GoogleDataProvider.swift */,
+				0BAA0B731A8F4B0000834417 /* GooglePlace.swift */,
+				0BAA0B741A8F4B0000834417 /* MasterViewController.swift */,
+				0BAA0B751A8F4B0000834417 /* NetworkViewController.swift */,
+				0BAA0B761A8F4B0000834417 /* PlaceMarker.swift */,
+				0BAA0B771A8F4B0000834417 /* TypesTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -513,20 +516,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B80D1321A8E762E00B51CFC /* Biergarten.swift in Sources */,
+				0B67EE8B1A9082200086723A /* Biergarten.swift in Sources */,
 				0B7A0A8B1A700C54001F39C5 /* UIViewExtension.swift in Sources */,
 				0B4374601A6A65C600A6E4AB /* iBiergarten.xcdatamodeld in Sources */,
-				0B7A0A821A700B1A001F39C5 /* GoogleDataProvider.swift in Sources */,
-				0B7A0A7E1A700ACB001F39C5 /* TypesTableViewController.swift in Sources */,
-				0B7A0A841A700B1A001F39C5 /* PlaceMarker.swift in Sources */,
+				0BAA0B7A1A8F4B0000834417 /* GooglePlace.swift in Sources */,
+				0BAA0B7E1A8F4B0000834417 /* TypesTableViewController.swift in Sources */,
+				0BAA0B791A8F4B0000834417 /* GoogleDataProvider.swift in Sources */,
 				0B43745D1A6A65C600A6E4AB /* AppDelegate.swift in Sources */,
-				16784A8BA649F343843493C7 /* MasterViewController.swift in Sources */,
-				16784E66DBBA0405F865CEDE /* DetailViewController.swift in Sources */,
 				0B207DAD1A877B0F00DC0A3F /* HRMViewController.m in Sources */,
 				0B7A0A891A700C54001F39C5 /* MarkerInfoView.swift in Sources */,
-				0B1FE3AE1A87C3E70084F0D9 /* NetworkViewController.swift in Sources */,
-				0B7A0A831A700B1A001F39C5 /* GooglePlace.swift in Sources */,
+				0BAA0B801A8F4B2100834417 /* BiergartenVO.swift in Sources */,
+				0BAA0B7B1A8F4B0000834417 /* MasterViewController.swift in Sources */,
+				0BAA0B7D1A8F4B0000834417 /* PlaceMarker.swift in Sources */,
+				0BAA0B781A8F4B0000834417 /* DetailViewController.swift in Sources */,
 				0B0D1CB81A75248F008FD607 /* PWReachability.swift in Sources */,
+				0BAA0B7C1A8F4B0000834417 /* NetworkViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

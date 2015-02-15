@@ -39,7 +39,7 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
         
         var observer = notificationCenter.addObserverForName("BiergartenLoaded", object: nil, queue: mainQueue) { _ in
             print("BiergartenLoaded")
-            var allBiergarten: Array<Biergarten> = reachability.getAllBiergarten()
+            var allBiergarten: Array<BiergartenVO> = reachability.getAllBiergarten()
             for biergarten in allBiergarten
             {
                 println(biergarten.name)
@@ -56,14 +56,36 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
     }
 
     func insertNewObject(sender: AnyObject) {
-        var biergartenModel: Biergarten = (sender as Biergarten)
-        
+        var biergartenModel: BiergartenVO
+        if(sender is UIBarButtonItem){
+            biergartenModel = BiergartenVO()
+        }else{
+            biergartenModel = (sender as BiergartenVO)
+        }
+                
         let context = self.fetchedResultsController.managedObjectContext
         let entity = self.fetchedResultsController.fetchRequest.entity!
-        let newManagedObject = NSEntityDescription.insertNewObjectForEntityForName(entity.name!, inManagedObjectContext: context) as NSManagedObject
+        let newBiergartenManagedObject = NSEntityDescription.insertNewObjectForEntityForName(entity.name!, inManagedObjectContext: context) as Biergarten
              
         // If appropriate, configure the new managed object.
         // Normally you should use accessor methods, but using KVC here avoids the need to add a custom class to the template.
+        
+        newBiergartenManagedObject.id = biergartenModel.id
+        newBiergartenManagedObject.name = biergartenModel.name
+        newBiergartenManagedObject.strasse = biergartenModel.strasse
+        newBiergartenManagedObject.plz = biergartenModel.plz
+        newBiergartenManagedObject.ort = biergartenModel.ort
+        newBiergartenManagedObject.url = biergartenModel.url
+        newBiergartenManagedObject.longitude = biergartenModel.longitude
+        newBiergartenManagedObject.latitude = biergartenModel.latitude
+        newBiergartenManagedObject.email = biergartenModel.email
+        newBiergartenManagedObject.telefon = biergartenModel.telefon
+        newBiergartenManagedObject.desc = biergartenModel.desc
+        newBiergartenManagedObject.favorit = biergartenModel.favorit
+        
+        
+        
+        /*
         newManagedObject.setValue(biergartenModel.id, forKey: "id")
         newManagedObject.setValue(biergartenModel.name, forKey: "name")
         newManagedObject.setValue(biergartenModel.strasse, forKey: "strasse")
@@ -75,15 +97,13 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
         newManagedObject.setValue(biergartenModel.email, forKey: "email")
         newManagedObject.setValue(biergartenModel.telefon, forKey: "telefon")
         newManagedObject.setValue(biergartenModel.desc, forKey: "desc")
-        newManagedObject.setValue(biergartenModel.favorit, forKey: "favorit")        
+        newManagedObject.setValue(biergartenModel.favorit, forKey: "favorit")    
+*/
         
         
-        // Save the context.
         var error: NSError? = nil
         if !context.save(&error) {
-            // Replace this implementation with code to handle the error appropriately.
-            // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-            //println("Unresolved error \(error), \(error.userInfo)")
+            println("Unresolved error \(error), \(error?.description)")
             abort()
         }
     }
@@ -131,8 +151,6 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
                 
             var error: NSError? = nil
             if !context.save(&error) {
-                // Replace this implementation with code to handle the error appropriately.
-                // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
                 //println("Unresolved error \(error), \(error.userInfo)")
                 abort()
             }
@@ -140,7 +158,7 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
     }
 
     func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) {
-        let object = self.fetchedResultsController.objectAtIndexPath(indexPath) as NSManagedObject
+        let object = self.fetchedResultsController.objectAtIndexPath(indexPath) as Biergarten
         cell.textLabel!.text = object.valueForKey("name")!.description
     }
 
@@ -173,9 +191,7 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
         
     	var error: NSError? = nil
     	if !_fetchedResultsController!.performFetch(&error) {
-    	     // Replace this implementation with code to handle the error appropriately.
-    	     // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. 
-             //println("Unresolved error \(error), \(error.userInfo)")
+            println("Unresolved error \(error), \(error?.description)")
     	     abort()
     	}
         
