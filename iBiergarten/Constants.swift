@@ -8,6 +8,10 @@
 
 class Constants
 {
+    
+    
+    class func iBiergartenIdentifier() -> String {return "iBiergarten"}
+    
     class func googleMapsApiKey() -> String {return "AIzaSyBydqUXFE-fbV_E4POTnhRfbZJpPDKUb-Q"}
     
     
@@ -19,6 +23,9 @@ class Constants
     class func actionOnePressed() -> String {return "actionOnePressed"}
     class func actionTwoPressed() -> String {return "actionTwoPressed"}
     
+    class func notificationBiergartenLoaded() -> String {return "BiergartenLoaded"}
+    
+    class func BiergartenEntity() -> String {return "Biergarten"}
     
     
     

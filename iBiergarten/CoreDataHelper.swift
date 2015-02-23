@@ -11,7 +11,7 @@ class CoreDataHelper {
     //1
     let bundle = NSBundle.mainBundle()
     let modelURL =
-    bundle.URLForResource("iBiergarten", withExtension:"momd")
+    bundle.URLForResource(Constants.iBiergartenIdentifier(), withExtension:"momd")
     model = NSManagedObjectModel(contentsOfURL: modelURL!)!
     
     //2
@@ -24,7 +24,7 @@ class CoreDataHelper {
     //4
     let documentsURL = applicationDocumentsDirectory()
     let storeURL =
-    documentsURL.URLByAppendingPathComponent("iBiergarten")
+    documentsURL.URLByAppendingPathComponent(Constants.iBiergartenIdentifier())
     
     let options =
     [NSMigratePersistentStoresAutomaticallyOption: true]

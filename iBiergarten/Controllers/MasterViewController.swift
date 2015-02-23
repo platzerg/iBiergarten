@@ -37,8 +37,8 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
         let notificationCenter = NSNotificationCenter.defaultCenter()
         let mainQueue = NSOperationQueue.mainQueue()
         
-        var observer = notificationCenter.addObserverForName("BiergartenLoaded", object: nil, queue: mainQueue) { _ in
-            print("BiergartenLoaded")
+        var observer = notificationCenter.addObserverForName(Constants.notificationBiergartenLoaded(), object: nil, queue: mainQueue) { _ in
+            print(Constants.notificationBiergartenLoaded())
             var allBiergarten: Array<BiergartenVO> = reachability.getAllBiergarten()
             for biergarten in allBiergarten
             {
@@ -171,7 +171,7 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
         
         let fetchRequest = NSFetchRequest()
         // Edit the entity name as appropriate.
-        let entity = NSEntityDescription.entityForName("Biergarten", inManagedObjectContext: self.managedObjectContext!)
+        let entity = NSEntityDescription.entityForName(Constants.BiergartenEntity(), inManagedObjectContext: self.managedObjectContext!)
         fetchRequest.entity = entity
         
         // Set the batch size to a suitable number.

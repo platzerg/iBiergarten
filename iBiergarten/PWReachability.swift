@@ -68,7 +68,7 @@ class PWReachability{
             }
             UIApplication.sharedApplication().networkActivityIndicatorVisible = false
             
-            self.nc.postNotificationName("BiergartenLoaded", object: nil)
+            self.nc.postNotificationName(Constants.notificationBiergartenLoaded(), object: nil)
         }
         
         
