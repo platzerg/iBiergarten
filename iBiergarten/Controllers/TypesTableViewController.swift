@@ -27,7 +27,7 @@ class TypesTableViewController: UITableViewController {
   @IBAction func donePressed(sender: AnyObject) {
     delegate?.typesController(self, didSelectTypes: selectedTypes)
   }
-  
+    
   // MARK: - Table view data source
   override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return possibleTypesDictionary.count
