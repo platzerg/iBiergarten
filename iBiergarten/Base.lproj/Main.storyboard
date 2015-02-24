@@ -186,6 +186,42 @@
             </objects>
             <point key="canvasLocation" x="4324" y="1035"/>
         </scene>
+        <!--CollectionView-->
+        <scene sceneID="vua-xD-6mg">
+            <objects>
+                <navigationController title="CollectionView" id="OTz-Ze-uN5" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="CollectionView" image="back@3x.png" id="aBc-CF-bGv"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8cH-3Z-QyY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="VYX-nJ-wKR" kind="relationship" relationship="rootViewController" id="zSf-Nd-7AR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CxV-r7-iKR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2692" y="1836"/>
+        </scene>
+        <!--CollectionView-->
+        <scene sceneID="MmE-fU-yYz">
+            <objects>
+                <viewController title="CollectionView" id="VYX-nJ-wKR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hbl-yq-nu6"/>
+                        <viewControllerLayoutGuide type="bottom" id="QLS-1u-aJr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hP6-RM-FUQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VkD-xD-Y2t"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mif-yc-8EN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3564" y="1836"/>
+        </scene>
         <!--OBD2-->
         <scene sceneID="ItM-19-6C9">
             <objects>
@@ -238,6 +274,7 @@
                     <connections>
                         <segue destination="v2y-0X-Qnn" kind="relationship" relationship="viewControllers" id="fqX-EV-SOT"/>
                         <segue destination="mBJ-do-klD" kind="relationship" relationship="viewControllers" id="W5N-UL-h1k"/>
+                        <segue destination="OTz-Ze-uN5" kind="relationship" relationship="viewControllers" id="LJ8-zO-auJ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UPe-Z3-E3n" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -369,10 +406,11 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wXE-ds-JTD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3512" y="1035"/>
+            <point key="canvasLocation" x="3512" y="1043"/>
         </scene>
     </scenes>
     <resources>
+        <image name="back@3x.png" width="36" height="36"/>
         <image name="beacon_grey.png" width="22" height="33"/>
         <image name="icon_me.png" width="30" height="55"/>
         <image name="navigation_guy.png" width="30" height="29"/>
