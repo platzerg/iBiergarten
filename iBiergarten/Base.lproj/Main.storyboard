@@ -130,7 +130,7 @@
                             <outlet property="delegate" destination="jc1-s4-7f0" id="sVN-hz-mwh"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="UOy-eR-v6X">
+                    <navigationItem key="navigationItem" title="Günter" id="UOy-eR-v6X">
                         <barButtonItem key="leftBarButtonItem" title="show more" id="QQn-ad-Dzq">
                             <connections>
                                 <segue destination="Trz-UA-aNE" kind="show" id="ure-Kv-6T1"/>
