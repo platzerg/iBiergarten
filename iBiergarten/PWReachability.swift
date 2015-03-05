@@ -77,8 +77,19 @@ class PWReachability{
             
         }
         
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "methodOFReceivedNotication:", name:"NotificationIdentifier", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "methodOFReceivedNotication1:", name:"NotificationIdentifier1", object: nil)
+        
         fetchNearbyPlaces()
         
+    }
+    
+    dynamic private func methodOFReceivedNotication(notification: NSNotification){
+        println("methodOFReceivedNotication")
+    }
+    
+    @objc private func methodOFReceivedNotication1(notification: NSNotification){
+        println("methodOFReceivedNotication1")
     }
     
     func getAllBiergarten() -> Array<BiergartenVO> {
@@ -87,6 +98,9 @@ class PWReachability{
     
     func fetchNearbyPlaces() {
         nc.postNotificationName("gpl", object: nil)
+        nc.postNotificationName("NotificationIdentifier", object: nil)
+        nc.postNotificationName("NotificationIdentifier1", object: nil)
+
     }
     
     func doOne() {
