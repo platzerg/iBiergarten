@@ -22,7 +22,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         self.initController()
         self.initNotification()
         self.initDatabase()
+        self.initFlickr()
         
+        return true
+    }
+    
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {
+        let scheme: String = url.scheme!
+        if("flickr391994024204840" == scheme) {
+            //[[NSNotificationCenter defaultCenter] postNotificationName:@"UserAuthCallbackNotification" object:url userInfo:nil];
+            NSNotificationCenter.defaultCenter().postNotificationName("UserAuthCallbackNotification", object: url, userInfo: nil)
+            return true
+        }
         return true
     }
     
@@ -45,6 +56,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     
     func initGoogleAPI() {
         GMSServices.provideAPIKey(Constants.googleMapsApiKey())
+    }
+    
+    func initFlickr(){
+        FlickrKit.sharedFlickrKit().initializeWithAPIKey("73767299b91be4b2db8d67de99d1da66", sharedSecret: "75e53598d548f2f3")
     }
     
     func application(application: UIApplication!, handleActionWithIdentifier identifier:String!, forLocalNotification notification:UILocalNotification!,

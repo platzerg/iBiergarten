@@ -190,7 +190,7 @@
         <scene sceneID="vua-xD-6mg">
             <objects>
                 <navigationController title="CollectionView" id="OTz-Ze-uN5" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="CollectionView" image="back@3x.png" id="aBc-CF-bGv"/>
+                    <tabBarItem key="tabBarItem" title="Flickr" image="Flickr.png" id="aBc-CF-bGv"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="8cH-3Z-QyY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -203,10 +203,10 @@
             </objects>
             <point key="canvasLocation" x="2692" y="1836"/>
         </scene>
-        <!--CollectionView-->
+        <!--Flickr-->
         <scene sceneID="MmE-fU-yYz">
             <objects>
-                <viewController title="CollectionView" id="VYX-nJ-wKR" sceneMemberID="viewController">
+                <viewController title="Flickr" id="VYX-nJ-wKR" customClass="FlickrViewController" customModule="iBiergarten" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hbl-yq-nu6"/>
                         <viewControllerLayoutGuide type="bottom" id="QLS-1u-aJr"/>
@@ -214,9 +214,79 @@
                     <view key="view" contentMode="scaleToFill" id="hP6-RM-FUQ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f1C-L6-NAI">
+                                <rect key="frame" x="79" y="72" width="512" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kkh-lW-irp">
+                                <rect key="frame" x="16" y="131" width="38" height="30"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButton:" destination="VYX-nJ-wKR" eventType="touchUpInside" id="pIy-m7-n94"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ekt-oW-cxD">
+                                <rect key="frame" x="88" y="131" width="44" height="30"/>
+                                <state key="normal" title="logout">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutButton:" destination="VYX-nJ-wKR" eventType="touchUpInside" id="3ba-Pz-BuI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BK9-JR-goW">
+                                <rect key="frame" x="195" y="131" width="49" height="30"/>
+                                <state key="normal" title="Photos">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="photosButton:" destination="VYX-nJ-wKR" eventType="touchUpInside" id="bKR-HD-ylt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Twh-3l-KhS">
+                                <rect key="frame" x="290" y="131" width="52" height="30"/>
+                                <state key="normal" title="Interest">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wC9-aQ-Bgf">
+                                <rect key="frame" x="375" y="131" width="46" height="30"/>
+                                <state key="normal" title="search">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jDs-lA-Nxl">
+                                <rect key="frame" x="0.0" y="181" width="600" height="362"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fmy-AL-vPH">
+                                <rect key="frame" x="494" y="131" width="83" height="30"/>
+                                <state key="normal" title="error search">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Status" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oCj-jY-tfQ">
+                                <rect key="frame" x="10" y="76" width="50" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="VkD-xD-Y2t"/>
+                    <connections>
+                        <outlet property="authStatusLabel" destination="oCj-jY-tfQ" id="P6D-nF-Ax3"/>
+                        <outlet property="loginButton" destination="kkh-lW-irp" id="d60-37-10b"/>
+                        <outlet property="logoutButton" destination="ekt-oW-cxD" id="Hdd-Oz-LZt"/>
+                        <outlet property="photosButton" destination="BK9-JR-goW" id="OJr-KX-e7E"/>
+                        <outlet property="searchText" destination="f1C-L6-NAI" id="Vp6-2L-Ph4"/>
+                        <outlet property="webView" destination="jDs-lA-Nxl" id="9An-0n-jt0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mif-yc-8EN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -410,7 +480,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="back@3x.png" width="36" height="36"/>
+        <image name="Flickr.png" width="32" height="32"/>
         <image name="beacon_grey.png" width="22" height="33"/>
         <image name="icon_me.png" width="30" height="55"/>
         <image name="navigation_guy.png" width="30" height="29"/>
