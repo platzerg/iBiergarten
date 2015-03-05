@@ -11,6 +11,7 @@
 
 #import <GoogleMaps.h>
 #import <PWReachability.h>
+#import <FlickrKit.h>
 
 #endif
 
