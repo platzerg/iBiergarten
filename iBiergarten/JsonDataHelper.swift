@@ -88,7 +88,7 @@ class JsonDataHelper : CoreDataHelper {
             }
         }
         super.saveContext()
-        println("Imported \(json.count) Biergarten")
+        //println("Imported \(json.count) Biergarten")
     }
 
 }
