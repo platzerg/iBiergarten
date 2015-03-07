@@ -27,7 +27,7 @@ class JsonDataHelper : CoreDataHelper {
                 super.context.executeFetchRequest(fetchRequest,
                     error: &fetchError) {
                         for object in results {
-                            let team = object as Biergarten
+                            let team = object as! Biergarten
                             super.context.deleteObject(team)
                         }
             }
@@ -54,18 +54,18 @@ class JsonDataHelper : CoreDataHelper {
                     
                     if let biergarten = bier as? NSDictionary{
                         
-                        var id: Int16 = Int16(bier["id"]! as Int)
-                        var name: String = bier["name"]! as String
-                        var strasse: String = bier["strasse"]! as String
-                        var plz: String = bier["plz"]! as String
-                        var ort: String = bier["ort"]! as String
-                        var url: String = bier["url"]! as String
-                        var longitude: String = bier["longitude"]! as String
-                        var latitude: String = bier["latitude"]! as String
-                        var email: String = bier["email"]! as String
-                        var telefon: String = bier["telefon"]! as String
-                        var desc: String = bier["desc"]! as String
-                        var favorit: Bool = bier["favorit"]! as Bool
+                        var id: Int16 = Int16(bier["id"]! as! Int)
+                        var name: String = bier["name"]! as! String
+                        var strasse: String = bier["strasse"]! as! String
+                        var plz: String = bier["plz"]! as! String
+                        var ort: String = bier["ort"]! as! String
+                        var url: String = bier["url"]! as! String
+                        var longitude: String = bier["longitude"]! as! String
+                        var latitude: String = bier["latitude"]! as! String
+                        var email: String = bier["email"]! as! String
+                        var telefon: String = bier["telefon"]! as! String
+                        var desc: String = bier["desc"]! as! String
+                        var favorit: Bool = bier["favorit"]! as! Bool
                         
                         var biergartenModel: BiergartenVO = BiergartenVO(id: id, name:name, strasse:strasse, plz:plz, ort:ort, url:url, longitude:longitude, latitude:latitude, email:email, telefon:telefon, desc:desc, favorit: favorit)
                         

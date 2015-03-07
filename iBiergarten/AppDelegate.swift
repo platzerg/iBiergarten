@@ -38,14 +38,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     }
     
     func initController(){
-        let splitViewController = self.window!.rootViewController as UISplitViewController
-        let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as UINavigationController
+        let splitViewController = self.window!.rootViewController as! UISplitViewController
+        let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as! UINavigationController
         
         navigationController.topViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem()
         splitViewController.delegate = self
         
-        let masterNavigationController = splitViewController.viewControllers[0] as UINavigationController
-        let masterViewController = masterNavigationController.topViewController as MasterViewController
+        let masterNavigationController = splitViewController.viewControllers[0] as! UINavigationController
+        let masterViewController = masterNavigationController.topViewController as! MasterViewController
         masterViewController.managedObjectContext = coreDataHelper.context
     }
     
@@ -59,19 +59,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     }
     
     func initFlickr(){
-        FlickrKit.sharedFlickrKit().initializeWithAPIKey("73767299b91be4b2db8d67de99d1da66", sharedSecret: "75e53598d548f2f3")
+        //FlickrKit.sharedFlickrKit().initializeWithAPIKey("73767299b91be4b2db8d67de99d1da66", sharedSecret: "75e53598d548f2f3")
     }
     
-    func application(application: UIApplication!, handleActionWithIdentifier identifier:String!, forLocalNotification notification:UILocalNotification!,
-        completionHandler: (() -> Void)!){
-            if (identifier == Constants.identifierFirstAction()){
-                NSNotificationCenter.defaultCenter().postNotificationName(Constants.actionOnePressed(), object: nil)
-            }else if (identifier == Constants.identifierSecondAction()){
-                NSNotificationCenter.defaultCenter().postNotificationName(Constants.actionTwoPressed(), object: nil)
-            }
-            completionHandler()
+    
+    func application(application: UIApplication, handleActionWithIdentifier identifier: String?, forLocalNotification notification: UILocalNotification, completionHandler: () -> Void) {
+        if (identifier == Constants.identifierFirstAction()){
+            NSNotificationCenter.defaultCenter().postNotificationName(Constants.actionOnePressed(), object: nil)
+        }else if (identifier == Constants.identifierSecondAction()){
+            NSNotificationCenter.defaultCenter().postNotificationName(Constants.actionTwoPressed(), object: nil)
+        }
+        completionHandler()
     }
-
+    
     func applicationWillResignActive(application: UIApplication) {
         coreDataHelper.saveContext()
     }
@@ -139,8 +139,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         let defaultActions:NSArray = [firstAction, secondAction, thirdAction]
         let minimalActions:NSArray = [firstAction, secondAction]
         
-        firstCategory.setActions(defaultActions, forContext: UIUserNotificationActionContext.Default)
-        firstCategory.setActions(minimalActions, forContext: UIUserNotificationActionContext.Minimal)
+        firstCategory.setActions(defaultActions as! [AnyObject], forContext: UIUserNotificationActionContext.Default)
+        firstCategory.setActions(minimalActions as! [AnyObject], forContext: UIUserNotificationActionContext.Minimal)
         
         // NSSet of all our categories
         
@@ -149,8 +149,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         
         
         let types:UIUserNotificationType = UIUserNotificationType.Alert | UIUserNotificationType.Badge
-        
-        let mySettings:UIUserNotificationSettings = UIUserNotificationSettings(forTypes: types, categories: categories)
+    
+        let mySettings:UIUserNotificationSettings = UIUserNotificationSettings(forTypes: types, categories: categories as Set<NSObject>)
         
         UIApplication.sharedApplication().registerUserNotificationSettings(mySettings)
     }

@@ -21,20 +21,22 @@ class CoreDataHelper {
     context = NSManagedObjectContext()
     context.persistentStoreCoordinator = psc
     
-    //4
-    let documentsURL = applicationDocumentsDirectory()
-    let storeURL =
-    documentsURL.URLByAppendingPathComponent(Constants.iBiergartenIdentifier())
+    
     
     let options =
     [NSMigratePersistentStoresAutomaticallyOption: true]
+    //4
+    
+    let fileManager = NSFileManager.defaultManager()
+    let urls = fileManager.URLsForDirectory(.DocumentDirectory,
+        inDomains: .UserDomainMask) as! [NSURL]
+    
+    
+
     
     var error: NSError? = nil
-    store = psc.addPersistentStoreWithType(NSSQLiteStoreType,
-      configuration: nil,
-      URL: storeURL,
-      options: options,
-      error:&error)
+    store = psc.addPersistentStoreWithType(NSSQLiteStoreType, configuration: nil,
+      URL: urls[0], options: options, error:&error)
     
     if store == nil {
       println("Error adding persistent store: \(error)")
@@ -42,6 +44,13 @@ class CoreDataHelper {
     }
     
   }
+    
+    func getDocumentsUrl() -> NSURL{
+        let documentsURL = applicationDocumentsDirectory()
+        let storeURL =
+        documentsURL.URLByAppendingPathComponent(Constants.iBiergartenIdentifier())
+        return storeURL
+    }
   
   func saveContext() {
     var error: NSError? = nil
@@ -54,7 +63,7 @@ class CoreDataHelper {
     let fileManager = NSFileManager.defaultManager()
     
     let urls = fileManager.URLsForDirectory(.DocumentDirectory,
-      inDomains: .UserDomainMask) as [NSURL]
+      inDomains: .UserDomainMask) as! [NSURL]
     
     return urls[0]
   }

@@ -12,18 +12,12 @@ import CoreData
 
 class PWReachability{
     
-    let internetReachable: Reachability
     let nc = NSNotificationCenter.defaultCenter()
     let kAddHomeError: String = "kAddHomeError"
     var allBiergarten = Array<BiergartenVO>()
     
     init() {
-        self.internetReachable = Reachability.reachabilityForInternetConnection()
-        internetReachable.startNotifier()
-        
-        var reachability: Reachability = Reachability.reachabilityForInternetConnection()
-        var internetStatus:NetworkStatus = reachability.currentReachabilityStatus()
-        
+                
         let notificationCenter = NSNotificationCenter.defaultCenter()
         let mainQueue = NSOperationQueue.mainQueue()
         
@@ -41,22 +35,23 @@ class PWReachability{
                             
                             if let biergarten = bier as? NSDictionary{
                                 
-                                var id: Int16 = Int16(bier["id"]! as Int)
-                                var name: String = bier["name"]! as String
-                                var strasse: String = bier["strasse"]! as String
-                                var plz: String = bier["plz"]! as String
-                                var ort: String = bier["ort"]! as String
-                                var url: String = bier["url"]! as String
-                                var longitude: String = bier["longitude"]! as String
-                                var latitude: String = bier["latitude"]! as String
-                                var email: String = bier["email"]! as String
-                                var telefon: String = bier["telefon"]! as String
-                                var desc: String = bier["desc"]! as String
-                                var favorit: Bool = bier["favorit"]! as Bool
+                                var id: Int16 = Int16(bier["id"]! as! Int)
+                                var name: String = bier["name"]! as! String
+                                var strasse: String = bier["strasse"]! as! String
+                                var plz: String = bier["plz"]! as! String
+                                var ort: String = bier["ort"]! as! String
+                                var url: String = bier["url"]! as! String
+                                var longitude: String = bier["longitude"]! as! String
+                                var latitude: String = bier["latitude"]! as! String
+                                var email: String = bier["email"]! as! String
+                                var telefon: String = bier["telefon"]! as! String
+                                var desc: String = bier["desc"]! as! String
+                                var favorit: Bool = bier["favorit"]! as! Bool
                                 
                                 var biergartenModel: BiergartenVO = BiergartenVO(id: id, name:name, strasse:strasse, plz:plz, ort:ort, url:url, longitude:longitude, latitude:latitude, email:email, telefon:telefon, desc:desc, favorit: favorit)
                                 
-                                self.allBiergarten.append(biergartenModel)                                   }
+                                self.allBiergarten.append(biergartenModel)
+                            }
                         }
                     }
                 }

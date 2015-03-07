@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class DetailViewController: UIViewController, TypesTableViewControllerDelegate, CLLocationManagerDelegate, GMSMapViewDelegate{
     
     @IBOutlet weak var addressLabel: UILabel!
@@ -70,7 +71,7 @@ class DetailViewController: UIViewController, TypesTableViewControllerDelegate, 
     // kGMSTypeNormal, kGMSTypeSatellite, kGMSTypeHybrid,
     // kGMSTypeTerrain, kGMSTypeNone
     @IBAction func mapTypeSegmentPressed(sender: AnyObject) {
-        let segmentedControl = sender as UISegmentedControl
+        let segmentedControl = sender as! UISegmentedControl
         switch segmentedControl.selectedSegmentIndex {
         case 0:
             mapView.mapType = kGMSTypeNormal
@@ -89,7 +90,7 @@ class DetailViewController: UIViewController, TypesTableViewControllerDelegate, 
     
     func mapView(mapView: GMSMapView!, markerInfoContents marker: GMSMarker!) -> UIView! {
         // 1
-        let placeMarker = marker as PlaceMarker
+        let placeMarker = marker as! PlaceMarker
         
         // 2
         if let infoView = UIView.viewFromNibName("MarkerInfoView") as? MarkerInfoView {
@@ -147,7 +148,7 @@ class DetailViewController: UIViewController, TypesTableViewControllerDelegate, 
             //Add this line
             self.addressLabel.unlock()
             if let address = response?.firstResult() {
-                let lines = address.lines as [String]
+                let lines = address.lines as! [String]
                 self.addressLabel.text = join("\n", lines)
                 
                 let labelHeight = self.addressLabel.intrinsicContentSize().height
@@ -162,7 +163,7 @@ class DetailViewController: UIViewController, TypesTableViewControllerDelegate, 
     
     func mapView(mapView: GMSMapView!, didTapInfoWindowOfMarker marker: GMSMarker!) {
         // 1
-        let googleMarker = mapView.selectedMarker as PlaceMarker
+        let googleMarker = mapView.selectedMarker as! PlaceMarker
         
         // 2
         dataProvider.fetchDirectionsFrom(mapView.myLocation.coordinate, to: googleMarker.place.coordinate) {optionalRoute in
@@ -210,8 +211,8 @@ class DetailViewController: UIViewController, TypesTableViewControllerDelegate, 
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "Types Segue" {
-            let navigationController = segue.destinationViewController as UINavigationController
-            let controller = segue.destinationViewController.topViewController as TypesTableViewController
+            let navigationController = segue.destinationViewController as! UINavigationController
+            let controller = segue.destinationViewController.topViewController as! TypesTableViewController
             controller.selectedTypes = searchedTypes
             controller.delegate = self
         }
