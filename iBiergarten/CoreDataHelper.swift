@@ -28,15 +28,17 @@ class CoreDataHelper {
     //4
     
     let fileManager = NSFileManager.defaultManager()
+    
     let urls = fileManager.URLsForDirectory(.DocumentDirectory,
         inDomains: .UserDomainMask) as! [NSURL]
     
-    
+    let documentsURL = urls[0]
+    let storeURL = documentsURL.URLByAppendingPathComponent(Constants.iBiergartenIdentifier())
 
     
     var error: NSError? = nil
     store = psc.addPersistentStoreWithType(NSSQLiteStoreType, configuration: nil,
-      URL: urls[0], options: options, error:&error)
+      URL: storeURL, options: options, error:&error)
     
     if store == nil {
       println("Error adding persistent store: \(error)")
