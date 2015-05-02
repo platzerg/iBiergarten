@@ -12,7 +12,7 @@ class Constants
     
     class func iBiergartenIdentifier() -> String {return "iBiergarten"}
     
-    class func googleMapsApiKey() -> String {return "AIzaSyBydqUXFE-fbV_E4POTnhRfbZJpPDKUb-Q"}
+    class func googleMapsApiKey() -> String {return "AIzaSyBvn7fjaCZJ2_a6hmYQ4Vx_3cL1Z8ezdkI"}
     
     
     class func identifierFirstCategory() -> String {return "FIRST_CATEGORY"}

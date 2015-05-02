@@ -19,6 +19,15 @@ class GooglePlace {
   let photoReference: String?
   var photo: UIImage?
   
+  init(name: String, adress: String, coordinate: CLLocationCoordinate2D, placeType: String){
+    self.name = name
+    self.address = adress
+    self.coordinate = coordinate
+    self.placeType = placeType
+    self.photoReference = nil
+    self.photo = nil
+  }
+    
   init(dictionary:NSDictionary, acceptedTypes: [String])
   {
     name = dictionary["name"] as! String

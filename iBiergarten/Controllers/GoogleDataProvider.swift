@@ -12,7 +12,7 @@ import CoreLocation
 
 class GoogleDataProvider {
   
-  let apiKey = "AIzaSyB2Te9S3PdjWihZk1PZ1e3g7dkNA1hh1_I"
+  let apiKey = "AIzaSyBl_hXcAJrme8YwGCfU8oYRQeAeupqfXno"
   var photoCache = [String:UIImage]()
   var placesTask = NSURLSessionDataTask()
   var session: NSURLSession {

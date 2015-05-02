@@ -137,7 +137,7 @@ class DetailViewController: UIViewController, TypesTableViewControllerDelegate, 
             
             // 7
             locationManager.stopUpdatingLocation()
-            fetchNearbyPlaces(location.coordinate)
+            //fetchNearbyPlaces(location.coordinate)
         }
     }
     
@@ -207,6 +207,25 @@ class DetailViewController: UIViewController, TypesTableViewControllerDelegate, 
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
         mapView.delegate = self
+        
+        if let detailItem: AnyObject = self.detailItem{
+            // name: String, adress: String, coordinate: CLLocationCoordinate2D, placeType: String
+            var biergarten: Biergarten = self.detailItem as! Biergarten
+            
+            var myDoubleLat = Double((biergarten.latitude as NSString).doubleValue)
+            var myDoubleLon = Double((biergarten.longitude as NSString).doubleValue)
+            
+            var lat: CLLocationDegrees = CLLocationDegrees(myDoubleLat)
+            var lon: CLLocationDegrees = CLLocationDegrees(myDoubleLon)
+            
+            
+            var place: GooglePlace = GooglePlace(name: "gpl", adress: "neu", coordinate: CLLocationCoordinate2DMake(lat, lon), placeType: "bakery")
+            let marker = PlaceMarker(place: place)
+            
+            // 4
+            marker.map = self.mapView
+        }
+        
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -228,7 +247,10 @@ class DetailViewController: UIViewController, TypesTableViewControllerDelegate, 
     func configureView() {
         // Update the user interface for the detail item.
         if let detail: AnyObject = self.detailItem {
-//            if let label = self.detailDescriptionLabel {
+            var myBiergarten: Biergarten = self.detailItem as! Biergarten
+            println(myBiergarten)
+            
+            //            if let label = self.detailDescriptionLabel {
 //                label.text = detail.valueForKey("name")!.description
 //            }
         }

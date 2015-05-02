@@ -110,7 +110,7 @@ class PWReachability{
         dateComp.minute = 04;
         dateComp.timeZone = NSTimeZone.systemTimeZone()
         
-        var calender:NSCalendar = NSCalendar(calendarIdentifier: NSGregorianCalendar)!
+        var calender:NSCalendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)!
         var date:NSDate = calender.dateFromComponents(dateComp)!
         
         
