@@ -35,13 +35,13 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
         let controllers = self.splitViewController!.viewControllers
         self.detailViewController = controllers[controllers.count-1].topViewController as? DetailViewController
         
-        var reachability:PWReachability = PWReachability()
-        self.activateNCBiergartenLoaded(reachability)
-        reachability.fetchAllBiergarten()
+        var dataFecher:DataFecher = DataFecher()
+        self.activateNCBiergartenLoaded(dataFecher)
+        dataFecher.fetchAllBiergarten()
         
     }
     
-    func activateNCBiergartenLoaded(reachability:PWReachability) -> (){
+    func activateNCBiergartenLoaded(reachability:DataFecher) -> (){
         let notificationCenter = NSNotificationCenter.defaultCenter()
         let mainQueue = NSOperationQueue.mainQueue()
         var observer = notificationCenter.addObserverForName(Constants.notificationBiergartenLoaded(), object: nil, queue: mainQueue) { _ in

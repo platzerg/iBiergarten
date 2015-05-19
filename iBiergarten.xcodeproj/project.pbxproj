@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0B0CB8BC1A9BC53500E6CABB /* OBD2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0CB8BB1A9BC53500E6CABB /* OBD2ViewController.swift */; };
 		0B0CB8BE1A9BC55A00E6CABB /* IBeaconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0CB8BD1A9BC55A00E6CABB /* IBeaconViewController.swift */; };
-		0B0D1CB81A75248F008FD607 /* PWReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0D1CB71A75248F008FD607 /* PWReachability.swift */; };
 		0B140D701A728A82003CF8E7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B140D6F1A728A82003CF8E7 /* Images.xcassets */; };
 		0B207DB71A877BF200DC0A3F /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B207DB61A877BF200DC0A3F /* CoreBluetooth.framework */; };
 		0B207DB91A877C0600DC0A3F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B207DB81A877C0600DC0A3F /* Foundation.framework */; };
@@ -74,7 +73,6 @@
 /* Begin PBXFileReference section */
 		0B0CB8BB1A9BC53500E6CABB /* OBD2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBD2ViewController.swift; sourceTree = "<group>"; };
 		0B0CB8BD1A9BC55A00E6CABB /* IBeaconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBeaconViewController.swift; sourceTree = "<group>"; };
-		0B0D1CB71A75248F008FD607 /* PWReachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PWReachability.swift; path = iBiergarten/PWReachability.swift; sourceTree = "<group>"; };
 		0B140D6F1A728A82003CF8E7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0B207DB21A877BBC00DC0A3F /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../Library/Developer/Xcode/DerivedData/iBiergarten-bsigpibmsvsrghayssycmerzhzzz/Build/Products/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
 		0B207DB41A877BC300DC0A3F /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../../Library/Developer/Xcode/DerivedData/iBiergarten-bsigpibmsvsrghayssycmerzhzzz/Build/Products/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
@@ -125,7 +123,6 @@
 		0B7A0A881A700C54001F39C5 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		0B7A0A911A7020C7001F39C5 /* de */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = de; path = de.lproj/Muenchen_01.jpg; sourceTree = "<group>"; };
 		0B7A0A931A7020C8001F39C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = en; path = en.lproj/Muenchen_01.jpg; sourceTree = "<group>"; };
-		0B80D1301A8E725400B51CFC /* Demo.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Demo.playground; sourceTree = "<group>"; };
 		0BAA0B711A8F4B0000834417 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		0BAA0B721A8F4B0000834417 /* GoogleDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleDataProvider.swift; sourceTree = "<group>"; };
 		0BAA0B731A8F4B0000834417 /* GooglePlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePlace.swift; sourceTree = "<group>"; };
@@ -179,15 +176,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0B0D1CB61A752465008FD607 /* GPL */ = {
-			isa = PBXGroup;
-			children = (
-				0B80D1301A8E725400B51CFC /* Demo.playground */,
-				0B0D1CB71A75248F008FD607 /* PWReachability.swift */,
-			);
-			name = GPL;
-			sourceTree = "<group>";
-		};
 		0B38FBA31A90EB1A00ACDA93 /* Database */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,7 +199,6 @@
 		0B43744E1A6A65C600A6E4AB = {
 			isa = PBXGroup;
 			children = (
-				0B0D1CB61A752465008FD607 /* GPL */,
 				0B140D6F1A728A82003CF8E7 /* Images.xcassets */,
 				0B4374591A6A65C600A6E4AB /* iBiergarten */,
 				0B4374741A6A65C600A6E4AB /* iBiergartenTests */,
@@ -564,7 +551,6 @@
 				0BAA0B7B1A8F4B0000834417 /* MasterViewController.swift in Sources */,
 				0BAA0B7D1A8F4B0000834417 /* PlaceMarker.swift in Sources */,
 				0BAA0B781A8F4B0000834417 /* DetailViewController.swift in Sources */,
-				0B0D1CB81A75248F008FD607 /* PWReachability.swift in Sources */,
 				0BAA0B7C1A8F4B0000834417 /* NetworkViewController.swift in Sources */,
 				0B0CB8BE1A9BC55A00E6CABB /* IBeaconViewController.swift in Sources */,
 				0B38FBB21A910B6200ACDA93 /* Constants.swift in Sources */,
