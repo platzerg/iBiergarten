@@ -10,8 +10,6 @@ import Foundation
 import CoreData
 
 class DataFecher{
-    let nc = NSNotificationCenter.defaultCenter()
-    let kAddHomeError: String = "kAddHomeError"
     var allBiergarten = Array<BiergartenVO>()
     
     func fetchAllBiergarten() {
@@ -19,7 +17,7 @@ class DataFecher{
         let notificationCenter = NSNotificationCenter.defaultCenter()
         let mainQueue = NSOperationQueue.mainQueue()
         
-        let url = NSURL(string: "http://biergartenservice.appspot.com/platzerworld/biergarten/holebiergarten")
+        let url = NSURL(string: Constants.biergartenURL())
         let request = NSURLRequest(URL: url!)
         
         NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) {response,data,error in
@@ -28,23 +26,22 @@ class DataFecher{
                 let json : AnyObject! = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil)
                 
                 if let statusesArray = json as? NSDictionary{
-                    if let biergartenListe = statusesArray["biergartenListe"] as? NSArray{
+                    if let biergartenListe = statusesArray[Constants.jsonKeyForBiergartenListe()] as? NSArray{
                         for bier in biergartenListe {
                             
                             if let biergarten = bier as? NSDictionary{
-                                
-                                var id: Int16 = Int16(bier["id"]! as! Int)
-                                var name: String = bier["name"]! as! String
-                                var strasse: String = bier["strasse"]! as! String
-                                var plz: String = bier["plz"]! as! String
-                                var ort: String = bier["ort"]! as! String
-                                var url: String = bier["url"]! as! String
-                                var longitude: String = bier["longitude"]! as! String
-                                var latitude: String = bier["latitude"]! as! String
-                                var email: String = bier["email"]! as! String
-                                var telefon: String = bier["telefon"]! as! String
-                                var desc: String = bier["desc"]! as! String
-                                var favorit: Bool = bier["favorit"]! as! Bool
+                                var id: Int16 = Int16(bier[Constants.jsonKeyForId()]! as! Int)
+                                var name: String = bier[Constants.jsonKeyForName()]! as! String
+                                var strasse: String = bier[Constants.jsonKeyForStrasse()]! as! String
+                                var plz: String = bier[Constants.jsonKeyForPlz()]! as! String
+                                var ort: String = bier[Constants.jsonKeyForOr()]! as! String
+                                var url: String = bier[Constants.jsonKeyForUrl()]! as! String
+                                var longitude: String = bier[Constants.jsonKeyForLongitude()]! as! String
+                                var latitude: String = bier[Constants.jsonKeyForLatitude()]! as! String
+                                var email: String = bier[Constants.jsonKeyForEmail()]! as! String
+                                var telefon: String = bier[Constants.jsonKeyForTelefon()]! as! String
+                                var desc: String = bier[Constants.jsonKeyForDescription()]! as! String
+                                var favorit: Bool = bier[Constants.jsonKeyForFavorit()]! as! Bool
                                 
                                 var biergartenModel: BiergartenVO = BiergartenVO(id: id, name:name, strasse:strasse, plz:plz, ort:ort, url:url, longitude:longitude, latitude:latitude, email:email, telefon:telefon, desc:desc, favorit: favorit)
                                 
@@ -58,7 +55,7 @@ class DataFecher{
             self.handleError(error)
             UIApplication.sharedApplication().networkActivityIndicatorVisible = false
             
-            self.nc.postNotificationName(Constants.notificationBiergartenLoaded(), object: nil)
+            notificationCenter.postNotificationName(Constants.notificationBiergartenLoaded(), object: nil)
         }
         
         
@@ -83,7 +80,6 @@ class DataFecher{
             alert.show()
         }
     }
-    
     
     func getAllBiergarten() -> Array<BiergartenVO> {
         return self.allBiergarten
