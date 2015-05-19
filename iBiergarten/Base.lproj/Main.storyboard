@@ -77,9 +77,6 @@
                             <segments>
                                 <segment title="Normal"/>
                                 <segment title="Satellite"/>
-                                <segment title="Hybrid"/>
-                                <segment title="Terrain"/>
-                                <segment title="None"/>
                             </segments>
                             <connections>
                                 <action selector="mapTypeSegmentPressed:" destination="JEX-9P-axG" eventType="valueChanged" id="DIV-mp-ajy"/>

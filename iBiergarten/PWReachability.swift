@@ -16,7 +16,7 @@ class PWReachability{
     let kAddHomeError: String = "kAddHomeError"
     var allBiergarten = Array<BiergartenVO>()
     
-    init() {
+    func fetchAllBiergarten() {
                 
         let notificationCenter = NSNotificationCenter.defaultCenter()
         let mainQueue = NSOperationQueue.mainQueue()
@@ -57,28 +57,41 @@ class PWReachability{
                 }
             }
             
-            if error != nil {
-                let alert = UIAlertView(title:"Oops!",message:error.localizedDescription, delegate:nil, cancelButtonTitle:"OK")
-                alert.show()
-            }
+            self.handleError(error)
             UIApplication.sharedApplication().networkActivityIndicatorVisible = false
             
             self.nc.postNotificationName(Constants.notificationBiergartenLoaded(), object: nil)
         }
         
         
+        
+        /*
         var observer = notificationCenter.addObserverForName("gpl", object: nil, queue: mainQueue) { _ in
             print("gpl was here")
             
         }
-        
+       
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "methodOFReceivedNotication:", name:"NotificationIdentifier", object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "methodOFReceivedNotication1:", name:"NotificationIdentifier1", object: nil)
-        
+
         fetchNearbyPlaces()
-        
+        doOne()
+        */
     }
     
+    func handleError(error: NSError!) -> (){
+        if error != nil {
+            let alert = UIAlertView(title:"Oops!",message:error.localizedDescription, delegate:nil, cancelButtonTitle:"OK")
+            alert.show()
+        }
+    }
+    
+    
+    func getAllBiergarten() -> Array<BiergartenVO> {
+        return self.allBiergarten
+    }
+    
+    /*
     dynamic private func methodOFReceivedNotication(notification: NSNotification){
         println("methodOFReceivedNotication")
     }
@@ -86,17 +99,14 @@ class PWReachability{
     @objc private func methodOFReceivedNotication1(notification: NSNotification){
         println("methodOFReceivedNotication1")
     }
-    
-    func getAllBiergarten() -> Array<BiergartenVO> {
-        return self.allBiergarten
-    }
-    
+
     func fetchNearbyPlaces() {
         nc.postNotificationName("gpl", object: nil)
         nc.postNotificationName("NotificationIdentifier", object: nil)
         nc.postNotificationName("NotificationIdentifier1", object: nil)
 
     }
+
     
     func doOne() {
         NSNotificationCenter.defaultCenter().addObserver(self, selector:"drawAShape:", name: "actionOnePressed", object: nil)
@@ -104,10 +114,10 @@ class PWReachability{
         
         var dateComp:NSDateComponents = NSDateComponents()
         dateComp.year = 2015;
-        dateComp.month = 02;
+        dateComp.month = 05;
         dateComp.day = 02;
-        dateComp.hour = 15;
-        dateComp.minute = 04;
+        dateComp.hour = 17;
+        dateComp.minute = 12;
         dateComp.timeZone = NSTimeZone.systemTimeZone()
         
         var calender:NSCalendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)!
@@ -119,21 +129,27 @@ class PWReachability{
         notification.alertBody = "Hi, I am a notification"
         notification.fireDate = date
         
+        var notification1:UILocalNotification = UILocalNotification()
+        notification1.category = "FIRST_CATEGORY"
+        notification1.alertBody = "Hi, I am a lokal"
+        notification1.fireDate = date
+        
         UIApplication.sharedApplication().scheduleLocalNotification(notification)
+        UIApplication.sharedApplication().scheduleLocalNotification(notification1)
+
     }
     
+
     func drawAShape(notification:NSNotification){
         var view:UIView = UIView(frame:CGRectMake(10, 10, 100, 100))
         view.backgroundColor = UIColor.redColor()
         
         
     }
-    
     func showAMessage(notification:NSNotification){
         var message:UIAlertController = UIAlertController(title: "A Notification Message", message: "Hello there", preferredStyle: UIAlertControllerStyle.Alert)
         message.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
         
-       
-        
     }
+    */
 }

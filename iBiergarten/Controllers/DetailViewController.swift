@@ -9,7 +9,7 @@
 import UIKit
 
 
-class DetailViewController: UIViewController, TypesTableViewControllerDelegate, CLLocationManagerDelegate, GMSMapViewDelegate{
+class DetailViewController: UIViewController {
     
     @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var mapView: GMSMapView!
@@ -19,8 +19,17 @@ class DetailViewController: UIViewController, TypesTableViewControllerDelegate, 
     
     let locationManager = CLLocationManager()
     let dataProvider = GoogleDataProvider()
+    var biergartenDic = [Int16: PlaceMarker]()
 
+    deinit {
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
     
+    var allBiergarten:[Biergarten] = [] {
+        didSet {
+            self.prepareView()
+        }
+    }
 
     var detailItem: AnyObject? {
         didSet {
@@ -50,26 +59,10 @@ class DetailViewController: UIViewController, TypesTableViewControllerDelegate, 
         }
     }
     
-    func fetchNearbyPlaces(coordinate: CLLocationCoordinate2D) {
-        // 1
-        mapView.clear()
-        // 2
-        dataProvider.fetchPlacesNearCoordinate(coordinate, radius:mapRadius, types: searchedTypes) { places in
-            for place: GooglePlace in places {
-                // 3
-                let marker = PlaceMarker(place: place)
-                // 4
-                marker.map = self.mapView
-            }
-        }
-    }
-    
     @IBAction func refreshPlaces(sender: AnyObject) {
         fetchNearbyPlaces(mapView.camera.target)
     }
     
-    // kGMSTypeNormal, kGMSTypeSatellite, kGMSTypeHybrid,
-    // kGMSTypeTerrain, kGMSTypeNone
     @IBAction func mapTypeSegmentPressed(sender: AnyObject) {
         let segmentedControl = sender as! UISegmentedControl
         switch segmentedControl.selectedSegmentIndex {
@@ -77,67 +70,51 @@ class DetailViewController: UIViewController, TypesTableViewControllerDelegate, 
             mapView.mapType = kGMSTypeNormal
         case 1:
             mapView.mapType = kGMSTypeSatellite
-        case 2:
-            mapView.mapType = kGMSTypeHybrid
-        case 3:
-            mapView.mapType = kGMSTypeTerrain
-        case 4:
-            mapView.mapType = kGMSTypeNone
         default:
             mapView.mapType = mapView.mapType
         }
     }
     
-    func mapView(mapView: GMSMapView!, markerInfoContents marker: GMSMarker!) -> UIView! {
-        // 1
-        let placeMarker = marker as! PlaceMarker
-        
-        // 2
-        if let infoView = UIView.viewFromNibName("MarkerInfoView") as? MarkerInfoView {
-            // 3
-            infoView.nameLabel.text = placeMarker.place.name
-            
-            // 4
-            if let photo = placeMarker.place.photo {
-                infoView.placePhoto.image = photo
-            } else {
-                infoView.placePhoto.image = UIImage(named: "generic")
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        if let detailItem: AnyObject = self.detailItem{
+            constructMarker(self.detailItem as! Biergarten)
+        }
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+    }
+    
+    func prepareView() -> (){
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
+        mapView.delegate = self
+        buildMarker()
+    }
+    
+    func fetchNearbyPlaces(coordinate: CLLocationCoordinate2D) {
+        mapView.clear()
+      
+        dataProvider.fetchPlacesNearCoordinate(coordinate, radius:mapRadius, types: searchedTypes) { places in
+            for place: GooglePlace in places {
+                let marker = PlaceMarker(place: place)
+                marker.map = self.mapView
             }
-            
-            return infoView
-        } else {
-            return nil
         }
     }
     
-    // 1
-    func locationManager(manager: CLLocationManager!, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
-        // 2
-        if status == .AuthorizedWhenInUse {
-            
-            // 3
-            locationManager.startUpdatingLocation()
-            
-            //4
-            mapView.myLocationEnabled = true
-            mapView.settings.myLocationButton = true
-        }
-    }
-    
-    func mapView(mapView: GMSMapView!, didTapMarker marker: GMSMarker!) -> Bool {
-        mapCenterPinImage.fadeOut(0.25)
-        return false
-    }
-    
-    // 5
-    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
-        if let location = locations.first as? CLLocation {
-            // 6
-            mapView.camera = GMSCameraPosition(target: location.coordinate, zoom: 15, bearing: 0, viewingAngle: 0)
-            
-            // 7
-            locationManager.stopUpdatingLocation()
-            //fetchNearbyPlaces(location.coordinate)
+    func buildMarker(){
+        for biergarten in allBiergarten {
+            constructMarker(biergarten)
         }
     }
     
@@ -161,24 +138,78 @@ class DetailViewController: UIViewController, TypesTableViewControllerDelegate, 
         }
     }
     
-    func mapView(mapView: GMSMapView!, didTapInfoWindowOfMarker marker: GMSMarker!) {
-        // 1
-        let googleMarker = mapView.selectedMarker as! PlaceMarker
+    func constructMarker(biergarten:Biergarten) -> (){
+        let latString = biergarten.latitude.stringByReplacingOccurrencesOfString(",", withString: ".", options: NSStringCompareOptions.LiteralSearch, range: nil)
+        let lonString = biergarten.longitude.stringByReplacingOccurrencesOfString(",", withString: ".", options: NSStringCompareOptions.LiteralSearch, range: nil)
         
-        // 2
+        var place: GooglePlace = GooglePlace(name: biergarten.name, adress: biergarten.strasse, coordinate: CLLocationCoordinate2DMake(CLLocationDegrees((latString as NSString).doubleValue), CLLocationDegrees((lonString as NSString).doubleValue)), placeType: "biergarten")
+        let marker = PlaceMarker(place: place)
+        
+        marker.appearAnimation = kGMSMarkerAnimationPop
+
+        marker.map = self.mapView
+        let id: Int16 = Int16(biergarten.id)
+        println(id)
+        biergartenDic[biergarten.id] = marker
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "Types Segue" {
+            let navigationController = segue.destinationViewController as! UINavigationController
+            let controller = segue.destinationViewController.topViewController as! TypesTableViewController
+            controller.selectedTypes = searchedTypes
+            controller.delegate = self
+        }
+    }
+    
+    func configureView() {
+        if let detail: AnyObject = self.detailItem {
+            //prepareView()
+            var myBiergarten: Biergarten = self.detailItem as! Biergarten
+            println(myBiergarten)
+            
+            //            if let label = self.detailDescriptionLabel {
+//                label.text = detail.valueForKey("name")!.description
+//            }
+        }
+    }
+    
+    
+}
+
+extension DetailViewController: CLLocationManagerDelegate {
+    func locationManager(manager: CLLocationManager!, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+        if status == .AuthorizedWhenInUse {
+            locationManager.startUpdatingLocation()
+            mapView.myLocationEnabled = true
+            mapView.settings.myLocationButton = true
+        }
+    }
+    
+    func mapView(mapView: GMSMapView!, didTapMarker marker: GMSMarker!) -> Bool {
+        mapCenterPinImage.fadeOut(0.25)
+        return false
+    }
+    
+    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+        if let location = locations.first as? CLLocation {
+            mapView.camera = GMSCameraPosition(target: location.coordinate, zoom: 15, bearing: 0, viewingAngle: 0)
+            locationManager.stopUpdatingLocation()
+        }
+    }
+}
+
+extension DetailViewController: GMSMapViewDelegate{
+    func mapView(mapView: GMSMapView!, didTapInfoWindowOfMarker marker: GMSMarker!) {
+        let googleMarker = mapView.selectedMarker as! PlaceMarker
         dataProvider.fetchDirectionsFrom(mapView.myLocation.coordinate, to: googleMarker.place.coordinate) {optionalRoute in
             if let encodedRoute = optionalRoute {
-                // 3
                 let path = GMSPath(fromEncodedPath: encodedRoute)
                 let line = GMSPolyline(path: path)
-                
-                // 4
                 line.strokeWidth = 4.0
                 line.tappable = true
                 line.map = self.mapView
                 line.strokeColor = self.randomLineColor
-                
-                // 5
                 mapView.selectedMarker = nil
             }
         }
@@ -192,6 +223,22 @@ class DetailViewController: UIViewController, TypesTableViewControllerDelegate, 
         }
     }
     
+    func mapView(mapView: GMSMapView!, markerInfoContents marker: GMSMarker!) -> UIView! {
+        let placeMarker = marker as! PlaceMarker
+        if let infoView = UIView.viewFromNibName("MarkerInfoView") as? MarkerInfoView {
+            infoView.nameLabel.text = placeMarker.place.name
+            if let photo = placeMarker.place.photo {
+                infoView.placePhoto.image = photo
+            } else {
+                infoView.placePhoto.image = UIImage(named: "generic")
+            }
+            
+            return infoView
+        } else {
+            return nil
+        }
+    }
+    
     func didTapMyLocationButtonForMapView(mapView: GMSMapView!) -> Bool {
         mapCenterPinImage.fadeIn(0.25)
         mapView.selectedMarker = nil
@@ -201,66 +248,15 @@ class DetailViewController: UIViewController, TypesTableViewControllerDelegate, 
     func mapView(mapView: GMSMapView!, idleAtCameraPosition position: GMSCameraPosition!) {
         reverseGeocodeCoordinate(position.target)
     }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        locationManager.delegate = self
-        locationManager.requestWhenInUseAuthorization()
-        mapView.delegate = self
-        
-        if let detailItem: AnyObject = self.detailItem{
-            // name: String, adress: String, coordinate: CLLocationCoordinate2D, placeType: String
-            var biergarten: Biergarten = self.detailItem as! Biergarten
-            
-            var myDoubleLat = Double((biergarten.latitude as NSString).doubleValue)
-            var myDoubleLon = Double((biergarten.longitude as NSString).doubleValue)
-            
-            var lat: CLLocationDegrees = CLLocationDegrees(myDoubleLat)
-            var lon: CLLocationDegrees = CLLocationDegrees(myDoubleLon)
-            
-            
-            var place: GooglePlace = GooglePlace(name: "gpl", adress: "neu", coordinate: CLLocationCoordinate2DMake(lat, lon), placeType: "bakery")
-            let marker = PlaceMarker(place: place)
-            
-            // 4
-            marker.map = self.mapView
-        }
-        
-    }
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "Types Segue" {
-            let navigationController = segue.destinationViewController as! UINavigationController
-            let controller = segue.destinationViewController.topViewController as! TypesTableViewController
-            controller.selectedTypes = searchedTypes
-            controller.delegate = self
-        }
-    }
-    
-    // MARK: - Types Controller Delegate
+
+}
+
+extension DetailViewController: TypesTableViewControllerDelegate{
     func typesController(controller: TypesTableViewController, didSelectTypes types: [String]) {
         searchedTypes = sorted(controller.selectedTypes)
         dismissViewControllerAnimated(true, completion: nil)
         fetchNearbyPlaces(mapView.camera.target)
     }
-    
-    func configureView() {
-        // Update the user interface for the detail item.
-        if let detail: AnyObject = self.detailItem {
-            var myBiergarten: Biergarten = self.detailItem as! Biergarten
-            println(myBiergarten)
-            
-            //            if let label = self.detailDescriptionLabel {
-//                label.text = detail.valueForKey("name")!.description
-//            }
-        }
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 }
 
 

@@ -13,6 +13,10 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
 
     var detailViewController: DetailViewController? = nil
     var managedObjectContext: NSManagedObjectContext? = nil
+    
+    deinit {
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
 
     
     override func awakeFromNib() {
@@ -32,27 +36,32 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
         self.detailViewController = controllers[controllers.count-1].topViewController as? DetailViewController
         
         var reachability:PWReachability = PWReachability()
-        reachability.fetchNearbyPlaces()
+        self.activateNCBiergartenLoaded(reachability)
+        reachability.fetchAllBiergarten()
         
+    }
+    
+    func activateNCBiergartenLoaded(reachability:PWReachability) -> (){
         let notificationCenter = NSNotificationCenter.defaultCenter()
         let mainQueue = NSOperationQueue.mainQueue()
-        
         var observer = notificationCenter.addObserverForName(Constants.notificationBiergartenLoaded(), object: nil, queue: mainQueue) { _ in
-            print(Constants.notificationBiergartenLoaded())
+            
             var allBiergarten: Array<BiergartenVO> = reachability.getAllBiergarten()
             for biergarten in allBiergarten
             {
                 println(biergarten.name)
-                //self.insertNewObject(biergarten)
             }
+            
+            self.detailViewController?.allBiergarten = self.fetchedResultsController.fetchedObjects! as! [Biergarten]
+            
         }
-       
+    
+    
     }
 
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     func insertNewObject(sender: AnyObject) {
@@ -66,10 +75,16 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
         let context = self.fetchedResultsController.managedObjectContext
         let entity = self.fetchedResultsController.fetchRequest.entity!
         let newBiergartenManagedObject = NSEntityDescription.insertNewObjectForEntityForName(entity.name!, inManagedObjectContext: context) as! Biergarten
-             
-        // If appropriate, configure the new managed object.
-        // Normally you should use accessor methods, but using KVC here avoids the need to add a custom class to the template.
+        self.updateBiergarten(newBiergartenManagedObject, biergartenModel: biergartenModel)
         
+        
+        var error: NSError? = nil
+        if !context.save(&error) {
+            self.handleError(error)
+        }
+    }
+    
+    func updateBiergarten(newBiergartenManagedObject:Biergarten, biergartenModel:BiergartenVO) -> (){
         newBiergartenManagedObject.id = biergartenModel.id
         newBiergartenManagedObject.name = biergartenModel.name
         newBiergartenManagedObject.strasse = biergartenModel.strasse
@@ -82,27 +97,10 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
         newBiergartenManagedObject.telefon = biergartenModel.telefon
         newBiergartenManagedObject.desc = biergartenModel.desc
         newBiergartenManagedObject.favorit = biergartenModel.favorit
-        
-        
-        
-        /*
-        newManagedObject.setValue(biergartenModel.id, forKey: "id")
-        newManagedObject.setValue(biergartenModel.name, forKey: "name")
-        newManagedObject.setValue(biergartenModel.strasse, forKey: "strasse")
-        newManagedObject.setValue(biergartenModel.plz, forKey: "plz")
-        newManagedObject.setValue(biergartenModel.ort, forKey: "ort")
-        newManagedObject.setValue(biergartenModel.url, forKey: "url")
-        newManagedObject.setValue(biergartenModel.longitude, forKey: "longitude")
-        newManagedObject.setValue(biergartenModel.latitude, forKey: "latitude")
-        newManagedObject.setValue(biergartenModel.email, forKey: "email")
-        newManagedObject.setValue(biergartenModel.telefon, forKey: "telefon")
-        newManagedObject.setValue(biergartenModel.desc, forKey: "desc")
-        newManagedObject.setValue(biergartenModel.favorit, forKey: "favorit")    
-*/
-        
-        
-        var error: NSError? = nil
-        if !context.save(&error) {
+    }
+    
+    func handleError(error: NSError!) -> (){
+        if error != nil {
             println("Unresolved error \(error), \(error?.description)")
             abort()
         }
@@ -113,7 +111,8 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showDetail" {
             if let indexPath = self.tableView.indexPathForSelectedRow() {
-            let object = self.fetchedResultsController.objectAtIndexPath(indexPath) as! Biergarten
+                
+                let object = self.fetchedResultsController.objectAtIndexPath(indexPath) as! Biergarten
                 let controller = (segue.destinationViewController as! UINavigationController).topViewController as! DetailViewController
                 controller.detailItem = object
                 controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()

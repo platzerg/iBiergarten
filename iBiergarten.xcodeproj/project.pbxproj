@@ -11,8 +11,6 @@
 		0B0CB8BE1A9BC55A00E6CABB /* IBeaconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0CB8BD1A9BC55A00E6CABB /* IBeaconViewController.swift */; };
 		0B0D1CB81A75248F008FD607 /* PWReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0D1CB71A75248F008FD607 /* PWReachability.swift */; };
 		0B140D701A728A82003CF8E7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B140D6F1A728A82003CF8E7 /* Images.xcassets */; };
-		0B207DAD1A877B0F00DC0A3F /* HRMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B207DAC1A877B0F00DC0A3F /* HRMViewController.m */; };
-		0B207DAF1A877B1F00DC0A3F /* TopApps.json in Resources */ = {isa = PBXBuildFile; fileRef = 0B207DAE1A877B1F00DC0A3F /* TopApps.json */; };
 		0B207DB71A877BF200DC0A3F /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B207DB61A877BF200DC0A3F /* CoreBluetooth.framework */; };
 		0B207DB91A877C0600DC0A3F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B207DB81A877C0600DC0A3F /* Foundation.framework */; };
 		0B207DBB1A877C1F00DC0A3F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B207DBA1A877C1F00DC0A3F /* CoreGraphics.framework */; };
@@ -77,9 +75,6 @@
 		0B0CB8BD1A9BC55A00E6CABB /* IBeaconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBeaconViewController.swift; sourceTree = "<group>"; };
 		0B0D1CB71A75248F008FD607 /* PWReachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PWReachability.swift; path = iBiergarten/PWReachability.swift; sourceTree = "<group>"; };
 		0B140D6F1A728A82003CF8E7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		0B207DAB1A877B0F00DC0A3F /* HRMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRMViewController.h; sourceTree = "<group>"; };
-		0B207DAC1A877B0F00DC0A3F /* HRMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRMViewController.m; sourceTree = "<group>"; };
-		0B207DAE1A877B1F00DC0A3F /* TopApps.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TopApps.json; sourceTree = "<group>"; };
 		0B207DB21A877BBC00DC0A3F /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../Library/Developer/Xcode/DerivedData/iBiergarten-bsigpibmsvsrghayssycmerzhzzz/Build/Products/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
 		0B207DB41A877BC300DC0A3F /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../../Library/Developer/Xcode/DerivedData/iBiergarten-bsigpibmsvsrghayssycmerzhzzz/Build/Products/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		0B207DB61A877BF200DC0A3F /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
@@ -186,9 +181,6 @@
 			isa = PBXGroup;
 			children = (
 				0B80D1301A8E725400B51CFC /* Demo.playground */,
-				0B207DAE1A877B1F00DC0A3F /* TopApps.json */,
-				0B207DAB1A877B0F00DC0A3F /* HRMViewController.h */,
-				0B207DAC1A877B0F00DC0A3F /* HRMViewController.m */,
 				0B0D1CB71A75248F008FD607 /* PWReachability.swift */,
 			);
 			name = GPL;
@@ -470,7 +462,6 @@
 				16784583231F782E4C6FD0ED /* LaunchScreen.xib in Resources */,
 				0B7A0A7C1A7009DD001F39C5 /* icon_me@2x.png in Resources */,
 				0B4D314B1A6BADAB00AFC29D /* InfoPlist.strings in Resources */,
-				0B207DAF1A877B1F00DC0A3F /* TopApps.json in Resources */,
 				0B38FBAD1A90FC1F00ACDA93 /* Biergarten.json in Resources */,
 				1678426F67E71BAB076E1FEB /* Main.storyboard in Resources */,
 			);
@@ -563,7 +554,6 @@
 				0BAA0B791A8F4B0000834417 /* GoogleDataProvider.swift in Sources */,
 				0B43745D1A6A65C600A6E4AB /* AppDelegate.swift in Sources */,
 				0B38FBA51A90EB2500ACDA93 /* CoreDataHelper.swift in Sources */,
-				0B207DAD1A877B0F00DC0A3F /* HRMViewController.m in Sources */,
 				0B38FBAF1A91018500ACDA93 /* JsonDataHelper.swift in Sources */,
 				0B7A0A891A700C54001F39C5 /* MarkerInfoView.swift in Sources */,
 				0BAA0B801A8F4B2100834417 /* BiergartenVO.swift in Sources */,

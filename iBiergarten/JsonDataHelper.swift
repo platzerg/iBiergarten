@@ -15,9 +15,7 @@ class JsonDataHelper : CoreDataHelper {
         let fetchRequest = NSFetchRequest(entityName: "Biergarten")
         var error: NSError? = nil
         
-        let results =
-        super.context.countForFetchRequest(fetchRequest,
-            error: &error)
+        let results = super.context.countForFetchRequest(fetchRequest, error: &error)
         
         if (results == 0) {
             
