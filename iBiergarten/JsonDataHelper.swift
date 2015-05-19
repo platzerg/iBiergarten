@@ -22,12 +22,11 @@ class JsonDataHelper : CoreDataHelper {
             var fetchError: NSError? = nil
             
             if let results =
-                super.context.executeFetchRequest(fetchRequest,
-                    error: &fetchError) {
-                        for object in results {
-                            let team = object as! Biergarten
-                            super.context.deleteObject(team)
-                        }
+                super.context.executeFetchRequest(fetchRequest, error: &fetchError) {
+                    for object in results {
+                        let team = object as! Biergarten
+                        super.context.deleteObject(team)
+                    }
             }
             
             super.saveContext()
@@ -86,7 +85,5 @@ class JsonDataHelper : CoreDataHelper {
             }
         }
         super.saveContext()
-        //println("Imported \(json.count) Biergarten")
     }
-
 }

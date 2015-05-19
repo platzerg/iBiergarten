@@ -11,11 +11,10 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
-    @IBOutlet weak var addressLabel: UILabel!
+    
     @IBOutlet weak var mapView: GMSMapView!
-    @IBOutlet weak var mapCenterPinImage: UIImageView!
     @IBOutlet weak var pinImageVerticalConstraint: NSLayoutConstraint!
-    var searchedTypes = ["bakery", "bar", "cafe", "grocery_or_supermarket", "restaurant"]
+    var searchedTypes = ["biergarten", "beergarden"]
     
     let locationManager = CLLocationManager()
     let dataProvider = GoogleDataProvider()
@@ -120,20 +119,10 @@ class DetailViewController: UIViewController {
     
     func reverseGeocodeCoordinate(coordinate: CLLocationCoordinate2D) {
         let geocoder = GMSGeocoder()
-        geocoder.reverseGeocodeCoordinate(coordinate) { response , error in
-            
-            //Add this line
-            self.addressLabel.unlock()
+        geocoder.reverseGeocodeCoordinate(coordinate) { response , error
+            in
             if let address = response?.firstResult() {
                 let lines = address.lines as! [String]
-                self.addressLabel.text = join("\n", lines)
-                
-                let labelHeight = self.addressLabel.intrinsicContentSize().height
-                self.mapView.padding = UIEdgeInsets(top: self.topLayoutGuide.length, left: 0, bottom: labelHeight, right: 0)
-                UIView.animateWithDuration(0.25) {
-                    // GPL: self.pinImageVerticalConstraint.constant = ((labelHeight - self.topLayoutGuide.length) * 0.5)
-                    self.view.layoutIfNeeded()
-                }
             }
         }
     }
@@ -164,16 +153,10 @@ class DetailViewController: UIViewController {
     
     func configureView() {
         if let detail: AnyObject = self.detailItem {
-            //prepareView()
             var myBiergarten: Biergarten = self.detailItem as! Biergarten
             println(myBiergarten)
-            
-            //            if let label = self.detailDescriptionLabel {
-//                label.text = detail.valueForKey("name")!.description
-//            }
         }
     }
-    
     
 }
 
@@ -186,10 +169,6 @@ extension DetailViewController: CLLocationManagerDelegate {
         }
     }
     
-    func mapView(mapView: GMSMapView!, didTapMarker marker: GMSMarker!) -> Bool {
-        mapCenterPinImage.fadeOut(0.25)
-        return false
-    }
     
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
         if let location = locations.first as? CLLocation {
@@ -215,13 +194,6 @@ extension DetailViewController: GMSMapViewDelegate{
         }
     }
     
-    func mapView(mapView: GMSMapView!, willMove gesture: Bool) {
-        addressLabel.lock()
-        if (gesture) {
-            mapCenterPinImage.fadeIn(0.25)
-            mapView.selectedMarker = nil
-        }
-    }
     
     func mapView(mapView: GMSMapView!, markerInfoContents marker: GMSMarker!) -> UIView! {
         let placeMarker = marker as! PlaceMarker
@@ -230,7 +202,7 @@ extension DetailViewController: GMSMapViewDelegate{
             if let photo = placeMarker.place.photo {
                 infoView.placePhoto.image = photo
             } else {
-                infoView.placePhoto.image = UIImage(named: "generic")
+                infoView.placePhoto.image = UIImage(named: "biergarten_pin")
             }
             
             return infoView
@@ -240,22 +212,16 @@ extension DetailViewController: GMSMapViewDelegate{
     }
     
     func didTapMyLocationButtonForMapView(mapView: GMSMapView!) -> Bool {
-        mapCenterPinImage.fadeIn(0.25)
         mapView.selectedMarker = nil
         return false
-    }
-    
-    func mapView(mapView: GMSMapView!, idleAtCameraPosition position: GMSCameraPosition!) {
-        reverseGeocodeCoordinate(position.target)
     }
 
 }
 
 extension DetailViewController: TypesTableViewControllerDelegate{
-    func typesController(controller: TypesTableViewController, didSelectTypes types: [String]) {
+    func makeFinish(controller: TypesTableViewController) {
         searchedTypes = sorted(controller.selectedTypes)
         dismissViewControllerAnimated(true, completion: nil)
-        fetchNearbyPlaces(mapView.camera.target)
     }
 }
 

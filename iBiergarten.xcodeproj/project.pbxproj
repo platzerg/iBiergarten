@@ -179,6 +179,8 @@
 		0B38FBA31A90EB1A00ACDA93 /* Database */ = {
 			isa = PBXGroup;
 			children = (
+				0B43745E1A6A65C600A6E4AB /* iBiergarten.xcdatamodeld */,
+				0B67EE8A1A9082200086723A /* Biergarten.swift */,
 				0B38FBAA1A90FC1F00ACDA93 /* Biergarten.plist */,
 				0B38FBAB1A90FC1F00ACDA93 /* Biergarten.json */,
 				0B38FBA41A90EB2500ACDA93 /* CoreDataHelper.swift */,
@@ -222,8 +224,6 @@
 			children = (
 				0B38FBB01A910B4A00ACDA93 /* Helper */,
 				0B38FBA31A90EB1A00ACDA93 /* Database */,
-				0B43745E1A6A65C600A6E4AB /* iBiergarten.xcdatamodeld */,
-				0B67EE8A1A9082200086723A /* Biergarten.swift */,
 				0B43745A1A6A65C600A6E4AB /* Supporting Files */,
 				0B7A0A851A700C48001F39C5 /* View */,
 				0B4D312D1A6BA60400AFC29D /* Images */,

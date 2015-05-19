@@ -8,13 +8,14 @@
 
 import UIKit
 
+// Protocoll TypesTableViewControllerDelegate
 protocol TypesTableViewControllerDelegate: class {
-  func typesController(controller: TypesTableViewController, didSelectTypes types: [String])
+  func makeFinish(controller: TypesTableViewController)
 }
 
 class TypesTableViewController: UITableViewController {
   
-  let possibleTypesDictionary = ["bakery":"Guenter"]
+  let possibleTypesDictionary = ["biergarten":"beergarden"]
   var selectedTypes: [String]!
   weak var delegate: TypesTableViewControllerDelegate!
   var sortedKeys: [String] {
@@ -25,7 +26,7 @@ class TypesTableViewController: UITableViewController {
   
   // MARK: - Actions
   @IBAction func donePressed(sender: AnyObject) {
-    delegate?.typesController(self, didSelectTypes: selectedTypes)
+    delegate?.makeFinish(self)
   }
     
   // MARK: - Table view data source
