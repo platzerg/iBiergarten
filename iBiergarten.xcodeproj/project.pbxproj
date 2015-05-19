@@ -15,6 +15,7 @@
 		0B207DB91A877C0600DC0A3F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B207DB81A877C0600DC0A3F /* Foundation.framework */; };
 		0B207DBB1A877C1F00DC0A3F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B207DBA1A877C1F00DC0A3F /* CoreGraphics.framework */; };
 		0B207DBD1A877C2A00DC0A3F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B207DBC1A877C2A00DC0A3F /* UIKit.framework */; };
+		0B2214CC1B0B8D3C0033462E /* DataFecher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2214CB1B0B8D3C0033462E /* DataFecher.swift */; };
 		0B38FBA51A90EB2500ACDA93 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B38FBA41A90EB2500ACDA93 /* CoreDataHelper.swift */; };
 		0B38FBAC1A90FC1F00ACDA93 /* Biergarten.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B38FBAA1A90FC1F00ACDA93 /* Biergarten.plist */; };
 		0B38FBAD1A90FC1F00ACDA93 /* Biergarten.json in Resources */ = {isa = PBXBuildFile; fileRef = 0B38FBAB1A90FC1F00ACDA93 /* Biergarten.json */; };
@@ -54,10 +55,10 @@
 		0BAA0B7D1A8F4B0000834417 /* PlaceMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAA0B761A8F4B0000834417 /* PlaceMarker.swift */; };
 		0BAA0B7E1A8F4B0000834417 /* TypesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAA0B771A8F4B0000834417 /* TypesTableViewController.swift */; };
 		0BAA0B801A8F4B2100834417 /* BiergartenVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAA0B7F1A8F4B2100834417 /* BiergartenVO.swift */; };
-		0CA2C334CFC7C7173E2995A7 /* libPods-iBiergartenTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0C9348F802374B2B213AFE /* libPods-iBiergartenTests.a */; };
 		1678426F67E71BAB076E1FEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1678401170F337BB58F70469 /* Main.storyboard */; };
 		16784583231F782E4C6FD0ED /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16784344909E4373CBDE9CE3 /* LaunchScreen.xib */; };
-		CF2D7A4C5B62F46B8E08D0F8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17FDADA7D65783769D9DACDA /* libPods.a */; };
+		E0425B0BE48960AD1280B3C4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0407152B689EDF2F03DB188 /* libPods.a */; };
+		E340BD3A35F57BBFA9B543AC /* libPods-iBiergartenTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BE7DEBEF57EF3D6547C80BE /* libPods-iBiergartenTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		0B207DB81A877C0600DC0A3F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0B207DBA1A877C1F00DC0A3F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		0B207DBC1A877C2A00DC0A3F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0B2214CB1B0B8D3C0033462E /* DataFecher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataFecher.swift; sourceTree = "<group>"; };
 		0B38FBA41A90EB2500ACDA93 /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		0B38FBAA1A90FC1F00ACDA93 /* Biergarten.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Biergarten.plist; sourceTree = "<group>"; };
 		0B38FBAB1A90FC1F00ACDA93 /* Biergarten.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Biergarten.json; sourceTree = "<group>"; };
@@ -133,12 +135,12 @@
 		0BAA0B771A8F4B0000834417 /* TypesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypesTableViewController.swift; sourceTree = "<group>"; };
 		0BAA0B7F1A8F4B2100834417 /* BiergartenVO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BiergartenVO.swift; path = iBiergarten/BiergartenVO.swift; sourceTree = SOURCE_ROOT; };
 		16784F7F312FB9B548AE3AC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = iBiergarten/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
-		17FDADA7D65783769D9DACDA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B56E6F1CA3FBCBCF5F5CA55 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		4BE7DEBEF57EF3D6547C80BE /* libPods-iBiergartenTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iBiergartenTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63CE92448F7E8DA6C476B74C /* Pods-iBiergartenTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iBiergartenTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iBiergartenTests/Pods-iBiergartenTests.release.xcconfig"; sourceTree = "<group>"; };
-		6A0C9348F802374B2B213AFE /* libPods-iBiergartenTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iBiergartenTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D1CAB765807E63B855CEE51 /* Pods-iBiergartenTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iBiergartenTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iBiergartenTests/Pods-iBiergartenTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DCFE5BDAE12D038C0E089F8A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		E0407152B689EDF2F03DB188 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,7 +164,7 @@
 				0B5714851A6A7B1900E44CB3 /* OpenGLES.framework in Frameworks */,
 				0B5714831A6A7B1100E44CB3 /* QuartzCore.framework in Frameworks */,
 				0B5714811A6A7B0B00E44CB3 /* SystemConfiguration.framework in Frameworks */,
-				CF2D7A4C5B62F46B8E08D0F8 /* libPods.a in Frameworks */,
+				E0425B0BE48960AD1280B3C4 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,7 +172,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CA2C334CFC7C7173E2995A7 /* libPods-iBiergartenTests.a in Frameworks */,
+				E340BD3A35F57BBFA9B543AC /* libPods-iBiergartenTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +195,7 @@
 				0B38FBAB1A90FC1F00ACDA93 /* Biergarten.json */,
 				0B38FBA41A90EB2500ACDA93 /* CoreDataHelper.swift */,
 				0B38FBAE1A91018500ACDA93 /* JsonDataHelper.swift */,
+				0B2214CB1B0B8D3C0033462E /* DataFecher.swift */,
 			);
 			name = Database;
 			sourceTree = "<group>";
@@ -349,8 +352,8 @@
 				0B5714841A6A7B1900E44CB3 /* OpenGLES.framework */,
 				0B5714821A6A7B1100E44CB3 /* QuartzCore.framework */,
 				0B5714801A6A7B0B00E44CB3 /* SystemConfiguration.framework */,
-				17FDADA7D65783769D9DACDA /* libPods.a */,
-				6A0C9348F802374B2B213AFE /* libPods-iBiergartenTests.a */,
+				E0407152B689EDF2F03DB188 /* libPods.a */,
+				4BE7DEBEF57EF3D6547C80BE /* libPods-iBiergartenTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -547,6 +550,7 @@
 			files = (
 				0B67EE8B1A9082200086723A /* Biergarten.swift in Sources */,
 				0B7A0A8B1A700C54001F39C5 /* UIViewExtension.swift in Sources */,
+				0B2214CC1B0B8D3C0033462E /* DataFecher.swift in Sources */,
 				0B4374601A6A65C600A6E4AB /* iBiergarten.xcdatamodeld in Sources */,
 				0BAA0B7A1A8F4B0000834417 /* GooglePlace.swift in Sources */,
 				0B0CB8BC1A9BC53500E6CABB /* OBD2ViewController.swift in Sources */,

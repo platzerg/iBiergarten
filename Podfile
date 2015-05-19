@@ -1,3 +1,7 @@
+
+platform :ios, '8.0'
+#use_frameworks!
+
 source 'https://github.com/CocoaPods/Specs.git'
 xcodeproj "iBiergarten.xcodeproj"
 #inhibit_all_warnings!
@@ -5,11 +9,12 @@ xcodeproj "iBiergarten.xcodeproj"
 ####
 
 workspace 'iBiergarten.xcworkspace'
-#use_frameworks!
-platform :ios, '8.0'
+
+
 pod 'AFNetworking'
 pod 'Google-Maps-iOS-SDK'
 pod 'pop', '~> 1.0'
+#pod 'SwiftyJSON', '~> 2.1'
 
 target 'iBiergarten' do
 
