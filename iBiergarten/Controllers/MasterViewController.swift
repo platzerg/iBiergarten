@@ -53,12 +53,9 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
             }
             
             self.detailViewController?.allBiergarten = self.fetchedResultsController.fetchedObjects! as! [Biergarten]
-            
         }
-    
-    
     }
-
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

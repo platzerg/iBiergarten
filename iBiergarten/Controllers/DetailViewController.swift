@@ -18,22 +18,25 @@ class DetailViewController: UIViewController {
     
     let locationManager = CLLocationManager()
     let dataProvider = GoogleDataProvider()
-    var biergartenDic = [Int16: PlaceMarker]()
-
+    
     deinit {
         NSNotificationCenter.defaultCenter().removeObserver(self)
+        locationManager.delegate = nil
     }
     
     var allBiergarten:[Biergarten] = [] {
         didSet {
-            self.prepareView()
+            for biergarten in allBiergarten {
+                constructMarker(biergarten)
+            }
         }
     }
-
+    
     var detailItem: AnyObject? {
         didSet {
-            // Update the view.
-            self.configureView()
+            if let detail: AnyObject = self.detailItem {
+                var myBiergarten: Biergarten = self.detailItem as! Biergarten
+            }
         }
     }
     
@@ -79,25 +82,21 @@ class DetailViewController: UIViewController {
         if let detailItem: AnyObject = self.detailItem{
             constructMarker(self.detailItem as! Biergarten)
         }
+        
+        initLocationManager()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        mapView.clear()
     }
     
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-    }
-    
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-    }
-    
-    func prepareView() -> (){
-        locationManager.delegate = self
-        locationManager.requestWhenInUseAuthorization()
-        mapView.delegate = self
-        buildMarker()
+    func initLocationManager() -> () {
+        if (locationManager.delegate == nil) {
+            locationManager.delegate = self
+            locationManager.requestWhenInUseAuthorization()
+            mapView.delegate = self
+        }
     }
     
     func fetchNearbyPlaces(coordinate: CLLocationCoordinate2D) {
@@ -108,12 +107,6 @@ class DetailViewController: UIViewController {
                 let marker = PlaceMarker(place: place)
                 marker.map = self.mapView
             }
-        }
-    }
-    
-    func buildMarker(){
-        for biergarten in allBiergarten {
-            constructMarker(biergarten)
         }
     }
     
@@ -135,11 +128,8 @@ class DetailViewController: UIViewController {
         let marker = PlaceMarker(place: place)
         
         marker.appearAnimation = kGMSMarkerAnimationPop
-
-        marker.map = self.mapView
-        let id: Int16 = Int16(biergarten.id)
-        println(id)
-        biergartenDic[biergarten.id] = marker
+        marker.map = mapView
+        
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -148,13 +138,6 @@ class DetailViewController: UIViewController {
             let controller = segue.destinationViewController.topViewController as! TypesTableViewController
             controller.selectedTypes = searchedTypes
             controller.delegate = self
-        }
-    }
-    
-    func configureView() {
-        if let detail: AnyObject = self.detailItem {
-            var myBiergarten: Biergarten = self.detailItem as! Biergarten
-            println(myBiergarten)
         }
     }
     
