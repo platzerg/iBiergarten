@@ -13,6 +13,7 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
 
     var detailViewController: DetailViewController? = nil
     var managedObjectContext: NSManagedObjectContext? = nil
+    var allFechtedBiergarten:[Biergarten] = []
     
     deinit {
         NSNotificationCenter.defaultCenter().removeObserver(self)
@@ -52,7 +53,10 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
                 println(biergarten.name)
             }
             
-            self.detailViewController?.allBiergarten = self.fetchedResultsController.fetchedObjects! as! [Biergarten]
+            self.allFechtedBiergarten  = self.fetchedResultsController.fetchedObjects! as! [Biergarten]
+            self.detailViewController?.allBiergarten = self.allFechtedBiergarten
+            self.detailViewController?.tmpAllBiergarten = self.allFechtedBiergarten
+            
         }
     }
     
@@ -111,7 +115,7 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
                 
                 let object = self.fetchedResultsController.objectAtIndexPath(indexPath) as! Biergarten
                 let controller = (segue.destinationViewController as! UINavigationController).topViewController as! DetailViewController
-                controller.detailItem = object
+                controller.detailItem = (object, self.allFechtedBiergarten)
                 controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }

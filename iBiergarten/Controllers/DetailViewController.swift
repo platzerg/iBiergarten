@@ -24,18 +24,25 @@ class DetailViewController: UIViewController {
         locationManager.delegate = nil
     }
     
-    var allBiergarten:[Biergarten] = [] {
+    var allBiergarten:[Biergarten] = []
+    var selectedBiergarten: Biergarten?
+    
+    var tmpAllBiergarten:[Biergarten] = [] {
         didSet {
             for biergarten in allBiergarten {
                 constructMarker(biergarten)
             }
         }
     }
+
     
-    var detailItem: AnyObject? {
+    var detailItem: (detailItem: AnyObject?, allItems: AnyObject?) {
         didSet {
-            if let detail: AnyObject = self.detailItem {
-                var myBiergarten: Biergarten = self.detailItem as! Biergarten
+            if let detail: AnyObject = self.detailItem.detailItem {
+                self.selectedBiergarten = self.detailItem.detailItem as? Biergarten            }
+            
+            if let detail: AnyObject = self.detailItem.allItems {
+                self.allBiergarten = self.detailItem.allItems as! [Biergarten]
             }
         }
     }
@@ -79,11 +86,25 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let detailItem: AnyObject = self.detailItem{
-            constructMarker(self.detailItem as! Biergarten)
+        self.mapView.clear()
+        initLocationManager()
+        var marker: PlaceMarker?
+        if let detailItem: AnyObject = self.detailItem.detailItem{
+            var biergarten: Biergarten = self.detailItem.detailItem as! Biergarten
+            
+            marker = constructMarker(biergarten)
+            
         }
         
-        initLocationManager()
+        for biergarten in allBiergarten {
+            constructMarker(biergarten)
+        }
+        
+        if let marker = marker{
+            mapView.selectedMarker = marker
+        }
+        
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -120,15 +141,16 @@ class DetailViewController: UIViewController {
         }
     }
     
-    func constructMarker(biergarten:Biergarten) -> (){
+    func constructMarker(biergarten:Biergarten) -> (PlaceMarker){
         let latString = biergarten.latitude.stringByReplacingOccurrencesOfString(",", withString: ".", options: NSStringCompareOptions.LiteralSearch, range: nil)
         let lonString = biergarten.longitude.stringByReplacingOccurrencesOfString(",", withString: ".", options: NSStringCompareOptions.LiteralSearch, range: nil)
         
         var place: GooglePlace = GooglePlace(name: biergarten.name, adress: biergarten.strasse, coordinate: CLLocationCoordinate2DMake(CLLocationDegrees((latString as NSString).doubleValue), CLLocationDegrees((lonString as NSString).doubleValue)), placeType: "biergarten")
         let marker = PlaceMarker(place: place)
-        
         marker.appearAnimation = kGMSMarkerAnimationPop
         marker.map = mapView
+        
+        return marker
         
     }
     
@@ -155,7 +177,7 @@ extension DetailViewController: CLLocationManagerDelegate {
     
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
         if let location = locations.first as? CLLocation {
-            mapView.camera = GMSCameraPosition(target: location.coordinate, zoom: 15, bearing: 0, viewingAngle: 0)
+            mapView.camera = GMSCameraPosition(target: location.coordinate, zoom: 12, bearing: 0, viewingAngle: 0)
             locationManager.stopUpdatingLocation()
         }
     }

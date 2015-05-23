@@ -146,7 +146,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 extension AppDelegate: UISplitViewControllerDelegate {
     func splitViewController(splitViewController: UISplitViewController, collapseSecondaryViewController secondaryViewController:UIViewController!, ontoPrimaryViewController primaryViewController:UIViewController!) -> Bool {
         if let secondaryAsNavController = secondaryViewController as? UINavigationController {
-            if let topAsDetailController = secondaryAsNavController.topViewController as? DetailViewController where topAsDetailController.detailItem == nil {
+            if let topAsDetailController = secondaryAsNavController.topViewController as? DetailViewController where topAsDetailController.detailItem.detailItem == nil {
                 // If there's no session, then we only want to show the primary. This is the
                 // only case where we return true. Remember, returning true means we've handled
                 // the collapse -- in this case, we've handled it by doing nothing! :]
