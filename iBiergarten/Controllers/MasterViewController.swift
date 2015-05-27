@@ -69,6 +69,18 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
         var biergartenModel: BiergartenVO
         if(sender is UIBarButtonItem){
             biergartenModel = BiergartenVO()
+            biergartenModel.id = 0815
+            biergartenModel.name = "GPL_name"
+            biergartenModel.strasse = "GPL_strasse"
+            biergartenModel.plz = "GPL_plz"
+            biergartenModel.ort = "GPL_ort"
+            biergartenModel.url = "GPL_url"
+            biergartenModel.longitude = "48.181051"
+            biergartenModel.latitude = "11.586875"
+            biergartenModel.email = "GPL_email"
+            biergartenModel.telefon = "GPL_telefon"
+            biergartenModel.desc = "GPL_desc"
+            biergartenModel.favorit = true
         }else{
             biergartenModel = (sender as! BiergartenVO)
         }
@@ -78,11 +90,24 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
         let newBiergartenManagedObject = NSEntityDescription.insertNewObjectForEntityForName(entity.name!, inManagedObjectContext: context) as! Biergarten
         self.updateBiergarten(newBiergartenManagedObject, biergartenModel: biergartenModel)
         
+        self.pushToCloud(biergartenModel)
         
         var error: NSError? = nil
         if !context.save(&error) {
             self.handleError(error)
         }
+    }
+    
+    func pushToCloud(biergartenVO: BiergartenVO) -> (){
+        var urlString = "http://gaejdo3.appspot.com/platzerworld/biergarten/addbiergarten?name=\(biergartenVO.name)&strasse=\(biergartenVO.name)&plz=\(biergartenVO.plz)&ort=\(biergartenVO.ort)&telefon=\(biergartenVO.telefon)&email=\(biergartenVO.email)&url=\(biergartenVO.url)&longitude=\(biergartenVO.longitude)&latitude=\(biergartenVO.latitude)&desc=\(biergartenVO.desc)&favorit=\(biergartenVO.favorit)"
+        
+        let url = NSURL(string: urlString)
+        
+        let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, error) in
+            println(NSString(data: data, encoding: NSUTF8StringEncoding))
+        }
+        
+        task.resume()
     }
     
     func updateBiergarten(newBiergartenManagedObject:Biergarten, biergartenModel:BiergartenVO) -> (){
