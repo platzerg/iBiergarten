@@ -23,6 +23,7 @@
 		0B43745D1A6A65C600A6E4AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B43745C1A6A65C600A6E4AB /* AppDelegate.swift */; };
 		0B4374601A6A65C600A6E4AB /* iBiergarten.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0B43745E1A6A65C600A6E4AB /* iBiergarten.xcdatamodeld */; };
 		0B4374781A6A65C600A6E4AB /* iBiergartenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4374771A6A65C600A6E4AB /* iBiergartenTests.swift */; };
+		0B4779E41B178435008A109C /* BiergartenDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4779E31B178435008A109C /* BiergartenDetailViewController.swift */; };
 		0B4D31291A6BA59400AFC29D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0B4D312B1A6BA59400AFC29D /* Localizable.strings */; };
 		0B4D31481A6BAC1B00AFC29D /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0B4D31471A6BAC1B00AFC29D /* Settings.bundle */; };
 		0B4D314B1A6BADAB00AFC29D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0B4D314D1A6BADAB00AFC29D /* InfoPlist.strings */; };
@@ -56,8 +57,8 @@
 		0BAA0B801A8F4B2100834417 /* BiergartenVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAA0B7F1A8F4B2100834417 /* BiergartenVO.swift */; };
 		1678426F67E71BAB076E1FEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1678401170F337BB58F70469 /* Main.storyboard */; };
 		16784583231F782E4C6FD0ED /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16784344909E4373CBDE9CE3 /* LaunchScreen.xib */; };
-		E0425B0BE48960AD1280B3C4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0407152B689EDF2F03DB188 /* libPods.a */; };
-		E340BD3A35F57BBFA9B543AC /* libPods-iBiergartenTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BE7DEBEF57EF3D6547C80BE /* libPods-iBiergartenTests.a */; };
+		2BD0C856ADCE55F476489CCE /* Pods_iBiergarten.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBFF5E7754718C2C778C03F1 /* Pods_iBiergarten.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		7EF02FEA8694D122880A1456 /* Pods_iBiergartenTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 449CA7663770F93662ED6667 /* Pods_iBiergartenTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		0B4374711A6A65C600A6E4AB /* iBiergartenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iBiergartenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B4374771A6A65C600A6E4AB /* iBiergartenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iBiergartenTests.swift; sourceTree = "<group>"; };
 		0B4374811A6A66C500A6E4AB /* Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Swift-Bridging-Header.h"; path = "../Swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		0B4779E31B178435008A109C /* BiergartenDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BiergartenDetailViewController.swift; path = ../Storyboard/BiergartenDetailViewController.swift; sourceTree = "<group>"; };
 		0B4D312A1A6BA59400AFC29D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0B4D312C1A6BA59800AFC29D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0B4D313A1A6BA94200AFC29D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
@@ -132,12 +134,12 @@
 		0BAA0B771A8F4B0000834417 /* TypesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypesTableViewController.swift; sourceTree = "<group>"; };
 		0BAA0B7F1A8F4B2100834417 /* BiergartenVO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BiergartenVO.swift; path = iBiergarten/BiergartenVO.swift; sourceTree = SOURCE_ROOT; };
 		16784F7F312FB9B548AE3AC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = iBiergarten/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
-		4B56E6F1CA3FBCBCF5F5CA55 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		4BE7DEBEF57EF3D6547C80BE /* libPods-iBiergartenTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iBiergartenTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		63CE92448F7E8DA6C476B74C /* Pods-iBiergartenTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iBiergartenTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iBiergartenTests/Pods-iBiergartenTests.release.xcconfig"; sourceTree = "<group>"; };
-		9D1CAB765807E63B855CEE51 /* Pods-iBiergartenTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iBiergartenTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iBiergartenTests/Pods-iBiergartenTests.debug.xcconfig"; sourceTree = "<group>"; };
-		DCFE5BDAE12D038C0E089F8A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		E0407152B689EDF2F03DB188 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		24D1C9467E18B2463A23CC1B /* Pods-iBiergarten.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iBiergarten.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iBiergarten/Pods-iBiergarten.debug.xcconfig"; sourceTree = "<group>"; };
+		2E163F15299099C2ED4C4963 /* Pods-iBiergartenTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iBiergartenTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iBiergartenTests/Pods-iBiergartenTests.debug.xcconfig"; sourceTree = "<group>"; };
+		449CA7663770F93662ED6667 /* Pods_iBiergartenTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iBiergartenTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		687F43FFFCA8A79A9D6EDD4C /* Pods-iBiergartenTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iBiergartenTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iBiergartenTests/Pods-iBiergartenTests.release.xcconfig"; sourceTree = "<group>"; };
+		A30ED1F1154997278B7D3CD5 /* Pods-iBiergarten.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iBiergarten.release.xcconfig"; path = "Pods/Target Support Files/Pods-iBiergarten/Pods-iBiergarten.release.xcconfig"; sourceTree = "<group>"; };
+		CBFF5E7754718C2C778C03F1 /* Pods_iBiergarten.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iBiergarten.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,7 +163,7 @@
 				0B5714851A6A7B1900E44CB3 /* OpenGLES.framework in Frameworks */,
 				0B5714831A6A7B1100E44CB3 /* QuartzCore.framework in Frameworks */,
 				0B5714811A6A7B0B00E44CB3 /* SystemConfiguration.framework in Frameworks */,
-				E0425B0BE48960AD1280B3C4 /* libPods.a in Frameworks */,
+				2BD0C856ADCE55F476489CCE /* Pods_iBiergarten.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,7 +171,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E340BD3A35F57BBFA9B543AC /* libPods-iBiergartenTests.a in Frameworks */,
+				7EF02FEA8694D122880A1456 /* Pods_iBiergartenTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +306,7 @@
 		16784A783D2242A0C40F7A8A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0B4779E31B178435008A109C /* BiergartenDetailViewController.swift */,
 				0B43745C1A6A65C600A6E4AB /* AppDelegate.swift */,
 				0BAA0B711A8F4B0000834417 /* DetailViewController.swift */,
 				0BAA0B721A8F4B0000834417 /* GoogleDataProvider.swift */,
@@ -339,8 +342,8 @@
 				0B5714841A6A7B1900E44CB3 /* OpenGLES.framework */,
 				0B5714821A6A7B1100E44CB3 /* QuartzCore.framework */,
 				0B5714801A6A7B0B00E44CB3 /* SystemConfiguration.framework */,
-				E0407152B689EDF2F03DB188 /* libPods.a */,
-				4BE7DEBEF57EF3D6547C80BE /* libPods-iBiergartenTests.a */,
+				CBFF5E7754718C2C778C03F1 /* Pods_iBiergarten.framework */,
+				449CA7663770F93662ED6667 /* Pods_iBiergartenTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -348,10 +351,10 @@
 		C31FB02B7D032BBA40A451D4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4B56E6F1CA3FBCBCF5F5CA55 /* Pods.debug.xcconfig */,
-				DCFE5BDAE12D038C0E089F8A /* Pods.release.xcconfig */,
-				9D1CAB765807E63B855CEE51 /* Pods-iBiergartenTests.debug.xcconfig */,
-				63CE92448F7E8DA6C476B74C /* Pods-iBiergartenTests.release.xcconfig */,
+				24D1C9467E18B2463A23CC1B /* Pods-iBiergarten.debug.xcconfig */,
+				A30ED1F1154997278B7D3CD5 /* Pods-iBiergarten.release.xcconfig */,
+				2E163F15299099C2ED4C4963 /* Pods-iBiergartenTests.debug.xcconfig */,
+				687F43FFFCA8A79A9D6EDD4C /* Pods-iBiergartenTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -363,11 +366,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0B43747B1A6A65C600A6E4AB /* Build configuration list for PBXNativeTarget "iBiergarten" */;
 			buildPhases = (
-				76EF3B23C3A954896C16527D /* Check Pods Manifest.lock */,
+				8E3C5843E27CF0A763758451 /* Check Pods Manifest.lock */,
 				0B4374531A6A65C600A6E4AB /* Sources */,
 				0B4374541A6A65C600A6E4AB /* Frameworks */,
 				0B4374551A6A65C600A6E4AB /* Resources */,
-				961BB75A9E83596D40E047B8 /* Copy Pods Resources */,
+				B42AD1EC74909C02106412CE /* Embed Pods Frameworks */,
+				01D5A83BB50143EE695FAB4C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -387,6 +391,7 @@
 				0B43746E1A6A65C600A6E4AB /* Frameworks */,
 				0B43746F1A6A65C600A6E4AB /* Resources */,
 				083140CF3EB5C7AA6A914EFD /* Copy Pods Resources */,
+				66B177DAD79E943D65133A5D /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -468,6 +473,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		01D5A83BB50143EE695FAB4C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iBiergarten/Pods-iBiergarten-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		083140CF3EB5C7AA6A914EFD /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -498,7 +518,22 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		76EF3B23C3A954896C16527D /* Check Pods Manifest.lock */ = {
+		66B177DAD79E943D65133A5D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iBiergartenTests/Pods-iBiergartenTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E3C5843E27CF0A763758451 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -513,19 +548,19 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		961BB75A9E83596D40E047B8 /* Copy Pods Resources */ = {
+		B42AD1EC74909C02106412CE /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iBiergarten/Pods-iBiergarten-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -547,6 +582,7 @@
 				0B38FBA51A90EB2500ACDA93 /* CoreDataHelper.swift in Sources */,
 				0B38FBAF1A91018500ACDA93 /* JsonDataHelper.swift in Sources */,
 				0B7A0A891A700C54001F39C5 /* MarkerInfoView.swift in Sources */,
+				0B4779E41B178435008A109C /* BiergartenDetailViewController.swift in Sources */,
 				0BAA0B801A8F4B2100834417 /* BiergartenVO.swift in Sources */,
 				0BAA0B7B1A8F4B0000834417 /* MasterViewController.swift in Sources */,
 				0BAA0B7D1A8F4B0000834417 /* PlaceMarker.swift in Sources */,
@@ -732,7 +768,7 @@
 		};
 		0B43747C1A6A65C600A6E4AB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B56E6F1CA3FBCBCF5F5CA55 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 24D1C9467E18B2463A23CC1B /* Pods-iBiergarten.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -742,6 +778,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/iBiergarten",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/iBiergarten-bsigpibmsvsrghayssycmerzhzzz/Build/Products/Debug-iphoneos",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = iBiergarten/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -753,7 +790,7 @@
 		};
 		0B43747D1A6A65C600A6E4AB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DCFE5BDAE12D038C0E089F8A /* Pods.release.xcconfig */;
+			baseConfigurationReference = A30ED1F1154997278B7D3CD5 /* Pods-iBiergarten.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -763,6 +800,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/iBiergarten",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/iBiergarten-bsigpibmsvsrghayssycmerzhzzz/Build/Products/Debug-iphoneos",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = iBiergarten/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -774,7 +812,7 @@
 		};
 		0B43747F1A6A65C600A6E4AB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D1CAB765807E63B855CEE51 /* Pods-iBiergartenTests.debug.xcconfig */;
+			baseConfigurationReference = 2E163F15299099C2ED4C4963 /* Pods-iBiergartenTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -794,7 +832,7 @@
 		};
 		0B4374801A6A65C600A6E4AB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 63CE92448F7E8DA6C476B74C /* Pods-iBiergartenTests.release.xcconfig */;
+			baseConfigurationReference = 687F43FFFCA8A79A9D6EDD4C /* Pods-iBiergartenTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
