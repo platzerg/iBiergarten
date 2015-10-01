@@ -28,6 +28,7 @@ class Constants
     class func BiergartenEntity() -> String {return "Biergarten"}
     
     class func biergartenURL() -> String {return "http://biergartenservice.appspot.com/platzerworld/biergarten/holebiergarten"}
+//class func biergartenURL() -> String {return "http://gaejdo3.appspot.com/platzerworld/biergarten/holebiergarten"}
     
     class func jsonKeyForBiergartenListe() -> String {return "biergartenListe"}
     

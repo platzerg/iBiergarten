@@ -20,7 +20,7 @@ class IBeaconViewController: UIViewController {
     }
 
     @IBAction func pressed2(sender: UIButton) {
-         println("pressed2")
+         print("pressed2")
         self.ibeaconLabel?.text = "pressed2"
     }
     

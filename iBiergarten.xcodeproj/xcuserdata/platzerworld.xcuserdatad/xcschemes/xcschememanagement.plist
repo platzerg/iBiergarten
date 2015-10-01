@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>iBierartenTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
 		<key>iBiergarten.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,21 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0B1B368E1BBD7F8000651808</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0B1B369A1BBD7FB200651808</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0B1B36A81BBD7FF500651808</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>0B4374561A6A65C600A6E4AB</key>
 		<dict>
 			<key>primary</key>

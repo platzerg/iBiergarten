@@ -21,12 +21,15 @@ class JsonDataHelper : CoreDataHelper {
             
             var fetchError: NSError? = nil
             
-            if let results =
-                super.context.executeFetchRequest(fetchRequest, error: &fetchError) {
+            do {
+                let results =
+                    try super.context.executeFetchRequest(fetchRequest)
                     for object in results {
                         let team = object as! Biergarten
                         super.context.deleteObject(team)
                     }
+            } catch let error as NSError {
+                fetchError = error
             }
             
             super.saveContext()
@@ -40,7 +43,7 @@ class JsonDataHelper : CoreDataHelper {
         let jsonData = NSData(contentsOfURL: jsonURL!)
         
         var error: NSError? = nil
-        let json : AnyObject! = NSJSONSerialization.JSONObjectWithData(jsonData!, options: NSJSONReadingOptions.MutableContainers, error: nil)
+        let json : AnyObject! = try? NSJSONSerialization.JSONObjectWithData(jsonData!, options: NSJSONReadingOptions.MutableContainers)
         
         let entity = NSEntityDescription.entityForName("Biergarten", inManagedObjectContext: super.context)
         
@@ -50,20 +53,20 @@ class JsonDataHelper : CoreDataHelper {
                 for bier in biergartenListe {
                     
                     if let biergarten = bier as? NSDictionary{
-                        var id: Int16 = Int16(bier[Constants.jsonKeyForId()]! as! Int)
-                        var name: String = bier[Constants.jsonKeyForName()]! as! String
-                        var strasse: String = bier[Constants.jsonKeyForStrasse()]! as! String
-                        var plz: String = bier[Constants.jsonKeyForPlz()]! as! String
-                        var ort: String = bier[Constants.jsonKeyForOr()]! as! String
-                        var url: String = bier[Constants.jsonKeyForUrl()]! as! String
-                        var longitude: String = bier[Constants.jsonKeyForLongitude()]! as! String
-                        var latitude: String = bier[Constants.jsonKeyForLatitude()]! as! String
-                        var email: String = bier[Constants.jsonKeyForEmail()]! as! String
-                        var telefon: String = bier[Constants.jsonKeyForTelefon()]! as! String
-                        var desc: String = bier[Constants.jsonKeyForDescription()]! as! String
-                        var favorit: Bool = bier[Constants.jsonKeyForFavorit()]! as! Bool
+                        let id: Int16 = Int16(bier[Constants.jsonKeyForId()]! as! Int)
+                        let name: String = bier[Constants.jsonKeyForName()]! as! String
+                        let strasse: String = bier[Constants.jsonKeyForStrasse()]! as! String
+                        let plz: String = bier[Constants.jsonKeyForPlz()]! as! String
+                        let ort: String = bier[Constants.jsonKeyForOr()]! as! String
+                        let url: String = bier[Constants.jsonKeyForUrl()]! as! String
+                        let longitude: String = bier[Constants.jsonKeyForLongitude()]! as! String
+                        let latitude: String = bier[Constants.jsonKeyForLatitude()]! as! String
+                        let email: String = bier[Constants.jsonKeyForEmail()]! as! String
+                        let telefon: String = bier[Constants.jsonKeyForTelefon()]! as! String
+                        let desc: String = bier[Constants.jsonKeyForDescription()]! as! String
+                        let favorit: Bool = bier[Constants.jsonKeyForFavorit()]! as! Bool
                         
-                        var biergartenModel: BiergartenVO = BiergartenVO(id: id, name:name, strasse:strasse, plz:plz, ort:ort, url:url, longitude:longitude, latitude:latitude, email:email, telefon:telefon, desc:desc, favorit: favorit)
+                        let biergartenModel: BiergartenVO = BiergartenVO(id: id, name:name, strasse:strasse, plz:plz, ort:ort, url:url, longitude:longitude, latitude:latitude, email:email, telefon:telefon, desc:desc, favorit: favorit)
                         
                         let newBiergartenManagedObject = Biergarten(entity: entity!, insertIntoManagedObjectContext: super.context)
                         

@@ -15,11 +15,10 @@ class OBD2ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
 
     @IBAction func pressed1(sender: UIButton) {
-        println("pressed1")
+        print("pressed1")
         self.obd2Label?.text = "pressed1"
     }
     override func didReceiveMemoryWarning() {

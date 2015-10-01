@@ -6,9 +6,4 @@
 //  Copyright (c) 2015 platzerworld. All rights reserved.
 //
 
-#ifndef iBiergarten_Swift_Bridging_Header_h
-#define iBiergarten_Swift_Bridging_Header_h
-
 #import <GoogleMaps/GoogleMaps.h>
-#endif
-

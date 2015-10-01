@@ -90,7 +90,7 @@ class DetailViewController: UIViewController {
         initLocationManager()
         var marker: PlaceMarker?
         if let detailItem: AnyObject = self.detailItem.detailItem{
-            var biergarten: Biergarten = self.detailItem.detailItem as! Biergarten
+            let biergarten: Biergarten = self.detailItem.detailItem as! Biergarten
             
             marker = constructMarker(biergarten)
             
@@ -145,7 +145,7 @@ class DetailViewController: UIViewController {
         let latString = biergarten.latitude.stringByReplacingOccurrencesOfString(",", withString: ".", options: NSStringCompareOptions.LiteralSearch, range: nil)
         let lonString = biergarten.longitude.stringByReplacingOccurrencesOfString(",", withString: ".", options: NSStringCompareOptions.LiteralSearch, range: nil)
         
-        var place: GooglePlace = GooglePlace(name: biergarten.name, adress: biergarten.strasse, coordinate: CLLocationCoordinate2DMake(CLLocationDegrees((latString as NSString).doubleValue), CLLocationDegrees((lonString as NSString).doubleValue)), placeType: "biergarten")
+        let place: GooglePlace = GooglePlace(name: biergarten.name, adress: biergarten.strasse, coordinate: CLLocationCoordinate2DMake(CLLocationDegrees((latString as NSString).doubleValue), CLLocationDegrees((lonString as NSString).doubleValue)), placeType: "biergarten")
         let marker = PlaceMarker(place: place)
         marker.appearAnimation = kGMSMarkerAnimationPop
         marker.map = mapView
@@ -156,17 +156,17 @@ class DetailViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "Types Segue" {
-            let navigationController = segue.destinationViewController as! UINavigationController
-            let controller = segue.destinationViewController.topViewController as! TypesTableViewController
-            controller.selectedTypes = searchedTypes
-            controller.delegate = self
+            //let navigationController = segue.destinationViewController as! UINavigationController
+            //let controller = segue.destinationViewController.topViewController as! TypesTableViewController
+            //controller.selectedTypes = searchedTypes
+            //controller.delegate = self
         }
     }
     
 }
 
 extension DetailViewController: CLLocationManagerDelegate {
-    func locationManager(manager: CLLocationManager!, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+    func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
         if status == .AuthorizedWhenInUse {
             locationManager.startUpdatingLocation()
             mapView.myLocationEnabled = true
@@ -175,8 +175,8 @@ extension DetailViewController: CLLocationManagerDelegate {
     }
     
     
-    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
-        if let location = locations.first as? CLLocation {
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let location = locations.first! as? CLLocation {
             mapView.camera = GMSCameraPosition(target: location.coordinate, zoom: 12, bearing: 0, viewingAngle: 0)
             locationManager.stopUpdatingLocation()
         }
@@ -225,7 +225,7 @@ extension DetailViewController: GMSMapViewDelegate{
 
 extension DetailViewController: TypesTableViewControllerDelegate{
     func makeFinish(controller: TypesTableViewController) {
-        searchedTypes = sorted(controller.selectedTypes)
+        searchedTypes = controller.selectedTypes.sort()
         dismissViewControllerAnimated(true, completion: nil)
     }
 }

@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class MasterViewController: UITableViewController, NSFetchedResultsControllerDelegate {
+class MasterViewController: UITableViewController, NSFetchedResultsControllerDelegate, BiergartenDetailViewControllerDelegate {
 
     var detailViewController: DetailViewController? = nil
     var managedObjectContext: NSManagedObjectContext? = nil
@@ -34,7 +34,7 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
         let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "insertNewObject:")
         self.navigationItem.rightBarButtonItem = addButton
         let controllers = self.splitViewController!.viewControllers
-        self.detailViewController = controllers[controllers.count-1].topViewController as? DetailViewController
+        //self.detailViewController = controllers[controllers.count-1].topViewController as? DetailViewController
         
         var dataFecher:DataFecher = DataFecher()
         self.activateNCBiergartenLoaded(dataFecher)
@@ -47,10 +47,10 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
         let mainQueue = NSOperationQueue.mainQueue()
         var observer = notificationCenter.addObserverForName(Constants.notificationBiergartenLoaded(), object: nil, queue: mainQueue) { _ in
             
-            var allBiergarten: Array<BiergartenVO> = reachability.getAllBiergarten()
+            let allBiergarten: Array<BiergartenVO> = reachability.getAllBiergarten()
             for biergarten in allBiergarten
             {
-                println(biergarten.name)
+                print(biergarten.name)
             }
             
             self.allFechtedBiergarten  = self.fetchedResultsController.fetchedObjects! as! [Biergarten]
@@ -81,6 +81,14 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
             biergartenModel.telefon = "GPL_telefon"
             biergartenModel.desc = "GPL_desc"
             biergartenModel.favorit = true
+            if let resultController = storyboard!.instantiateViewControllerWithIdentifier("biergrtenDetail") as? BiergartenDetailViewController {
+                    resultController.biergartenVO = biergartenModel
+                    resultController.delegate = self
+                    presentViewController(resultController, animated: true, completion: nil)
+                
+                self.pushToCloud(biergartenModel)
+            }
+
         }else{
             biergartenModel = (sender as! BiergartenVO)
         }
@@ -90,10 +98,13 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
         let newBiergartenManagedObject = NSEntityDescription.insertNewObjectForEntityForName(entity.name!, inManagedObjectContext: context) as! Biergarten
         self.updateBiergarten(newBiergartenManagedObject, biergartenModel: biergartenModel)
         
-        self.pushToCloud(biergartenModel)
+        
         
         var error: NSError? = nil
-        if !context.save(&error) {
+        do {
+            try context.save()
+        } catch let error1 as NSError {
+            error = error1
             self.handleError(error)
         }
     }
@@ -104,7 +115,7 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
         let url = NSURL(string: urlString)
         
         let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, error) in
-            println(NSString(data: data, encoding: NSUTF8StringEncoding))
+            print(NSString(data: data!, encoding: NSUTF8StringEncoding))
         }
         
         task.resume()
@@ -127,7 +138,7 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
     
     func handleError(error: NSError!) -> (){
         if error != nil {
-            println("Unresolved error \(error), \(error?.description)")
+            print("Unresolved error \(error), \(error?.description)")
             abort()
         }
     }
@@ -136,7 +147,7 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showDetail" {
-            if let indexPath = self.tableView.indexPathForSelectedRow() {
+            if let indexPath = self.tableView.indexPathForSelectedRow {
                 
                 let object = self.fetchedResultsController.objectAtIndexPath(indexPath) as! Biergarten
                 let controller = (segue.destinationViewController as! UINavigationController).topViewController as! DetailViewController
@@ -154,12 +165,12 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let sectionInfo = self.fetchedResultsController.sections![section] as! NSFetchedResultsSectionInfo
+        let sectionInfo = self.fetchedResultsController.sections![section] 
         return sectionInfo.numberOfObjects
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) 
         self.configureCell(cell, atIndexPath: indexPath)
         return cell
     }
@@ -175,7 +186,10 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
             context.deleteObject(self.fetchedResultsController.objectAtIndexPath(indexPath) as! NSManagedObject)
                 
             var error: NSError? = nil
-            if !context.save(&error) {
+            do {
+                try context.save()
+            } catch let error1 as NSError {
+                error = error1
                 //println("Unresolved error \(error), \(error.userInfo)")
                 abort()
             }
@@ -215,8 +229,11 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
         _fetchedResultsController = aFetchedResultsController
         
     	var error: NSError? = nil
-    	if !_fetchedResultsController!.performFetch(&error) {
-            println("Unresolved error \(error), \(error?.description)")
+    	do {
+            try _fetchedResultsController!.performFetch()
+        } catch let error1 as NSError {
+            error = error1
+            print("Unresolved error \(error), \(error?.description)")
     	     abort()
     	}
         
@@ -239,7 +256,8 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
         }
     }
 
-    func controller(controller: NSFetchedResultsController, didChangeObject anObject: AnyObject, atIndexPath indexPath: NSIndexPath?, forChangeType type: NSFetchedResultsChangeType, newIndexPath: NSIndexPath?) {
+    /*
+    func controller(controller: NSFetchedResultsController, didChangeObject anObject: NSManagedObject, atIndexPath indexPath: NSIndexPath?, forChangeType type: NSFetchedResultsChangeType, newIndexPath: NSIndexPath?) {
         switch type {
             case .Insert:
                 tableView.insertRowsAtIndexPaths([newIndexPath!], withRowAnimation: .Fade)
@@ -254,6 +272,7 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
                 return
         }
     }
+*/
 
     func controllerDidChangeContent(controller: NSFetchedResultsController) {
         self.tableView.endUpdates()
@@ -267,6 +286,13 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
          self.tableView.reloadData()
      }
      */
+    
+    // MARK: - Types Controller Delegate
+    func storeBiergarten(controller: BiergartenDetailViewController, biergarten: BiergartenVO) {
+        
+        dismissViewControllerAnimated(true, completion: nil)
+    
+    }
 
 }
 

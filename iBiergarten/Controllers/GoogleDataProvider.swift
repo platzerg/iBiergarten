@@ -24,7 +24,7 @@ class GoogleDataProvider {
     
     // 48.179859, 11.592179
     var urlString = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=\(apiKey)&location=\(coordinate.latitude),\(coordinate.longitude)&radius=\(radius)&rankby=prominence&sensor=true"
-    let typesString = types.count > 0 ? join("|", types) : "food"
+    let typesString = types.count > 0 ? types.joinWithSeparator("|") : "food"
     urlString += "&types=\(typesString)"
     urlString = urlString.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
     
@@ -35,7 +35,7 @@ class GoogleDataProvider {
     placesTask = session.dataTaskWithURL(NSURL(string: urlString)!) {data, response, error in
       UIApplication.sharedApplication().networkActivityIndicatorVisible = false
       var placesArray = [GooglePlace]()
-      if let json = NSJSONSerialization.JSONObjectWithData(data, options:nil, error:nil) as? NSDictionary {
+      if let json = (try? NSJSONSerialization.JSONObjectWithData(data!, options:[])) as? NSDictionary {
         if let results = json["results"] as? NSArray {
           for rawPlace:AnyObject in results {
             let place = GooglePlace(dictionary: rawPlace as! NSDictionary, acceptedTypes: types)
@@ -66,7 +66,7 @@ class GoogleDataProvider {
     session.dataTaskWithURL(NSURL(string: urlString)!) {data, response, error in
       UIApplication.sharedApplication().networkActivityIndicatorVisible = false
       var encodedRoute: String?
-      if let json = NSJSONSerialization.JSONObjectWithData(data, options:nil, error:nil) as? [String:AnyObject] {
+      if let json = (try? NSJSONSerialization.JSONObjectWithData(data!, options:[])) as? [String:AnyObject] {
         if let routes = json["routes"] as AnyObject? as? [AnyObject] {
           if let route = routes.first as? [String : AnyObject] {
             if let polyline = route["overview_polyline"] as AnyObject? as? [String : String] {
@@ -94,7 +94,7 @@ class GoogleDataProvider {
       UIApplication.sharedApplication().networkActivityIndicatorVisible = true
       session.downloadTaskWithURL(NSURL(string: urlString)!) {url, response, error in
         UIApplication.sharedApplication().networkActivityIndicatorVisible = false
-        let downloadedPhoto = UIImage(data: NSData(contentsOfURL: url)!)
+        let downloadedPhoto = UIImage(data: NSData(contentsOfURL: url!)!)
         self.photoCache[reference] = downloadedPhoto
         dispatch_async(dispatch_get_main_queue()) {
           completion(downloadedPhoto)

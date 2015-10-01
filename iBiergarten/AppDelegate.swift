@@ -24,11 +24,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.initDatabase()
         self.initFlickr()
         
+        
         return true
     }
     
-    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {
-        let scheme: String = url.scheme!
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+        let scheme: String = url.scheme
         if("flickr391994024204840" == scheme) {
             NSNotificationCenter.defaultCenter().postNotificationName("UserAuthCallbackNotification", object: url, userInfo: nil)
             return true
@@ -51,7 +52,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // SPLIT-VIEW
         let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as! UINavigationController
-        navigationController.topViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem()
+        navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem()
         
         // HANDLE DEVICE-IPAD
         if UIDevice.currentDevice().userInterfaceIdiom == .Pad {
@@ -104,7 +105,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func initNotification (a: Void ) -> (Void){
         // Actions
-        var firstAction:UIMutableUserNotificationAction = UIMutableUserNotificationAction()
+        let firstAction:UIMutableUserNotificationAction = UIMutableUserNotificationAction()
         firstAction.identifier = Constants.identifierFirstAction()
         firstAction.title = "First Action"
         
@@ -112,7 +113,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         firstAction.destructive = true
         firstAction.authenticationRequired = false
         
-        var secondAction:UIMutableUserNotificationAction = UIMutableUserNotificationAction()
+        let secondAction:UIMutableUserNotificationAction = UIMutableUserNotificationAction()
         secondAction.identifier = Constants.identifierSecondAction()
         secondAction.title = "Second Action"
         
@@ -122,29 +123,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // category
         
-        var firstCategory:UIMutableUserNotificationCategory = UIMutableUserNotificationCategory()
+        let firstCategory:UIMutableUserNotificationCategory = UIMutableUserNotificationCategory()
         firstCategory.identifier = Constants.identifierFirstCategory()
         
         let defaultActions:NSArray = [firstAction, secondAction]
         let minimalActions:NSArray = [firstAction, secondAction]
         
-        firstCategory.setActions(defaultActions as! [AnyObject], forContext: UIUserNotificationActionContext.Default)
-        firstCategory.setActions(minimalActions as! [AnyObject], forContext: UIUserNotificationActionContext.Minimal)
+        /*
+        firstCategory.setActions(defaultActions as [AnyObject], forContext: UIUserNotificationActionContext.Default)
+        firstCategory.setActions(minimalActions as [AnyObject], forContext: UIUserNotificationActionContext.Minimal)
         
         // NSSet of all our categories
         
         let categories:NSSet = NSSet(objects: firstCategory)
         
-        let types:UIUserNotificationType = UIUserNotificationType.Alert | UIUserNotificationType.Badge
+        let types:UIUserNotificationType = [UIUserNotificationType.Alert, UIUserNotificationType.Badge]
     
         let mySettings:UIUserNotificationSettings = UIUserNotificationSettings(forTypes: types, categories: categories as Set<NSObject>)
-        
+
         UIApplication.sharedApplication().registerUserNotificationSettings(mySettings)
+ */
     }
 }
 
 extension AppDelegate: UISplitViewControllerDelegate {
-    func splitViewController(splitViewController: UISplitViewController, collapseSecondaryViewController secondaryViewController:UIViewController!, ontoPrimaryViewController primaryViewController:UIViewController!) -> Bool {
+    func splitViewController(splitViewController: UISplitViewController, collapseSecondaryViewController secondaryViewController:UIViewController, ontoPrimaryViewController primaryViewController:UIViewController) -> Bool {
         if let secondaryAsNavController = secondaryViewController as? UINavigationController {
             if let topAsDetailController = secondaryAsNavController.topViewController as? DetailViewController where topAsDetailController.detailItem.detailItem == nil {
                 // If there's no session, then we only want to show the primary. This is the

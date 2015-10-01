@@ -22,12 +22,10 @@
 		0B38FBB21A910B6200ACDA93 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B38FBB11A910B6200ACDA93 /* Constants.swift */; };
 		0B43745D1A6A65C600A6E4AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B43745C1A6A65C600A6E4AB /* AppDelegate.swift */; };
 		0B4374601A6A65C600A6E4AB /* iBiergarten.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0B43745E1A6A65C600A6E4AB /* iBiergarten.xcdatamodeld */; };
-		0B4374781A6A65C600A6E4AB /* iBiergartenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4374771A6A65C600A6E4AB /* iBiergartenTests.swift */; };
 		0B4779E41B178435008A109C /* BiergartenDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4779E31B178435008A109C /* BiergartenDetailViewController.swift */; };
 		0B4D31291A6BA59400AFC29D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0B4D312B1A6BA59400AFC29D /* Localizable.strings */; };
 		0B4D31481A6BAC1B00AFC29D /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0B4D31471A6BAC1B00AFC29D /* Settings.bundle */; };
 		0B4D314B1A6BADAB00AFC29D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0B4D314D1A6BADAB00AFC29D /* InfoPlist.strings */; };
-		0B4D31511A6BADC900AFC29D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0B4D31531A6BADC900AFC29D /* InfoPlist.strings */; };
 		0B5714811A6A7B0B00E44CB3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B5714801A6A7B0B00E44CB3 /* SystemConfiguration.framework */; };
 		0B5714831A6A7B1100E44CB3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B5714821A6A7B1100E44CB3 /* QuartzCore.framework */; };
 		0B5714851A6A7B1900E44CB3 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B5714841A6A7B1900E44CB3 /* OpenGLES.framework */; };
@@ -57,19 +55,8 @@
 		0BAA0B801A8F4B2100834417 /* BiergartenVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAA0B7F1A8F4B2100834417 /* BiergartenVO.swift */; };
 		1678426F67E71BAB076E1FEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1678401170F337BB58F70469 /* Main.storyboard */; };
 		16784583231F782E4C6FD0ED /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16784344909E4373CBDE9CE3 /* LaunchScreen.xib */; };
-		2BD0C856ADCE55F476489CCE /* Pods_iBiergarten.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBFF5E7754718C2C778C03F1 /* Pods_iBiergarten.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		7EF02FEA8694D122880A1456 /* Pods_iBiergartenTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 449CA7663770F93662ED6667 /* Pods_iBiergartenTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		2D77ED3412816FD4E4485DA1 /* Pods_iBiergarten.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBFF5E7754718C2C778C03F1 /* Pods_iBiergarten.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		0B4374721A6A65C600A6E4AB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0B43744F1A6A65C600A6E4AB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0B4374561A6A65C600A6E4AB;
-			remoteInfo = iBiergarten;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0B0CB8BB1A9BC53500E6CABB /* OBD2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBD2ViewController.swift; sourceTree = "<group>"; };
@@ -91,20 +78,15 @@
 		0B43745B1A6A65C600A6E4AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B43745C1A6A65C600A6E4AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		0B43745F1A6A65C600A6E4AB /* iBiergarten.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iBiergarten.xcdatamodel; sourceTree = "<group>"; };
-		0B4374711A6A65C600A6E4AB /* iBiergartenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iBiergartenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0B4374771A6A65C600A6E4AB /* iBiergartenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iBiergartenTests.swift; sourceTree = "<group>"; };
 		0B4374811A6A66C500A6E4AB /* Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Swift-Bridging-Header.h"; path = "../Swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		0B4779E31B178435008A109C /* BiergartenDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BiergartenDetailViewController.swift; path = ../Storyboard/BiergartenDetailViewController.swift; sourceTree = "<group>"; };
 		0B4D312A1A6BA59400AFC29D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0B4D312C1A6BA59800AFC29D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0B4D313A1A6BA94200AFC29D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
 		0B4D313B1A6BA94B00AFC29D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
-		0B4D313C1A6BA9B800AFC29D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = de; path = de.lproj/Info.plist; sourceTree = "<group>"; };
 		0B4D31471A6BAC1B00AFC29D /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		0B4D314C1A6BADAB00AFC29D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0B4D314E1A6BADAC00AFC29D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		0B4D31521A6BADC900AFC29D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		0B4D31541A6BADCA00AFC29D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0B5714801A6A7B0B00E44CB3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		0B5714821A6A7B1100E44CB3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		0B5714841A6A7B1900E44CB3 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -163,15 +145,7 @@
 				0B5714851A6A7B1900E44CB3 /* OpenGLES.framework in Frameworks */,
 				0B5714831A6A7B1100E44CB3 /* QuartzCore.framework in Frameworks */,
 				0B5714811A6A7B0B00E44CB3 /* SystemConfiguration.framework in Frameworks */,
-				2BD0C856ADCE55F476489CCE /* Pods_iBiergarten.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0B43746E1A6A65C600A6E4AB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7EF02FEA8694D122880A1456 /* Pods_iBiergartenTests.framework in Frameworks */,
+				2D77ED3412816FD4E4485DA1 /* Pods_iBiergarten.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,7 +179,6 @@
 			children = (
 				0B140D6F1A728A82003CF8E7 /* Images.xcassets */,
 				0B4374591A6A65C600A6E4AB /* iBiergarten */,
-				0B4374741A6A65C600A6E4AB /* iBiergartenTests */,
 				0B4374581A6A65C600A6E4AB /* Products */,
 				C31FB02B7D032BBA40A451D4 /* Pods */,
 				596C6487592CDFEAB89D23C7 /* Frameworks */,
@@ -216,7 +189,6 @@
 			isa = PBXGroup;
 			children = (
 				0B4374571A6A65C600A6E4AB /* iBiergarten.app */,
-				0B4374711A6A65C600A6E4AB /* iBiergartenTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -244,24 +216,6 @@
 				0B4D312B1A6BA59400AFC29D /* Localizable.strings */,
 				0B43745B1A6A65C600A6E4AB /* Info.plist */,
 				0B4D314D1A6BADAB00AFC29D /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		0B4374741A6A65C600A6E4AB /* iBiergartenTests */ = {
-			isa = PBXGroup;
-			children = (
-				0B4374771A6A65C600A6E4AB /* iBiergartenTests.swift */,
-				0B4374751A6A65C600A6E4AB /* Supporting Files */,
-			);
-			path = iBiergartenTests;
-			sourceTree = "<group>";
-		};
-		0B4374751A6A65C600A6E4AB /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				0B4D313D1A6BA9B800AFC29D /* Info.plist */,
-				0B4D31531A6BADC900AFC29D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -382,43 +336,20 @@
 			productReference = 0B4374571A6A65C600A6E4AB /* iBiergarten.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0B4374701A6A65C600A6E4AB /* iBiergartenTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0B43747E1A6A65C600A6E4AB /* Build configuration list for PBXNativeTarget "iBiergartenTests" */;
-			buildPhases = (
-				432BE47B1E221075E80D5265 /* Check Pods Manifest.lock */,
-				0B43746D1A6A65C600A6E4AB /* Sources */,
-				0B43746E1A6A65C600A6E4AB /* Frameworks */,
-				0B43746F1A6A65C600A6E4AB /* Resources */,
-				083140CF3EB5C7AA6A914EFD /* Copy Pods Resources */,
-				66B177DAD79E943D65133A5D /* Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0B4374731A6A65C600A6E4AB /* PBXTargetDependency */,
-			);
-			name = iBiergartenTests;
-			productName = iBiergartenTests;
-			productReference = 0B4374711A6A65C600A6E4AB /* iBiergartenTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		0B43744F1A6A65C600A6E4AB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = platzerworld;
 				TargetAttributes = {
 					0B4374561A6A65C600A6E4AB = {
 						CreatedOnToolsVersion = 6.1.1;
 						DevelopmentTeam = 3EUQZMQ92F;
-					};
-					0B4374701A6A65C600A6E4AB = {
-						CreatedOnToolsVersion = 6.1.1;
-						TestTargetID = 0B4374561A6A65C600A6E4AB;
 					};
 				};
 			};
@@ -437,7 +368,6 @@
 			projectRoot = "";
 			targets = (
 				0B4374561A6A65C600A6E4AB /* iBiergarten */,
-				0B4374701A6A65C600A6E4AB /* iBiergartenTests */,
 			);
 		};
 /* End PBXProject section */
@@ -462,14 +392,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0B43746F1A6A65C600A6E4AB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0B4D31511A6BADC900AFC29D /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -486,51 +408,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iBiergarten/Pods-iBiergarten-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		083140CF3EB5C7AA6A914EFD /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iBiergartenTests/Pods-iBiergartenTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		432BE47B1E221075E80D5265 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		66B177DAD79E943D65133A5D /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iBiergartenTests/Pods-iBiergartenTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8E3C5843E27CF0A763758451 /* Check Pods Manifest.lock */ = {
@@ -593,23 +470,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0B43746D1A6A65C600A6E4AB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0B4374781A6A65C600A6E4AB /* iBiergartenTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		0B4374731A6A65C600A6E4AB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0B4374561A6A65C600A6E4AB /* iBiergarten */;
-			targetProxy = 0B4374721A6A65C600A6E4AB /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0B4D312B1A6BA59400AFC29D /* Localizable.strings */ = {
@@ -621,28 +482,11 @@
 			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
-		0B4D313D1A6BA9B800AFC29D /* Info.plist */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0B4D313C1A6BA9B800AFC29D /* de */,
-			);
-			name = Info.plist;
-			sourceTree = "<group>";
-		};
 		0B4D314D1A6BADAB00AFC29D /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				0B4D314C1A6BADAB00AFC29D /* en */,
 				0B4D314E1A6BADAC00AFC29D /* de */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		0B4D31531A6BADC900AFC29D /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0B4D31521A6BADC900AFC29D /* en */,
-				0B4D31541A6BADCA00AFC29D /* de */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -698,6 +542,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: guenter platzer (T4PB5U8RFR)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -774,6 +619,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer: guenter platzer (T4PB5U8RFR)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: guenter platzer (T4PB5U8RFR)";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/iBiergarten",
@@ -782,6 +628,52 @@
 				);
 				INFOPLIST_FILE = iBiergarten/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"c++\"",
+					"-l\"icucore\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"Bolts\"",
+					"-framework",
+					"\"CoreBluetooth\"",
+					"-framework",
+					"\"CoreData\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"FBSDKCoreKit\"",
+					"-framework",
+					"\"GLKit\"",
+					"-framework",
+					"\"GoogleMaps\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MBProgressHUD\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"pop\"",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.platzerworld.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Swift-Bridging-Header.h";
 				USER_HEADER_SEARCH_PATHS = "Pods/**/**";
@@ -796,6 +688,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer: guenter platzer (T4PB5U8RFR)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: guenter platzer (T4PB5U8RFR)";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/iBiergarten",
@@ -804,45 +697,55 @@
 				);
 				INFOPLIST_FILE = iBiergarten/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"c++\"",
+					"-l\"icucore\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"Bolts\"",
+					"-framework",
+					"\"CoreBluetooth\"",
+					"-framework",
+					"\"CoreData\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"FBSDKCoreKit\"",
+					"-framework",
+					"\"GLKit\"",
+					"-framework",
+					"\"GoogleMaps\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MBProgressHUD\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"pop\"",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.platzerworld.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Swift-Bridging-Header.h";
 				USER_HEADER_SEARCH_PATHS = "Pods/**/**";
-			};
-			name = Release;
-		};
-		0B43747F1A6A65C600A6E4AB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E163F15299099C2ED4C4963 /* Pods-iBiergartenTests.debug.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = iBiergartenTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iBiergarten.app/iBiergarten";
-			};
-			name = Debug;
-		};
-		0B4374801A6A65C600A6E4AB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 687F43FFFCA8A79A9D6EDD4C /* Pods-iBiergartenTests.release.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = iBiergartenTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iBiergarten.app/iBiergarten";
 			};
 			name = Release;
 		};
@@ -863,15 +766,6 @@
 			buildConfigurations = (
 				0B43747C1A6A65C600A6E4AB /* Debug */,
 				0B43747D1A6A65C600A6E4AB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0B43747E1A6A65C600A6E4AB /* Build configuration list for PBXNativeTarget "iBiergartenTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0B43747F1A6A65C600A6E4AB /* Debug */,
-				0B4374801A6A65C600A6E4AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

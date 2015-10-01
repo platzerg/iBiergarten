@@ -28,17 +28,22 @@ class CoreDataHelper {
     
     let fileManager = NSFileManager.defaultManager()
     
-    let urls = fileManager.URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask) as! [NSURL]
+    let urls = fileManager.URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask) 
     
     let documentsURL = urls[0]
     let storeURL = documentsURL.URLByAppendingPathComponent(Constants.iBiergartenIdentifier())
 
     
     var error: NSError? = nil
-    store = psc.addPersistentStoreWithType(NSSQLiteStoreType, configuration: nil, URL: storeURL, options: options, error:&error)
+    do {
+      store = try psc.addPersistentStoreWithType(NSSQLiteStoreType, configuration: nil, URL: storeURL, options: options)
+    } catch let error1 as NSError {
+      error = error1
+      store = nil
+    }
     
     if store == nil {
-      println("Error adding persistent store: \(error)")
+      print("Error adding persistent store: \(error)")
       abort()
     }
     
@@ -53,8 +58,13 @@ class CoreDataHelper {
   
   func saveContext() {
     var error: NSError? = nil
-    if context.hasChanges && !context.save(&error) {
-      println("Could not save: \(error), \(error?.userInfo)")
+    if context.hasChanges {
+      do {
+        try context.save()
+      } catch let error1 as NSError {
+        error = error1
+        print("Could not save: \(error), \(error?.userInfo)")
+      }
     }
   }
 
@@ -62,7 +72,7 @@ class CoreDataHelper {
     let fileManager = NSFileManager.defaultManager()
     
     let urls = fileManager.URLsForDirectory(.DocumentDirectory,
-      inDomains: .UserDomainMask) as! [NSURL]
+      inDomains: .UserDomainMask) 
     
     return urls[0]
   }
