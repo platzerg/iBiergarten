@@ -123,13 +123,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // category
         
+        /*
         let firstCategory:UIMutableUserNotificationCategory = UIMutableUserNotificationCategory()
         firstCategory.identifier = Constants.identifierFirstCategory()
         
         let defaultActions:NSArray = [firstAction, secondAction]
         let minimalActions:NSArray = [firstAction, secondAction]
         
-        /*
+        
         firstCategory.setActions(defaultActions as [AnyObject], forContext: UIUserNotificationActionContext.Default)
         firstCategory.setActions(minimalActions as [AnyObject], forContext: UIUserNotificationActionContext.Minimal)
         
