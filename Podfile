@@ -14,6 +14,12 @@ target 'iBiergarten' do
 end
 
 #target 'iBiergartenTests' do
-#    pod 'MBProgressHUD', '~> 0.9.0'
+    pod 'AFNetworking'
+    #pod 'Google-Maps-iOS-SDK'
+    pod 'GoogleMaps'
+    pod 'pop', '~> 1.0'
+    pod 'FBSDKCoreKit'
+    #pod 'Alamofire', '1.2.3'
+    pod 'MBProgressHUD', '~> 0.9.0'
     #pod 'Kiwi'#
 #end

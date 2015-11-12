@@ -156,10 +156,9 @@ class DetailViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "Types Segue" {
-            //let navigationController = segue.destinationViewController as! UINavigationController
-            //let controller = segue.destinationViewController.topViewController as! TypesTableViewController
-            //controller.selectedTypes = searchedTypes
-            //controller.delegate = self
+            let controller = (segue.destinationViewController as! UINavigationController).topViewController as! TypesTableViewController
+            controller.selectedTypes = searchedTypes
+            controller.delegate = self
         }
     }
     
